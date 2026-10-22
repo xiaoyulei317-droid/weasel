@@ -69,6 +69,8 @@ class WeaselPanel {
   LRESULT OnMouseActive(UINT uMsg, WPARAM wParam, LPARAM lParam);
   LRESULT OnLeftClickUp(UINT uMsg, WPARAM wParam, LPARAM lParam);
   LRESULT OnLeftClickDown(UINT uMsg, WPARAM wParam, LPARAM lParam);
+  LRESULT OnRightClickUp(UINT uMsg, WPARAM wParam, LPARAM lParam);
+  CRect _GetAuxRect();
 
   LRESULT MsgHandler(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam);
   static LRESULT CALLBACK WindowProc(HWND hwnd,
@@ -115,6 +117,7 @@ class WeaselPanel {
   wstring m_current_half_icon;
   wstring m_current_full_icon;
   UICallbackFunc& m_uiCallback;
+  std::function<void(UINT)>& m_bilingualCallback;
   // window handle and per-instance click timer
   HWND m_hWnd;
   HWND m_parent = nullptr;

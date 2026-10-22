@@ -260,6 +260,7 @@
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Bilingual.cpp" />
     <ClCompile Include="RimeWithWeasel.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -276,6 +277,7 @@
   <ItemGroup>
     <ClInclude Include="..\include\RimeWithWeasel.h" />
     <ClInclude Include="..\include\WeaselUtility.h" />
+    <ClInclude Include="Bilingual.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>

@@ -37,6 +37,12 @@ class WeaselServerApp {
   }
 
   static bool check_update() {
+    // 雙語拼音 is released on its own page; the stock updater would replace it
+    // with the official Weasel.
+    return open(L"https://github.com/xiaoyulei317-droid/weasel/releases");
+  }
+
+  static bool check_update_stock() {
     // when checked manually, show testing versions too
     std::string feed_url = GetCustomResource("ManualUpdateFeedURL", "APPCAST");
     std::wstring channel{};

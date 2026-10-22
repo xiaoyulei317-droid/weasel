@@ -31,7 +31,7 @@ int WeaselServerApp::Run() {
     win_sparkle_set_lang("zh-CN");
   else
     win_sparkle_set_lang("en");
-  win_sparkle_init();
+  // 雙語拼音: no automatic update checks against the official Weasel feed.
   LOG(INFO) << "creating candidate UI";
   if (!m_ui.Create(m_server.GetHWnd())) {
     LOG(ERROR) << "failed to create candidate UI";
@@ -60,7 +60,6 @@ int WeaselServerApp::Run() {
   m_handler->Finalize();
   m_ui.Destroy();
   tray_icon.RemoveIcon();
-  win_sparkle_cleanup();
 
   return ret;
 }

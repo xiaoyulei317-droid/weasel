@@ -83,6 +83,7 @@ WeaselPanel::WeaselPanel(UI& ui)
       m_in_server(ui.InServer()),
       m_style(ui.style()),
       m_uiCallback(ui.uiCallback()),
+      m_bilingualCallback(ui.bilingualCallback()),
       m_ostyle(ui.ostyle()),
       m_candidateCount(0),
       m_lastCandidateCount(0),
@@ -1061,6 +1062,28 @@ LRESULT WeaselPanel::OnLeftClickUp(UINT uMsg, WPARAM wParam, LPARAM lParam) {
   return 0;
 }
 
+CRect WeaselPanel::_GetAuxRect() {
+  CRect rc = m_layout ? m_layout->GetAuxiliaryRect() : CRect();
+  if (m_istorepos)
+    rc.OffsetRect(0, m_offsety_aux);
+  return rc;
+}
+
+// 雙語拼音: right-click a candidate to see its details
+LRESULT WeaselPanel::OnRightClickUp(UINT uMsg, WPARAM wParam, LPARAM lParam) {
+  if (m_preview_mode || hide_candidates || m_candidateCount <= 0 ||
+      !m_bilingualCallback)
+    return 0;
+  CPoint point(GET_X_LPARAM(lParam), GET_Y_LPARAM(lParam));
+  for (int i = 0; i < m_candidateCount && i < MAX_CANDIDATES_COUNT; ++i) {
+    if (_GetInflatedCandRect(i).PtInRect(point)) {
+      m_bilingualCallback(WEASEL_BILINGUAL_DETAILS + i);
+      return 0;
+    }
+  }
+  return 0;
+}
+
 LRESULT WeaselPanel::OnLeftClickDown(UINT uMsg, WPARAM wParam, LPARAM lParam) {
   if (m_preview_mode) {
     GetCursorPos(&m_drag_start);
@@ -1141,6 +1164,12 @@ LRESULT WeaselPanel::OnLeftClickDown(UINT uMsg, WPARAM wParam, LPARAM lParam) {
         }
       }
     }
+    // 雙語拼音: clicking the translation line types the translation
+    if (m_bilingualCallback && !m_ctx.aux.str.empty() &&
+        _GetAuxRect().PtInRect(point)) {
+      m_bilingualCallback(WEASEL_BILINGUAL_COMMIT_TRANSLATION);
+      return 0;
+    }
     // select by click relative actions
     for (size_t i = 0; i < m_candidateCount && i < MAX_CANDIDATES_COUNT; ++i) {
       auto rect = _GetInflatedCandRect(i);
@@ -1202,6 +1231,8 @@ LRESULT WeaselPanel::MsgHandler(HWND hwnd,
       return OnLeftClickUp(uMsg, wParam, lParam);
     case WM_LBUTTONDOWN:
       return OnLeftClickDown(uMsg, wParam, lParam);
+    case WM_RBUTTONUP:
+      return OnRightClickUp(uMsg, wParam, lParam);
     case WM_DPICHANGED:
       if (lParam) {
         const auto* rc = reinterpret_cast<const RECT*>(lParam);

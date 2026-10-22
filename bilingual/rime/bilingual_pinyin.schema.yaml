@@ -1,0 +1,115 @@
+# Rime schema
+# encoding: utf-8
+#
+# 雙語拼音: Luna Pinyin (明月拼音) with English translations.
+# Needs librime-lua, which Trime (同文) and Weasel (小狼毫) include.
+
+schema:
+  schema_id: bilingual_pinyin
+  name: 雙語拼音
+  version: "0.1"
+  author:
+    - 雙語拼音輸入法 contributors
+  description: |
+    明月拼音加上英文翻譯。中文候選旁顯示英文，
+    第一個候選後面會列出它的英文，可以直接選英文輸出。
+    英文來自 CC-CEDICT（CC BY-SA 4.0）。
+
+switches:
+  - name: ascii_mode
+    reset: 0
+    states: [ 中文, 西文 ]
+  - name: full_shape
+    states: [ 半角, 全角 ]
+  - name: english
+    reset: 1
+    states: [ 無英文, 中英 ]
+  - name: zh_tw
+    reset: 1
+    states: [ 標準字形, 臺灣字形 ]
+  - name: simplification
+    states: [ 漢字, 汉字 ]
+  - name: ascii_punct
+    states: [ 。，, ．， ]
+
+engine:
+  processors:
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - script_translator
+  filters:
+    # Order matters: Taiwan forms first, so 喫飯 becomes 吃飯 and matches the
+    # English table; simplification last, after the English is attached.
+    - simplifier@zh_tw
+    - lua_filter@*bilingual_english
+    - simplifier
+    - uniquifier
+
+speller:
+  alphabet: zyxwvutsrqponmlkjihgfedcba
+  delimiter: " '"
+  algebra:
+    - erase/^xx$/
+    - abbrev/^([a-z]).+$/$1/
+    - abbrev/^([zcs]h).+$/$1/
+    - derive/^([nl])ve$/$1ue/
+    - derive/^([jqxy])u/$1v/
+    - derive/un$/uen/
+    - derive/ui$/uei/
+    - derive/iu$/iou/
+    - derive/([aeiou])ng$/$1gn/
+    - derive/([dtngkhrzcs])o(u|ng)$/$1o/
+    - derive/ong$/on/
+    - derive/ao$/oa/
+    - derive/([iu])a(o|ng?)$/a$1$2/
+
+translator:
+  dictionary: luna_pinyin
+  prism: bilingual_pinyin
+  contextual_suggestions: true
+  max_homophones: 7
+  max_homographs: 7
+  preedit_format:
+    - xform/([nl])v/$1ü/
+    - xform/([nl])ue/$1üe/
+    - xform/([jqxy])v/$1u/
+
+# Language model (lotem/rime-octagram-data, LGPL-3.0) for better sentences.
+grammar:
+  language: zh-hant-t-essay-bgw
+
+zh_tw:
+  option_name: zh_tw
+  opencc_config: t2tw.json
+  tips: none
+
+simplifier:
+  option_name: simplification
+  opencc_config: t2s.json
+  tips: none
+
+bilingual_english:
+  english_options: 3
+
+punctuator:
+  import_preset: default
+
+key_binder:
+  import_preset: default
+
+recognizer:
+  import_preset: default

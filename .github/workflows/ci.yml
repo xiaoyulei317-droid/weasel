@@ -1,5 +1,8 @@
 name: CI
 
+# 雙語拼音: builds the offline translation DLL on Linux, then Weasel and its
+# installer on Windows, and publishes the installer as a release.
+
 on:
   push:
     branches:
@@ -9,39 +12,46 @@ on:
   pull_request:
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
-  lint:
-    runs-on: ubuntu-22.04
+  translation:
+    runs-on: ubuntu-24.04
     steps:
       - name: Checkout last commit
         uses: actions/checkout@v4
 
-      - name: Install clang-format 18
-        if: ${{ !startsWith(github.ref, 'refs/tags/') }}
-        run: |
-          wget https://apt.llvm.org/llvm-snapshot.gpg.key
-          sudo gpg --dearmor < llvm-snapshot.gpg.key > /usr/share/keyrings/llvm-archive-keyring.gpg
-          echo "deb [signed-by=/usr/share/keyrings/llvm-archive-keyring.gpg] http://apt.llvm.org/jammy/ llvm-toolchain-jammy-18 main" | sudo tee /etc/apt/sources.list.d/llvm-toolchain-jammy-18.list
-          sudo apt-get update
-          sudo apt-get install -y clang-format-18
-          sudo ln -sf /usr/bin/clang-format-18 /usr/local/bin/clang-format
-          clang-format --version
+      - name: Checkout slimt
+        run: git submodule update --init --recursive bilingual/mt/slimt
 
-      - name: Code style lint
-        if: ${{ !startsWith(github.ref, 'refs/tags/') }}
-        shell: bash
-        run: ./clang-format.sh -i
+      - name: Install MinGW-w64
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y mingw-w64 cmake ninja-build zstd
+
+      - name: Build bilingual_mt.dll
+        run: bilingual/mt/build.sh
+
+      - name: Download models
+        run: bilingual/fetch-models.sh models
+
+      - name: Upload translation files
+        uses: actions/upload-artifact@v4
+        with:
+          name: bilingual-translation
+          if-no-files-found: error
+          path: |
+            bilingual/mt/build/bilingual_mt.dll
+            models/
 
   build:
-    needs: lint
+    needs: translation
     runs-on: windows-2022
     env:
       boost_version: 1.84.0
       BOOST_ROOT: ${{ github.workspace }}\deps\boost_1_84_0
       SDKVER: 10.0.19041.0
-    strategy:
-      matrix:
-        variant: [msbuild, xmake]
     steps:
       - name: Checkout last commit
         uses: actions/checkout@v4
@@ -128,64 +138,46 @@ jobs:
           $ErrorActionPreference = 'Stop'
           .\build.bat data
 
-      - name: Setup xmake
-        if: matrix.variant == 'xmake'
-        uses: xmake-io/github-action-setup-xmake@v1
+      - name: Download translation files
+        uses: actions/download-artifact@v4
+        with:
+          name: bilingual-translation
+          path: bilingual-translation
+
+      - name: Add 雙語拼音 files
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          python bilingual\install-data.py --models bilingual-translation\models --dll bilingual-translation\bilingual\mt\build\bilingual_mt.dll
 
       - name: Build Weasel
         shell: pwsh
         id: build_weasel
-        env:
-          RELEASE_BUILD: ${{ (github.repository == 'rime/weasel' && startsWith(github.ref, 'refs/tags/')) && '1' || '' }}
         run: |
           $ErrorActionPreference = 'Stop'
-          if ('${{ matrix.variant }}' -eq 'msbuild') {
-            .\build.bat arm64 installer
-          } else {
-            .\xbuild.bat arm64 installer
-          }
-
-      - name: Compress Debug Symbols
-        if: matrix.variant == 'msbuild'
-        shell: pwsh
-        run: |
-          $ErrorActionPreference = 'Stop'
-          output\7z.exe a -t7z "./output/archives/debug_symbols.7z" "output/*.pdb" -r
+          .\build.bat arm64 installer
+          Copy-Item (Get-ChildItem .\output\archives\weasel-bilingual-*-installer.exe | Select-Object -First 1).FullName .\output\archives\bilingual-pinyin-windows-installer.exe
 
       - name: Upload artifacts
-        if: matrix.variant == 'msbuild'
         uses: actions/upload-artifact@v4
         with:
-          name: weasel-artifact-${{ env.git_ref_name }}
+          name: weasel-bilingual-${{ env.git_ref_name }}
           if-no-files-found: error
           path: |
-            .\output\archives\weasel*.exe
-            .\output\archives\debug_symbols.7z
+            .\output\archives\bilingual-pinyin-windows-installer.exe
 
-      # Release-only steps (run on tags or master)
-      - name: Extract changelog
-        if: ${{ github.repository == 'rime/weasel' && startsWith(github.ref, 'refs/tags/') && matrix.variant == 'msbuild' }}
-        shell: pwsh
-        run: .\extract_changelog.ps1
-
-      - name: Create Nightly release
-        if: ${{ github.repository == 'rime/weasel' && github.ref == 'refs/heads/master' && matrix.variant == 'msbuild' }}
-        uses: 'marvinpinto/action-automatic-releases@latest'
-        with:
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
-          automatic_release_tag: latest
-          prerelease: true
-          title: "Nightly Build"
-          files: |
-            ./output/archives/weasel*.exe
-            ./output/archives/debug_symbols.7z
-
-      - name: Release (stable)
-        if: ${{ github.repository == 'rime/weasel' && startsWith(github.ref, 'refs/tags/') && matrix.variant == 'msbuild' }}
+      - name: Publish installer
+        if: ${{ github.event_name != 'pull_request' && github.ref == 'refs/heads/bilingual' }}
         uses: softprops/action-gh-release@v2
         with:
-          draft: true
+          tag_name: bilingual-latest
+          target_commitish: ${{ github.sha }}
+          name: 雙語拼音 Windows 版（最新）
+          prerelease: false
+          make_latest: true
+          body: |
+            雙語拼音輸入法 Windows 版，以小狼毫（Weasel）為基礎。
+            下載下面的 bilingual-pinyin-windows-installer.exe，執行後照畫面安裝。
+            版本：${{ env.git_ref_name }}
           files: |
-            ./output/archives/weasel*.exe
-            ./output/archives/debug_symbols.7z
-          body_path: ${{ github.workspace }}/RELEASE_CHANGELOG.md
+            ./output/archives/bilingual-pinyin-windows-installer.exe

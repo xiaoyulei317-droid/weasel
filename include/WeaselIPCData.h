@@ -5,6 +5,12 @@
 #include <boost/serialization/vector.hpp>
 #include <boost/serialization/string.hpp>
 
+// 雙語拼音: commands the candidate window sends through Client::TrayCommand.
+#define WEASEL_BILINGUAL_COMMIT_TRANSLATION 41000
+// Details of candidate N on the current page: WEASEL_BILINGUAL_DETAILS + N.
+#define WEASEL_BILINGUAL_DETAILS 41001
+#define WEASEL_BILINGUAL_COMMAND_END 41101
+
 namespace weasel {
 
 enum TextAttributeType { NONE = 0, HIGHLIGHTED, LAST_TYPE };

@@ -25,7 +25,7 @@ Unicode true
 Name "小狼毫 ${WEASEL_VERSION}"
 
 ; The file to write
-OutFile "archives\weasel-${PRODUCT_VERSION}-installer.exe"
+OutFile "archives\weasel-bilingual-${PRODUCT_VERSION}-installer.exe"
 
 VIProductVersion "${WEASEL_VERSION}.${WEASEL_BUILD}"
 VIAddVersionKey /LANG=2052 "ProductName" "小狼毫"
@@ -286,6 +286,13 @@ program_files:
   SetOutPath $INSTDIR\data\opencc
   File "data\opencc\*.json"
   File "data\opencc\*.ocd*"
+  ; 雙語拼音: Lua filters, word details, offline translation
+  SetOutPath $INSTDIR\data\lua
+  File /nonfatal "data\lua\*.lua"
+  SetOutPath $INSTDIR\bilingual
+  File /nonfatal "bilingual\*.*"
+  SetOutPath $INSTDIR\bilingual\mt
+  File /nonfatal "bilingual\mt\*.*"
 
   SetOutPath $INSTDIR
 
@@ -392,9 +399,15 @@ Section "Uninstall"
   ; Remove files and uninstaller
   SetOutPath $TEMP
   Delete  "$INSTDIR\data\opencc\*.*"
+  Delete  "$INSTDIR\data\lua\*.*"
+  Delete  "$INSTDIR\bilingual\mt\*.*"
+  Delete  "$INSTDIR\bilingual\*.*"
   Delete  "$INSTDIR\data\*.*"
   Delete  "$INSTDIR\*.*"
   RMDir  "$INSTDIR\data\opencc"
+  RMDir  "$INSTDIR\data\lua"
+  RMDir  "$INSTDIR\bilingual\mt"
+  RMDir  "$INSTDIR\bilingual"
   RMDir  "$INSTDIR\data"
   RMDir  "$INSTDIR"
   SetShellVarContext all

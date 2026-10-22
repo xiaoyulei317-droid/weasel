@@ -3,9 +3,14 @@
 #include <WeaselUI.h>
 #include <map>
 #include <string>
+#include <memory>
 #include <mutex>
 
 #include <rime_api.h>
+
+namespace bilingual {
+class Service;
+}
 
 struct CaseInsensitiveCompare {
   bool operator()(const std::string& str1, const std::string& str2) const {
@@ -68,6 +73,7 @@ class RimeWithWeaselHandler : public weasel::RequestHandler {
                          const std::string& opt,
                          bool val);
   virtual void UpdateColorTheme(BOOL darkMode);
+  virtual void BilingualCommand(UINT command, WeaselSessionId ipc_id);
 
   void OnUpdateUI(std::function<void()> const& cb);
 
@@ -90,6 +96,12 @@ class RimeWithWeaselHandler : public weasel::RequestHandler {
   void _UpdateShowNotifications(RimeConfig* config, bool initialize = false);
 
   void _UpdateInlinePreeditStatus(WeaselSessionId ipc_id);
+
+  // 雙語拼音
+  std::string _TranslationSource(RimeContext& ctx, RimeSessionId session_id);
+  bool _CommitTranslation(WeaselSessionId ipc_id);
+  std::unique_ptr<bilingual::Service> m_bilingual;
+  std::map<WeaselSessionId, std::wstring> m_bilingual_commit;
 
   RimeSessionId to_session_id(WeaselSessionId ipc_id) {
     return m_session_status_map[ipc_id].session_id;

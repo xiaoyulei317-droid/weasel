@@ -85,6 +85,8 @@ struct RequestHandler {
   virtual void EndMaintenance() {}
   virtual void SetOption(DWORD session_id, const std::string& opt, bool val) {}
   virtual void UpdateColorTheme(BOOL darkMode) {}
+  // 雙語拼音: one of the WEASEL_BILINGUAL_* commands.
+  virtual void BilingualCommand(UINT command, DWORD session_id) {}
 };
 
 // 處理server端回應之物件

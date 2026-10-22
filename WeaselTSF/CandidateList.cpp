@@ -306,6 +306,10 @@ void CCandidateList::StartUI() {
                               bool* const next, bool* const scroll_next) {
       _tsf->HandleUICallback(sel, hov, next, scroll_next);
     });
+  if (!_ui->bilingualCallback())
+    _ui->bilingualCallback() = [this](UINT command) {
+      _tsf->_HandleBilingualCommand(command);
+    };
   if (FAILED(pUIElementMgr->BeginUIElement(this, &_pbShow, &uiid)))
     return;
   _uiStarted = true;
@@ -396,6 +400,20 @@ void WeaselTSF::_DeleteCandidateList() {
 
 void WeaselTSF::_SelectCandidateOnCurrentPage(size_t index) {
   m_client.SelectCandidateOnCurrentPage(index);
+  _SimulateSelectKey();
+}
+
+// 雙語拼音: the server opens the details window (so let it come to the
+// front), or prepares the translation to be typed, which the simulated key
+// then fetches like a selected candidate.
+void WeaselTSF::_HandleBilingualCommand(UINT command) {
+  AllowSetForegroundWindow(ASFW_ANY);
+  m_client.TrayCommand(command);
+  if (command == WEASEL_BILINGUAL_COMMIT_TRANSLATION)
+    _SimulateSelectKey();
+}
+
+void WeaselTSF::_SimulateSelectKey() {
   // simulate a VK_SELECT presskey to get data back and DoEditSession
   // the simulated keycode must be the one make TranslateKeycode Non-Zero return
   // fix me: are there any better ways?

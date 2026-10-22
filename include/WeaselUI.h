@@ -53,6 +53,8 @@ class UI {
   // compatibility shim for existing call sites
   void SetUICallBack(const UICallbackFunc& func) { _uiCallback = func; }
   void SetCallback(const UICallbackFunc& func) { _uiCallback = func; }
+  // 雙語拼音: receives WEASEL_BILINGUAL_* commands from mouse actions.
+  std::function<void(UINT)>& bilingualCallback() { return _bilingualCallback; }
   bool& InServer() { return in_server_; }
   HWND hwnd();
 
@@ -64,5 +66,6 @@ class UI {
   UIStyle ostyle_;
   bool in_server_;
   UICallbackFunc _uiCallback;
+  std::function<void(UINT)> _bilingualCallback;
 };
 }  // namespace weasel

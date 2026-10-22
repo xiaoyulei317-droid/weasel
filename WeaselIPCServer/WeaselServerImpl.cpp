@@ -121,6 +121,12 @@ LRESULT ServerImpl::OnCommand(UINT uMsg,
       return 0;
     default:;
   }
+  if (uID >= WEASEL_BILINGUAL_COMMIT_TRANSLATION &&
+      uID < WEASEL_BILINGUAL_COMMAND_END) {
+    if (m_pRequestHandler)
+      m_pRequestHandler->BilingualCommand(uID, lParam);
+    return 0;
+  }
 
   std::map<UINT, CommandHandler>::iterator it = m_MenuHandlers.find(uID);
   if (it == m_MenuHandlers.end()) {

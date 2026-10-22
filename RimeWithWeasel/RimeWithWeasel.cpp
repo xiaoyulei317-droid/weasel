@@ -1,5 +1,6 @@
 ﻿#include "stdafx.h"
 #include <RimeWithWeasel.h>
+#include "Bilingual.h"
 #include <StringAlgorithm.hpp>
 #include <WeaselConstants.h>
 #include <WeaselStyleColor.h>
@@ -50,6 +51,9 @@ RimeWithWeaselHandler::RimeWithWeaselHandler(UI* ui)
   m_pid = (m_pid << (31 - msbit));
   LOG(INFO) << "setting up Rime traits";
   _Setup();
+  const auto shared_dir = WeaselSharedDataPath();
+  m_bilingual = std::make_unique<bilingual::Service>(
+      shared_dir.parent_path().wstring(), shared_dir.wstring());
   LOG(INFO) << "RimeWithWeaselHandler constructed";
 }
 
@@ -271,6 +275,15 @@ BOOL RimeWithWeaselHandler::ProcessKeyEvent(KeyEvent keyEvent,
   if (m_disabled)
     return FALSE;
   RimeSessionId session_id = to_session_id(ipc_id);
+  // 雙語拼音: Ctrl+Enter types the sentence's English translation.
+  if (keyEvent.keycode == ibus::Return &&
+      (keyEvent.mask & ibus::CONTROL_MASK) &&
+      !(keyEvent.mask & ibus::RELEASE_MASK) && _CommitTranslation(ipc_id)) {
+    _Respond(ipc_id, eat);
+    _UpdateUI(ipc_id);
+    m_active_session = ipc_id;
+    return TRUE;
+  }
   Bool handled = rime_api->process_key(session_id, keyEvent.keycode,
                                        expand_ibus_modifier(keyEvent.mask));
   // vim_mode when keydown only
@@ -754,11 +767,23 @@ bool RimeWithWeaselHandler::_Respond(WeaselSessionId ipc_id, EatLine eat) {
   SessionStatus& session_status = get_session_status(ipc_id);
   RimeSessionId session_id = session_status.session_id;
   RIME_STRUCT(RimeCommit, commit);
+  std::wstring commit_text;
+  bool has_commit = false;
   if (rime_api->get_commit(session_id, &commit)) {
-    actions.push_back("commit");
-    std::wstring commit_text_w = escape_string(u8tow(commit.text));
-    body.append(L"commit=").append(commit_text_w).append(L"\n");
+    commit_text = u8tow(commit.text);
+    has_commit = true;
     rime_api->free_commit(&commit);
+  }
+  // 雙語拼音: a translation picked with Ctrl+Enter or a click
+  auto translation = m_bilingual_commit.find(ipc_id);
+  if (translation != m_bilingual_commit.end()) {
+    commit_text += translation->second;
+    has_commit = true;
+    m_bilingual_commit.erase(translation);
+  }
+  if (has_commit) {
+    actions.push_back("commit");
+    body.append(L"commit=").append(escape_string(commit_text)).append(L"\n");
   }
 
   bool is_composing = false;
@@ -889,6 +914,21 @@ bool RimeWithWeaselHandler::_Respond(WeaselSessionId ipc_id, EatLine eat) {
           }
           break;
         }
+      }
+    }
+    // 雙語拼音: the sentence's translation, as the auxiliary line
+    if (m_bilingual) {
+      std::string source =
+          is_composing ? _TranslationSource(ctx, session_id) : std::string();
+      if (source.empty()) {
+        m_bilingual->Idle();
+      } else {
+        std::wstring english = m_bilingual->Translate(source);
+        if (!english.empty())
+          body.append(L"ctx.aux=")
+              .append(escape_string(L"整句　" + english +
+                                    L"　〔Ctrl+Enter 或點這裡輸出〕"))
+              .append(L"\n");
       }
     }
     if (has_candidates) {
@@ -1494,6 +1534,91 @@ void RimeWithWeaselHandler::_GetContext(Context& weasel_context,
     }
     rime_api->free_context(&ctx);
   }
+}
+
+// 雙語拼音: the text to translate, if the composition is a phrase or sentence
+// rather than a single dictionary word (whose English is already shown next
+// to it). Only for schemas with the `english` switch turned on.
+std::string RimeWithWeaselHandler::_TranslationSource(
+    RimeContext& ctx,
+    RimeSessionId session_id) {
+  if (!rime_api->get_option(session_id, "english"))
+    return {};
+  if (ctx.composition.length <= 0 || !ctx.commit_text_preview ||
+      ctx.menu.num_candidates <= 0)
+    return {};
+  std::string preview = ctx.commit_text_preview;
+  std::wstring text = u8tow(preview);
+  int han = 0;
+  for (wchar_t c : text)
+    if ((c >= 0x3400 && c <= 0x9FFF) || (c >= 0xF900 && c <= 0xFAFF) ||
+        (c >= 0xD800 && c <= 0xDBFF))
+      ++han;
+  const RimeCandidate& first = ctx.menu.candidates[0];
+  bool dictionary_word = ctx.menu.page_no == 0 && first.text &&
+                         preview == first.text && first.comment &&
+                         *first.comment;
+  if (han < 2 || (dictionary_word && han < 4))
+    return {};
+  return preview;
+}
+
+bool RimeWithWeaselHandler::_CommitTranslation(WeaselSessionId ipc_id) {
+  if (m_disabled || !m_bilingual)
+    return false;
+  RimeSessionId session_id = to_session_id(ipc_id);
+  std::wstring english;
+  RIME_STRUCT(RimeContext, ctx);
+  if (rime_api->get_context(session_id, &ctx)) {
+    std::string source = _TranslationSource(ctx, session_id);
+    if (!source.empty())
+      english = m_bilingual->Translate(source);
+    rime_api->free_context(&ctx);
+  }
+  if (english.empty())
+    return false;
+  rime_api->clear_composition(session_id);
+  m_bilingual_commit[ipc_id] = english;
+  return true;
+}
+
+void RimeWithWeaselHandler::BilingualCommand(UINT command,
+                                             WeaselSessionId ipc_id) {
+  if (m_disabled || !m_bilingual)
+    return;
+  if (command == WEASEL_BILINGUAL_COMMIT_TRANSLATION) {
+    // The client sends a key right after this, whose response carries it.
+    _CommitTranslation(ipc_id);
+    return;
+  }
+  if (command < WEASEL_BILINGUAL_DETAILS)
+    return;
+  int index = (int)(command - WEASEL_BILINGUAL_DETAILS);
+  RIME_STRUCT(RimeContext, ctx);
+  if (!rime_api->get_context(to_session_id(ipc_id), &ctx))
+    return;
+  if (index < ctx.menu.num_candidates) {
+    static const std::string kEnglishMark = "〔英〕";
+    auto is_english = [&](int i) {
+      const char* comment = ctx.menu.candidates[i].comment;
+      return comment && kEnglishMark == comment;
+    };
+    std::string chinese, english;
+    if (is_english(index)) {
+      english = ctx.menu.candidates[index].text;
+      // English candidates follow the Chinese word they translate.
+      for (int i = index - 1; i >= 0; --i) {
+        if (!is_english(i)) {
+          chinese = ctx.menu.candidates[i].text;
+          break;
+        }
+      }
+    } else {
+      chinese = ctx.menu.candidates[index].text;
+    }
+    m_bilingual->ShowDetails(chinese, english);
+  }
+  rime_api->free_context(&ctx);
 }
 
 void RimeWithWeaselHandler::_UpdateInlinePreeditStatus(WeaselSessionId ipc_id) {
