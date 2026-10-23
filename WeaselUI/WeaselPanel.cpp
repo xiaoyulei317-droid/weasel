@@ -515,7 +515,10 @@ bool WeaselPanel::_DrawPreedit(const Text& text, bool isPreedit) {
   PtTextFormat& pTextFormat = m_pD2D->pPreeditFormat;
 
   if (!t.empty()) {
-    const TextRange& range = m_layout->GetPreeditRange();
+    // The highlighted range belongs to the preedit; the auxiliary line has
+    // none (雙語拼音 shows the translation there while composing).
+    const TextRange range =
+        isPreedit ? m_layout->GetPreeditRange() : TextRange();
     if (range.start < range.end) {
       auto before_str = t.substr(0, range.start);
       auto hilited_str = t.substr(range.start, range.end - range.start);
