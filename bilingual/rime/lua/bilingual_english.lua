@@ -94,7 +94,9 @@ function M.init(env)
   load_table()
   load_usage()
   local config = env.engine.schema.config
-  env.english_options = config:get_int(env.name_space .. "/english_options") or 3
+  -- Some librime-lua versions keep the "*" of "lua_filter@*name" in name_space.
+  local ns = env.name_space:gsub("^%*", "")
+  env.english_options = config:get_int(ns .. "/english_options") or 3
   env.source = {}  -- English candidate text -> the Chinese word it translates
   env.commit_connection = env.engine.context.commit_notifier:connect(function(ctx)
     local cand = ctx:get_selected_candidate()
