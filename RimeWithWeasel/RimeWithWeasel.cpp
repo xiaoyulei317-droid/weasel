@@ -276,9 +276,12 @@ BOOL RimeWithWeaselHandler::ProcessKeyEvent(KeyEvent keyEvent,
     return FALSE;
   RimeSessionId session_id = to_session_id(ipc_id);
   // 雙語拼音: Ctrl+Enter types the sentence's English translation.
-  if (keyEvent.keycode == ibus::Return &&
+  if ((keyEvent.keycode == ibus::Return ||
+       keyEvent.keycode == ibus::KP_Enter) &&
       (keyEvent.mask & ibus::CONTROL_MASK) &&
-      !(keyEvent.mask & ibus::RELEASE_MASK) && _CommitTranslation(ipc_id)) {
+      !(keyEvent.mask &
+        (ibus::RELEASE_MASK | ibus::SHIFT_MASK | ibus::MOD1_MASK)) &&
+      _CommitTranslation(ipc_id)) {
     _Respond(ipc_id, eat);
     _UpdateUI(ipc_id);
     m_active_session = ipc_id;
@@ -405,6 +408,11 @@ void RimeWithWeaselHandler::OnNotify(void* context_object,
   RimeWithWeaselHandler* self =
       reinterpret_cast<RimeWithWeaselHandler*>(context_object);
   if (!self || !message_type || !message_value)
+    return;
+  // 雙語拼音: hidden options are no news, such as _auto_commit, which the
+  // schema turns off and on while a sentence is picked word by word.
+  if (!strcmp(message_type, "option") &&
+      message_value[message_value[0] == '!'] == '_')
     return;
   std::lock_guard<std::mutex> lock(m_notifier_mutex);
   m_message_type = message_type;
@@ -925,11 +933,14 @@ bool RimeWithWeaselHandler::_Respond(WeaselSessionId ipc_id, EatLine eat) {
       } else {
         // Until the translation is ready, hold its line with a placeholder,
         // so the candidates do not jump down under the mouse when it comes.
+        // Once every word is picked, the sentence waits to be typed.
         std::wstring english = m_bilingual->Translate(source);
-        std::wstring line =
-            english.empty() ? std::wstring(L"整句　翻譯中…")
-                            : L"整句　" + english +
-                                  L"　〔Ctrl+Enter 或點這裡輸出〕";
+        const wchar_t* hint =
+            has_candidates ? L"　〔Ctrl+Enter 或點這裡打英文〕"
+                           : L"　〔空白鍵打中文，Ctrl+Enter 或點這裡打英文〕";
+        std::wstring line = english.empty()
+                                ? std::wstring(L"整句　翻譯中…")
+                                : L"整句　" + english + hint;
         body.append(L"ctx.aux=").append(escape_string(line)).append(L"\n");
       }
     }
@@ -1538,53 +1549,101 @@ void RimeWithWeaselHandler::_GetContext(Context& weasel_context,
   }
 }
 
-// 雙語拼音: the text to translate, if the composition is a phrase or sentence
-// rather than a single dictionary word (whose English is already shown next
-// to it). Only for schemas with the `english` switch turned on.
-std::string RimeWithWeaselHandler::_TranslationSource(
-    RimeContext& ctx,
-    RimeSessionId session_id) {
-  if (!rime_api->get_option(session_id, "english"))
-    return {};
-  if (ctx.composition.length <= 0 || !ctx.commit_text_preview ||
-      ctx.menu.num_candidates <= 0)
-    return {};
-  std::string preview = ctx.commit_text_preview;
-  // Pinyin left unconverted (a shorter candidate is highlighted, or no
-  // conversion exists) would only garble the translation.
-  if (std::any_of(preview.begin(), preview.end(), [](char c) {
-        return (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z');
-      }))
-    return {};
-  std::wstring text = u8tow(preview);
+// 雙語拼音: the comment of the English candidates (bilingual_english.lua).
+static const std::string kEnglishMark = "〔英〕";
+
+static int CountHan(const std::string& utf8) {
   int han = 0;
-  for (wchar_t c : text)
+  for (wchar_t c : u8tow(utf8))
     if ((c >= 0x3400 && c <= 0x9FFF) || (c >= 0xF900 && c <= 0xFAFF) ||
         (c >= 0xD800 && c <= 0xDBFF))
       ++han;
-  const RimeCandidate& first = ctx.menu.candidates[0];
-  bool dictionary_word = ctx.menu.page_no == 0 && first.text &&
-                         preview == first.text && first.comment &&
-                         *first.comment;
-  if (han < 2 || (dictionary_word && han < 4))
+  return han;
+}
+
+static bool HasLetter(const std::string& s) {
+  return std::any_of(s.begin(), s.end(), [](char c) {
+    return (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z');
+  });
+}
+
+// 雙語拼音: the Chinese to translate: all of the composition, once all of it
+// is converted (the words picked so far, then the highlighted candidate).
+// For the translation line, a single dictionary word is left out, as its
+// English is shown next to it already; for typing, English picked for every
+// word is kept. Only with the `english` switch on.
+std::string RimeWithWeaselHandler::_TranslationSource(RimeContext& ctx,
+                                                      RimeSessionId session_id,
+                                                      bool for_typing) {
+  if (!rime_api->get_option(session_id, "english"))
     return {};
+  if (ctx.composition.length <= 0 || !ctx.composition.preedit ||
+      !ctx.commit_text_preview)
+    return {};
+  // Pinyin left after the highlighted candidate (a shorter candidate is
+  // highlighted, or no conversion exists) would only garble the translation.
+  // English picked for a word is fine.
+  std::string rest = ctx.composition.preedit;
+  size_t sel_end =
+      ctx.composition.sel_end > 0 ? (size_t)ctx.composition.sel_end : 0;
+  rest.erase(0, sel_end < rest.size() ? sel_end : rest.size());
+  if (HasLetter(rest))
+    return {};
+  std::string preview = ctx.commit_text_preview;
+  int han = CountHan(preview);
+  if (for_typing ? (han == 0 && !HasLetter(preview)) : han < 2)
+    return {};
+  if (!for_typing && han < 4 && ctx.menu.num_candidates > 0 &&
+      ctx.menu.page_no == 0) {
+    const RimeCandidate& first = ctx.menu.candidates[0];
+    if (first.text && preview == first.text && first.comment &&
+        *first.comment)
+      return {};
+  }
   return preview;
 }
 
+// 雙語拼音: types the composition's English translation instead of it. False
+// if the key is Rime's: nothing is being typed, the `english` switch is off,
+// or there is no translation engine.
 bool RimeWithWeaselHandler::_CommitTranslation(WeaselSessionId ipc_id) {
   if (m_disabled || !m_bilingual)
     return false;
   RimeSessionId session_id = to_session_id(ipc_id);
+  if (!rime_api->get_option(session_id, "english"))
+    return false;
+  bool composing = false;
+  std::string source;
   std::wstring english;
   RIME_STRUCT(RimeContext, ctx);
   if (rime_api->get_context(session_id, &ctx)) {
-    std::string source = _TranslationSource(ctx, session_id);
-    if (!source.empty())
-      english = m_bilingual->Translate(source);
+    composing = ctx.composition.length > 0;
+    source = _TranslationSource(ctx, session_id, true);
+    // A word from the dictionary: its first English, as shown next to it.
+    const RimeMenu& menu = ctx.menu;
+    if (!source.empty() && menu.page_no == 0 && menu.num_candidates > 1 &&
+        menu.candidates[0].text && source == menu.candidates[0].text &&
+        menu.candidates[1].text && menu.candidates[1].comment &&
+        kEnglishMark == menu.candidates[1].comment)
+      english = u8tow(menu.candidates[1].text);
     rime_api->free_context(&ctx);
   }
-  if (english.empty())
+  if (!composing)
     return false;
+  // Pinyin is left unconverted: there is no English to type, and Rime would
+  // type the pinyin.
+  if (source.empty())
+    return true;
+  // English picked for every word needs no translation.
+  if (CountHan(source) == 0)
+    english = u8tow(source);
+  if (english.empty() && !m_bilingual->Available())
+    return false;
+  // Usually ready, as the translation line shows it; if not, it is a moment.
+  if (english.empty())
+    english = m_bilingual->TranslateWait(source, 3000);
+  if (english.empty())
+    return true;  // Still not ready: keep typing; the line shows it when it is.
   rime_api->clear_composition(session_id);
   m_bilingual_commit[ipc_id] = english;
   return true;
@@ -1606,7 +1665,6 @@ void RimeWithWeaselHandler::BilingualCommand(UINT command,
   if (!rime_api->get_context(to_session_id(ipc_id), &ctx))
     return;
   if (index < ctx.menu.num_candidates) {
-    static const std::string kEnglishMark = "〔英〕";
     auto is_english = [&](int i) {
       const char* comment = ctx.menu.candidates[i].comment;
       return comment && kEnglishMark == comment;

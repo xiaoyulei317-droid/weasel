@@ -7,12 +7,13 @@
 schema:
   schema_id: bilingual_pinyin
   name: 雙語拼音
-  version: "0.1"
+  version: "0.2"
   author:
     - 雙語拼音輸入法 contributors
   description: |
     明月拼音加上英文翻譯。中文候選旁顯示英文，
     第一個候選後面會列出它的英文，可以直接選英文輸出。
+    整句逐詞選好後會先留著，再決定打中文或英文。
     英文來自 CC-CEDICT（CC BY-SA 4.0）。
 
 switches:
@@ -34,6 +35,8 @@ switches:
 
 engine:
   processors:
+    # A sentence picked word by word waits to be typed as Chinese or English.
+    - lua_processor@*bilingual_sentence
     - ascii_composer
     - recognizer
     - key_binder

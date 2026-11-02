@@ -97,13 +97,18 @@ function M.init(env)
   -- Some librime-lua versions keep the "*" of "lua_filter@*name" in name_space.
   local ns = env.name_space:gsub("^%*", "")
   env.english_options = config:get_int(ns .. "/english_options") or 3
-  env.source = {}  -- English candidate text -> the Chinese word it translates
+  -- "start|english" -> the Chinese word it translates, for this composition
+  env.source = {}
   env.commit_connection = env.engine.context.commit_notifier:connect(function(ctx)
-    local cand = ctx:get_selected_candidate()
-    if cand and cand.type == "english" then
-      local word = env.source[cand.text]
-      if word then record(word, cand.text) end
+    -- A sentence can be picked word by word, so look at every word of it.
+    for _, seg in ipairs(ctx.composition:toSegmentation():get_segments()) do
+      local cand = seg:get_selected_candidate()
+      if cand and cand.type == "english" then
+        local word = env.source[cand.start .. "|" .. cand.text]
+        if word then record(word, cand.text) end
+      end
     end
+    env.source = {}
   end)
 end
 
@@ -127,12 +132,11 @@ function M.func(input, env)
     end
     yield(cand)
     if opts and index == 1 then
-      env.source = {}
       for n, o in ipairs(opts) do
         if n > env.english_options then break end
         local en = Candidate("english", cand.start, cand._end, o, "〔英〕")
         en.quality = cand.quality
-        env.source[o] = cand.text
+        env.source[cand.start .. "|" .. o] = cand.text
         yield(en)
       end
     end

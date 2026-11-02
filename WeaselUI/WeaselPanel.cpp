@@ -1096,6 +1096,14 @@ LRESULT WeaselPanel::OnLeftClickDown(UINT uMsg, WPARAM wParam, LPARAM lParam) {
     SetCapture(m_hWnd);
     return 0;
   }
+  // 雙語拼音: clicking the translation line ("整句 ...") types the translation,
+  // also once every word is picked and no candidates are left.
+  if (m_bilingualCallback && m_ctx.aux.str.rfind(L"\u6574\u53E5", 0) == 0 &&
+      _GetAuxRect().PtInRect(
+          CPoint(GET_X_LPARAM(lParam), GET_Y_LPARAM(lParam)))) {
+    m_bilingualCallback(WEASEL_BILINGUAL_COMMIT_TRANSLATION);
+    return 0;
+  }
   if (hide_candidates || m_candidateCount <= 0)
     return 0;
   const int highlighted = (m_ctx.cinfo.highlighted >= 0 &&
@@ -1166,12 +1174,6 @@ LRESULT WeaselPanel::OnLeftClickDown(UINT uMsg, WPARAM wParam, LPARAM lParam) {
           return 0;
         }
       }
-    }
-    // 雙語拼音: clicking the translation line types the translation
-    if (m_bilingualCallback && !m_ctx.aux.str.empty() &&
-        _GetAuxRect().PtInRect(point)) {
-      m_bilingualCallback(WEASEL_BILINGUAL_COMMIT_TRANSLATION);
-      return 0;
     }
     // select by click relative actions
     for (size_t i = 0; i < m_candidateCount && i < MAX_CANDIDATES_COUNT; ++i) {

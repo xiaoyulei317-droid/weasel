@@ -98,7 +98,9 @@ class RimeWithWeaselHandler : public weasel::RequestHandler {
   void _UpdateInlinePreeditStatus(WeaselSessionId ipc_id);
 
   // 雙語拼音
-  std::string _TranslationSource(RimeContext& ctx, RimeSessionId session_id);
+  std::string _TranslationSource(RimeContext& ctx,
+                                 RimeSessionId session_id,
+                                 bool for_typing = false);
   bool _CommitTranslation(WeaselSessionId ipc_id);
   std::unique_ptr<bilingual::Service> m_bilingual;
   std::map<WeaselSessionId, std::wstring> m_bilingual_commit;

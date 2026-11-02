@@ -8,6 +8,7 @@
 #include <sapi.h>
 
 #include <algorithm>
+#include <chrono>
 #include <condition_variable>
 #include <deque>
 #include <filesystem>
@@ -804,6 +805,28 @@ class Service::Impl {
     return {};
   }
 
+  std::wstring TranslateWait(const std::string& text, unsigned timeout_ms) {
+    std::unique_lock<std::mutex> lock(mutex_);
+    wanted_ = text;
+    if (unavailable_ || text.size() > kMaxSentence * 3)
+      return {};
+    // The caller uses the translation itself: no refresh of the client.
+    nudged_ = text;
+    auto ready = [&] { return unavailable_ || cache_.count(text) != 0; };
+    if (!ready()) {
+      pending_ = text;
+      cv_.notify_one();
+      done_.wait_for(lock, std::chrono::milliseconds(timeout_ms), ready);
+    }
+    auto it = cache_.find(text);
+    if (it == cache_.end()) {
+      // Too slow: refresh the client once it is ready after all.
+      nudged_.clear();
+      return {};
+    }
+    return it->second;
+  }
+
   void Idle() {
     std::lock_guard<std::mutex> lock(mutex_);
     wanted_.clear();
@@ -823,6 +846,18 @@ class Service::Impl {
 
  private:
   void Work() {
+    // Load the model right away (about a second), so that the first sentence
+    // is translated as quickly as the rest.
+    if (!LoadEngine()) {
+      {
+        std::lock_guard<std::mutex> lock(mutex_);
+        unavailable_ = true;
+        pending_.clear();
+      }
+      done_.notify_all();
+      // Have the client drop the "translating" line.
+      PostMessageW(hwnd_, WM_TRANSLATED, 0, 0);
+    }
     for (;;) {
       std::string text;
       {
@@ -832,16 +867,8 @@ class Service::Impl {
           return;
         text.swap(pending_);
       }
-      if (!engine_ && !LoadEngine()) {
-        {
-          std::lock_guard<std::mutex> lock(mutex_);
-          unavailable_ = true;
-          pending_.clear();
-        }
-        // Have the client drop the "translating" line.
-        PostMessageW(hwnd_, WM_TRANSLATED, 0, 0);
+      if (!engine_)
         continue;
-      }
       std::string out(1024, '\0');
       int n = translate_(engine_, text.c_str(), &out[0], (int)out.size());
       if (n >= (int)out.size()) {
@@ -859,6 +886,7 @@ class Service::Impl {
         if (cache_.emplace(text, result).second)
           order_.push_back(text);
       }
+      done_.notify_all();
       PostMessageW(hwnd_, WM_TRANSLATED, 0, 0);
     }
   }
@@ -940,7 +968,8 @@ class Service::Impl {
 
   std::thread worker_;
   std::mutex mutex_;
-  std::condition_variable cv_;
+  std::condition_variable cv_;    // a text to translate, or stop
+  std::condition_variable done_;  // a translation is ready
   bool stop_ = false;
   bool unavailable_ = false;
   std::string pending_;
@@ -965,6 +994,11 @@ Service::~Service() = default;
 
 std::wstring Service::Translate(const std::string& text) {
   return impl_->Translate(text);
+}
+
+std::wstring Service::TranslateWait(const std::string& text,
+                                    unsigned timeout_ms) {
+  return impl_->TranslateWait(text, timeout_ms);
 }
 
 void Service::Idle() {

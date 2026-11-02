@@ -28,6 +28,9 @@ class Service {
   // text is queued and an empty string is returned; once the translation is
   // ready, the input client is asked to refresh, which brings it back here.
   std::wstring Translate(const std::string& text);
+  // The same, but waits up to `timeout_ms` for the translation, for typing it
+  // right away. Empty if it is not ready by then.
+  std::wstring TranslateWait(const std::string& text, unsigned timeout_ms);
   // Nothing is being typed; drop any queued translation.
   void Idle();
   // False once the translation engine failed to load (or on 32-bit Windows).
