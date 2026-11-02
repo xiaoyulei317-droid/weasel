@@ -934,9 +934,11 @@ bool RimeWithWeaselHandler::_Respond(WeaselSessionId ipc_id, EatLine eat) {
         // Until the translation is ready, hold its line with a placeholder,
         // so the candidates do not jump down under the mouse when it comes.
         // Once every word is picked, the sentence waits to be typed.
-        // In the script of the 汉字 (simplification) switch.
+        // In simplified characters unless the schema's 繁體
+        // (traditionalization) switch is on.
         std::wstring english = m_bilingual->Translate(source);
-        bool simplified = !!rime_api->get_option(session_id, "simplification");
+        bool simplified =
+            !rime_api->get_option(session_id, "traditionalization");
         const wchar_t* hint =
             has_candidates
                 ? (simplified ? L"　〔Ctrl+Enter 或点这里打英文〕"
@@ -1691,7 +1693,7 @@ void RimeWithWeaselHandler::BilingualCommand(UINT command,
     }
     m_bilingual->ShowDetails(
         chinese, english,
-        !!rime_api->get_option(session_id, "simplification"));
+        !rime_api->get_option(session_id, "traditionalization"));
   }
   rime_api->free_context(&ctx);
 }

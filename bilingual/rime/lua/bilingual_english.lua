@@ -123,8 +123,8 @@ function M.func(input, env)
     index = index + 1
     local opts = show and options_of(cand.text) or nil
     if opts then
-      -- A candidate in Taiwan forms (這裏 -> 這裡) is a shadow of the
-      -- dictionary's, which takes no comment of its own but shows its
+      -- A candidate changed by an earlier filter (a simplifier) is a shadow
+      -- of the dictionary's, which takes no comment of its own but shows its
       -- original's.
       local target = cand:get_genuine()
       local hint = opts[1]

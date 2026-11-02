@@ -127,7 +127,7 @@ std::string wtou8(const std::wstring& s) {
 // ---------------------------------------------------------------------------
 // Traditional to simplified Chinese, character by character, with OpenCC's
 // table (t2s.tsv). The translation model reads simplified Chinese, and the
-// details window follows the schema's 汉字 (simplification) switch.
+// details window follows the schema's 简体/繁體 (traditionalization) switch.
 
 class Simplifier {
  public:

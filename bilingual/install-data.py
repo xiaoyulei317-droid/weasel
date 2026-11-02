@@ -35,7 +35,11 @@ def main():
         copy(f, data)
     for f in glob.glob(os.path.join(HERE, "rime", "lua", "*.lua")):
         copy(f, os.path.join(data, "lua"))
-    copy(os.path.join(args.models, "zh-hant-t-essay-bgw.gram"), data)
+    copy(os.path.join(args.models, "zh-hans-t-essay-bgw.gram"), data)
+    # The word lists bilingual_pinyin.dict.yaml imports (cn_dicts/, cn_dicts_cell/).
+    words = os.path.join(args.models, "rime")
+    for f in glob.glob(os.path.join(words, "*", "*.dict.yaml")):
+        copy(f, os.path.join(data, os.path.relpath(os.path.dirname(f), words)))
 
     target = os.path.join(OUT, "bilingual")
     for f in glob.glob(os.path.join(HERE, "data", "*.tsv")):

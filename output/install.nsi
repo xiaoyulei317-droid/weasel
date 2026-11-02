@@ -178,12 +178,16 @@ call_uninstaller:
   ; Remove files and uninstaller
   Delete  "$R1\data\opencc\*.*"
   Delete  "$R1\data\lua\*.*"
+  Delete  "$R1\data\cn_dicts\*.*"
+  Delete  "$R1\data\cn_dicts_cell\*.*"
   Delete  "$R1\bilingual\mt\*.*"
   Delete  "$R1\bilingual\*.*"
   Delete  "$R1\data\*.*"
   Delete  "$R1\*.*"
   RMDir   "$R1\data\opencc"
   RMDir   "$R1\data\lua"
+  RMDir   "$R1\data\cn_dicts"
+  RMDir   "$R1\data\cn_dicts_cell"
   RMDir   "$R1\bilingual\mt"
   RMDir   "$R1\bilingual"
   RMDir   "$R1\data"
@@ -292,9 +296,15 @@ program_files:
   SetOutPath $INSTDIR\data\opencc
   File "data\opencc\*.json"
   File "data\opencc\*.ocd*"
-  ; 雙語拼音: Lua filters, word details, offline translation
+  ; 雙語拼音: Lua filters, word lists, word details, offline translation
   SetOutPath $INSTDIR\data\lua
   File /nonfatal "data\lua\*.lua"
+  SetOutPath $INSTDIR\data\cn_dicts
+  File /nonfatal "data\cn_dicts\*.yaml"
+  SetOutPath $INSTDIR\data\cn_dicts_cell
+  File /nonfatal "data\cn_dicts_cell\*.yaml"
+  ; replaced by the simplified one; an upgrade's backup brings it back
+  Delete "$INSTDIR\data\zh-hant-t-essay-bgw.gram"
   SetOutPath $INSTDIR\bilingual
   File /nonfatal "bilingual\*.*"
   SetOutPath $INSTDIR\bilingual\mt
@@ -406,12 +416,16 @@ Section "Uninstall"
   SetOutPath $TEMP
   Delete  "$INSTDIR\data\opencc\*.*"
   Delete  "$INSTDIR\data\lua\*.*"
+  Delete  "$INSTDIR\data\cn_dicts\*.*"
+  Delete  "$INSTDIR\data\cn_dicts_cell\*.*"
   Delete  "$INSTDIR\bilingual\mt\*.*"
   Delete  "$INSTDIR\bilingual\*.*"
   Delete  "$INSTDIR\data\*.*"
   Delete  "$INSTDIR\*.*"
   RMDir  "$INSTDIR\data\opencc"
   RMDir  "$INSTDIR\data\lua"
+  RMDir  "$INSTDIR\data\cn_dicts"
+  RMDir  "$INSTDIR\data\cn_dicts_cell"
   RMDir  "$INSTDIR\bilingual\mt"
   RMDir  "$INSTDIR\bilingual"
   RMDir  "$INSTDIR\data"

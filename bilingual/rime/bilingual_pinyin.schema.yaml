@@ -1,20 +1,20 @@
 # Rime schema
 # encoding: utf-8
 #
-# 雙語拼音: Luna Pinyin (明月拼音) with English translations.
+# 雙語拼音: pinyin with English translations.
 # Needs librime-lua, which Trime (同文) and Weasel (小狼毫) include.
 
 schema:
   schema_id: bilingual_pinyin
-  name: 雙語拼音
-  version: "0.3"
+  name: 双语拼音
+  version: "0.4"
   author:
     - 雙語拼音輸入法 contributors
   description: |
-    明月拼音加上英文翻譯，預設輸出簡體字。中文候選旁顯示英文，
-    第一個候選後面會列出它的英文，可以直接選英文輸出。
-    整句逐詞選好後會先留著，再決定打中文或英文。
-    英文來自 CC-CEDICT（CC BY-SA 4.0）。
+    简体全拼，中文候选旁显示英文，
+    第一个候选后面会列出它的英文，可以直接选英文输出。
+    整句逐词选好后会先留着，再决定打中文或英文。
+    词库来自白霜拼音（GPL-3.0），英文来自 CC-CEDICT（CC BY-SA 4.0）。
 
 switches:
   - name: ascii_mode
@@ -24,13 +24,10 @@ switches:
     states: [ 半角, 全角 ]
   - name: english
     reset: 1
-    states: [ 無英文, 中英 ]
-  - name: zh_tw
-    reset: 1
-    states: [ 標準字形, 臺灣字形 ]
-  - name: simplification
-    reset: 1
-    states: [ 漢字, 汉字 ]
+    states: [ 无英文, 中英 ]
+  - name: traditionalization
+    reset: 0
+    states: [ 简体, 繁體 ]
   - name: ascii_punct
     states: [ 。，, ．， ]
 
@@ -56,11 +53,10 @@ engine:
     - punct_translator
     - script_translator
   filters:
-    # Order matters: Taiwan forms first, so 喫飯 becomes 吃飯 and matches the
-    # English table; simplification last, after the English is attached.
-    - simplifier@zh_tw
+    # The English table is keyed by simplified words, so attach the English
+    # before the optional conversion to traditional characters.
     - lua_filter@*bilingual_english
-    - simplifier
+    - simplifier@traditionalize
     - uniquifier
 
 speller:
@@ -82,7 +78,8 @@ speller:
     - derive/([iu])a(o|ng?)$/a$1$2/
 
 translator:
-  dictionary: luna_pinyin
+  # bilingual_pinyin.dict.yaml: the word lists of 白霜拼音.
+  dictionary: bilingual_pinyin
   prism: bilingual_pinyin
   contextual_suggestions: true
   max_homophones: 7
@@ -93,17 +90,16 @@ translator:
     - xform/([jqxy])v/$1u/
 
 # Language model (lotem/rime-octagram-data, LGPL-3.0) for better sentences.
+# The penalty for words it has not seen together suits these word lists.
+# Measured on 4,468 sentences against the old Luna Pinyin setup, sentences
+# typed right in one go: 59.7% -> 65.5% (everyday), 48.0% -> 58.4% (web).
 grammar:
-  language: zh-hant-t-essay-bgw
+  language: zh-hans-t-essay-bgw
+  non_collocation_penalty: -6
 
-zh_tw:
-  option_name: zh_tw
-  opencc_config: t2tw.json
-  tips: none
-
-simplifier:
-  option_name: simplification
-  opencc_config: t2s.json
+traditionalize:
+  option_name: traditionalization
+  opencc_config: s2tw.json
   tips: none
 
 bilingual_english:
