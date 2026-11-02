@@ -123,11 +123,15 @@ function M.func(input, env)
     index = index + 1
     local opts = show and options_of(cand.text) or nil
     if opts then
+      -- A candidate in Taiwan forms (這裏 -> 這裡) is a shadow of the
+      -- dictionary's, which takes no comment of its own but shows its
+      -- original's.
+      local target = cand:get_genuine()
       local hint = opts[1]
-      if cand.comment == "" then
-        cand.comment = hint
+      if target.comment == "" then
+        target.comment = hint
       else
-        cand.comment = cand.comment .. " " .. hint
+        target.comment = target.comment .. " " .. hint
       end
     end
     yield(cand)

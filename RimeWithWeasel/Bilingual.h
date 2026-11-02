@@ -4,8 +4,8 @@
 
 // 雙語拼音: English for the Chinese being typed.
 //
-// - Sentence translation with an offline model (bilingual_mt.dll), shown as
-//   the candidate window's auxiliary line.
+// - Sentence translation with an offline model (bilingual_mt.dll, simplified
+//   Chinese to English), shown as the candidate window's auxiliary line.
 // - A details window for a word: pinyin, Chinese senses, English parts of
 //   speech, definitions, forms, synonyms and example sentences, read aloud
 //   with Windows text-to-speech.
@@ -37,8 +37,11 @@ class Service {
   bool Available();
 
   // Opens the details window. Either word may be empty; both are UTF-8.
-  // Safe to call from any thread.
-  void ShowDetails(const std::string& chinese, const std::string& english);
+  // `simplified`: show Chinese in simplified characters. Safe to call from
+  // any thread.
+  void ShowDetails(const std::string& chinese,
+                   const std::string& english,
+                   bool simplified);
 
   class Impl;
 

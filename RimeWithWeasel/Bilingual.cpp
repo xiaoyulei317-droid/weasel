@@ -113,6 +113,72 @@ bool ReadAll(const std::wstring& path, std::string& out) {
   return true;
 }
 
+std::string wtou8(const std::wstring& s) {
+  if (s.empty())
+    return {};
+  int n = WideCharToMultiByte(CP_UTF8, 0, s.data(), (int)s.size(), nullptr, 0,
+                              nullptr, nullptr);
+  std::string out(n, '\0');
+  WideCharToMultiByte(CP_UTF8, 0, s.data(), (int)s.size(), &out[0], n, nullptr,
+                      nullptr);
+  return out;
+}
+
+// ---------------------------------------------------------------------------
+// Traditional to simplified Chinese, character by character, with OpenCC's
+// table (t2s.tsv). The translation model reads simplified Chinese, and the
+// details window follows the schema's 汉字 (simplification) switch.
+
+class Simplifier {
+ public:
+  void Load(const std::wstring& path) {
+    if (!ReadAll(path, file_))
+      return;
+    std::string_view all(file_);
+    size_t start = 0;
+    while (start < all.size()) {
+      size_t end = all.find('\n', start);
+      if (end == std::string_view::npos)
+        end = all.size();
+      auto line = all.substr(start, end - start);
+      if (!line.empty() && line.back() == '\r')
+        line.remove_suffix(1);
+      auto tab = line.find('\t');
+      if (tab != std::string_view::npos && tab > 0 && tab + 1 < line.size())
+        map_[line.substr(0, tab)] = line.substr(tab + 1);
+      start = end + 1;
+    }
+  }
+
+  std::string Convert(std::string_view text) const {
+    if (map_.empty())
+      return std::string(text);
+    std::string out;
+    out.reserve(text.size());
+    for (size_t i = 0; i < text.size();) {
+      unsigned char lead = text[i];
+      size_t n = lead < 0x80 ? 1 : lead < 0xE0 ? 2 : lead < 0xF0 ? 3 : 4;
+      std::string_view ch = text.substr(i, n);
+      auto it = map_.find(ch);
+      out += it == map_.end() ? ch : it->second;
+      i += n;
+    }
+    return out;
+  }
+
+  std::wstring Convert(const std::wstring& text) const {
+    if (map_.empty() || !std::any_of(text.begin(), text.end(), [](wchar_t c) {
+          return c >= 0x3400;
+        }))
+      return text;
+    return u8tow(Convert(wtou8(text)));
+  }
+
+ private:
+  std::string file_;
+  std::unordered_map<std::string_view, std::string_view> map_;
+};
+
 // ---------------------------------------------------------------------------
 // Dictionaries for the details window. Each file is kept in memory as read;
 // the maps point into it.
@@ -274,15 +340,39 @@ struct Content {
   std::vector<std::wstring> example_speech;
 };
 
-const std::pair<const char*, const wchar_t*> kFormLabels[] = {
-    {"3sg", L"第三人稱"}, {"past", L"過去式"},   {"pp", L"過去分詞"},
-    {"ing", L"進行式"},   {"pl", L"複數"},       {"comp", L"比較級"},
-    {"sup", L"最高級"},
+// The Chinese text of the window: all of it in simplified characters, the
+// labels in mainland wording too.
+void Simplify(const Simplifier& s, Content& c) {
+  c.title = s.Convert(c.title);
+  for (auto& line : c.lines) {
+    line.text = s.Convert(line.text);
+    line.speech = s.Convert(line.speech);
+  }
+  c.head_speech = s.Convert(c.head_speech);
+}
+
+// Traditional and simplified (mainland) labels.
+const wchar_t* Label(bool simplified, const wchar_t* t, const wchar_t* s) {
+  return simplified ? s : t;
+}
+
+struct FormLabel {
+  const char* key;
+  const wchar_t* traditional;
+  const wchar_t* simplified;
+};
+
+const FormLabel kFormLabels[] = {
+    {"3sg", L"第三人稱", L"第三人称"},   {"past", L"過去式", L"过去式"},
+    {"pp", L"過去分詞", L"过去分词"},    {"ing", L"進行式", L"现在分词"},
+    {"pl", L"複數", L"复数"},            {"comp", L"比較級", L"比较级"},
+    {"sup", L"最高級", L"最高级"},
 };
 
 void AddEnglishCard(const Dictionary& dict,
                     const std::string& word,
                     bool prefer_verb,
+                    bool simplified,
                     Content& c) {
   auto e = dict.En(word);
   std::wstring w = u8tow(word);
@@ -305,10 +395,12 @@ void AddEnglishCard(const Dictionary& dict,
   if (!forms.empty()) {
     std::vector<std::wstring> parts;
     std::vector<std::wstring> words;
-    for (auto& [label, w_label] : kFormLabels) {
+    for (auto& form : kFormLabels) {
       for (auto& [key, items] : forms) {
-        if (key == label && !items.empty()) {
-          parts.push_back(std::wstring(w_label) + L" " + u8tow(items[0]));
+        if (key == form.key && !items.empty()) {
+          parts.push_back(
+              std::wstring(Label(simplified, form.traditional, form.simplified)) +
+              L" " + u8tow(items[0]));
           words.push_back(u8tow(items[0]));
         }
       }
@@ -343,7 +435,10 @@ void AddEnglishCard(const Dictionary& dict,
       for (auto s : items)
         sw.push_back(u8tow(s));
       std::wstring list = Join(sw, L", ");
-      c.lines.push_back({L"    近義詞　" + list, list});
+      c.lines.push_back(
+          {L"    " + std::wstring(Label(simplified, L"近義詞", L"近义词")) +
+               L"　" + list,
+           list});
       done = true;
       break;
     }
@@ -354,10 +449,12 @@ void AddEnglishCard(const Dictionary& dict,
 
 Content BuildContent(const Dictionary& dict,
                      const std::string& chinese,
-                     const std::string& english) {
+                     const std::string& english,
+                     bool simplified) {
   Content c;
   std::wstring zh = u8tow(chinese);
-  c.title = L"單字詳情　" + (zh.empty() ? u8tow(english) : zh);
+  c.title = std::wstring(Label(simplified, L"單字詳情", L"单词详情")) + L"　" +
+            (zh.empty() ? u8tow(english) : zh);
 
   std::vector<std::string> options;
   if (!english.empty())
@@ -377,7 +474,7 @@ Content BuildContent(const Dictionary& dict,
     c.head_speech = zh;
     if (entry && !entry->senses.empty()) {
       c.lines.push_back({L"", L""});
-      c.lines.push_back({L"【釋義】", L""});
+      c.lines.push_back({Label(simplified, L"【釋義】", L"【释义】"), L""});
       int i = 0;
       for (auto s : Split(entry->senses, '/')) {
         std::wstring sw = u8tow(s);
@@ -406,11 +503,11 @@ Content BuildContent(const Dictionary& dict,
         continue;
       if (cards)
         c.lines.push_back({L"", L""});
-      AddEnglishCard(dict, o, prefer_verb, c);
+      AddEnglishCard(dict, o, prefer_verb, simplified, c);
       ++cards;
     }
     if (!cards)
-      AddEnglishCard(dict, options.front(), prefer_verb, c);
+      AddEnglishCard(dict, options.front(), prefer_verb, simplified, c);
     std::wstring first = u8tow(options.front());
     c.head_speech = c.head_speech.empty() ? first : c.head_speech + L"，" + first;
   }
@@ -428,10 +525,14 @@ Content BuildContent(const Dictionary& dict,
   }
   if (c.lines.size() <= 1) {
     c.lines.push_back({L"", L""});
-    c.lines.push_back({L"字典裡沒有這個詞的詳細資料。", L""});
+    c.lines.push_back({Label(simplified, L"字典裡沒有這個詞的詳細資料。",
+                             L"词典里没有这个词的详细资料。"),
+                       L""});
   }
   c.lines.push_back({L"", L""});
-  c.lines.push_back({L"（連按兩下任一行就會朗讀那一行）", L""});
+  c.lines.push_back({Label(simplified, L"（連按兩下任一行就會朗讀那一行）",
+                           L"（双击任意一行即可朗读该行）"),
+                     L""});
   return c;
 }
 
@@ -534,10 +635,11 @@ class DetailsWindow {
       DeleteObject(font_);
   }
 
-  void Show(Content content) {
+  void Show(Content content, bool simplified) {
     content_ = std::move(content);
     if (!hwnd_ && !Create())
       return;
+    SetScript(simplified);
     std::wstring text;
     starts_.clear();
     for (auto& line : content_.lines) {
@@ -574,13 +676,9 @@ class DetailsWindow {
     HDC dc = GetDC(nullptr);
     dpi_ = GetDeviceCaps(dc, LOGPIXELSY);
     ReleaseDC(nullptr, dc);
-    font_ = CreateFontW(-MulDiv(11, dpi_, 72), 0, 0, 0, FW_NORMAL, FALSE,
-                        FALSE, FALSE, DEFAULT_CHARSET, OUT_DEFAULT_PRECIS,
-                        CLIP_DEFAULT_PRECIS, CLEARTYPE_QUALITY,
-                        DEFAULT_PITCH | FF_DONTCARE, L"Microsoft JhengHei UI");
     hwnd_ = CreateWindowExW(
         WS_EX_TOPMOST | WS_EX_NOACTIVATE | WS_EX_TOOLWINDOW,
-        kDetailsWindowClass, L"單字詳情",
+        kDetailsWindowClass, L"",
         WS_OVERLAPPED | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME, CW_USEDEFAULT,
         CW_USEDEFAULT, Scale(520), Scale(560), nullptr, nullptr, inst, this);
     if (!hwnd_)
@@ -593,13 +691,33 @@ class DetailsWindow {
     SetWindowLongPtrW(edit_, GWLP_USERDATA, (LONG_PTR)this);
     edit_proc_ = (WNDPROC)SetWindowLongPtrW(edit_, GWLP_WNDPROC,
                                             (LONG_PTR)EditProc);
-    speak_button_ = Button(L"朗讀", ID_SPEAK);
-    examples_button_ = Button(L"朗讀例句", ID_EXAMPLES);
-    close_button_ = Button(L"關閉", ID_CLOSE);
-    for (HWND w : {edit_, speak_button_, examples_button_, close_button_})
-      SendMessageW(w, WM_SETFONT, (WPARAM)font_, TRUE);
+    speak_button_ = Button(L"", ID_SPEAK);
+    examples_button_ = Button(L"", ID_EXAMPLES);
+    close_button_ = Button(L"", ID_CLOSE);
     Layout();
     return true;
+  }
+
+  // Button labels and font for simplified or traditional Chinese.
+  void SetScript(bool simplified) {
+    int script = simplified ? 1 : 2;
+    if (script == script_)
+      return;
+    script_ = script;
+    SetWindowTextW(speak_button_, Label(simplified, L"朗讀", L"朗读"));
+    SetWindowTextW(examples_button_,
+                   Label(simplified, L"朗讀例句", L"朗读例句"));
+    SetWindowTextW(close_button_, Label(simplified, L"關閉", L"关闭"));
+    HFONT old = font_;
+    font_ = CreateFontW(
+        -MulDiv(11, dpi_, 72), 0, 0, 0, FW_NORMAL, FALSE, FALSE, FALSE,
+        DEFAULT_CHARSET, OUT_DEFAULT_PRECIS, CLIP_DEFAULT_PRECIS,
+        CLEARTYPE_QUALITY, DEFAULT_PITCH | FF_DONTCARE,
+        Label(simplified, L"Microsoft JhengHei UI", L"Microsoft YaHei UI"));
+    for (HWND w : {edit_, speak_button_, examples_button_, close_button_})
+      SendMessageW(w, WM_SETFONT, (WPARAM)font_, TRUE);
+    if (old)
+      DeleteObject(old);
   }
 
   HWND Button(const wchar_t* text, int id) {
@@ -747,6 +865,7 @@ class DetailsWindow {
   WNDPROC edit_proc_ = nullptr;
   HFONT font_ = nullptr;
   int dpi_ = 96;
+  int script_ = 0;  // 1 simplified, 2 traditional
   Content content_;
   std::vector<size_t> starts_;
   Speaker speaker_;
@@ -758,6 +877,12 @@ class DetailsWindow {
 typedef void* (*LoadFn)(const char*, const char*, const char*, const char*);
 typedef int (*TranslateFn)(void*, const char*, char*, int);
 typedef void (*FreeFn)(void*);
+
+struct DetailsRequest {
+  std::string chinese;
+  std::string english;
+  bool simplified;
+};
 
 }  // namespace
 
@@ -772,6 +897,7 @@ class Service::Impl {
     RegisterClassExW(&wc);
     hwnd_ = CreateWindowExW(0, kMessageWindowClass, L"", 0, 0, 0, 0, 0,
                             HWND_MESSAGE, nullptr, wc.hInstance, this);
+    simplifier_.Load(dir_ + L"\\t2s.tsv");
     worker_ = std::thread([this] { Work(); });
   }
 
@@ -838,8 +964,10 @@ class Service::Impl {
     return !unavailable_;
   }
 
-  void ShowDetails(const std::string& chinese, const std::string& english) {
-    auto* request = new std::pair<std::string, std::string>(chinese, english);
+  void ShowDetails(const std::string& chinese,
+                   const std::string& english,
+                   bool simplified) {
+    auto* request = new DetailsRequest{chinese, english, simplified};
     if (!hwnd_ || !PostMessageW(hwnd_, WM_SHOW_DETAILS, 0, (LPARAM)request))
       delete request;
   }
@@ -869,11 +997,13 @@ class Service::Impl {
       }
       if (!engine_)
         continue;
+      // The model reads simplified Chinese.
+      std::string source = simplifier_.Convert(text);
       std::string out(1024, '\0');
-      int n = translate_(engine_, text.c_str(), &out[0], (int)out.size());
+      int n = translate_(engine_, source.c_str(), &out[0], (int)out.size());
       if (n >= (int)out.size()) {
         out.assign(n + 1, '\0');
-        n = translate_(engine_, text.c_str(), &out[0], (int)out.size());
+        n = translate_(engine_, source.c_str(), &out[0], (int)out.size());
       }
       std::wstring result = n > 0 ? u8tow(std::string_view(out.data(), n))
                                   : std::wstring();
@@ -902,10 +1032,12 @@ class Service::Impl {
     free_ = (FreeFn)GetProcAddress(dll_, "bmt_free");
     if (!load || !translate_ || !free_)
       return false;
+    // Firefox Translations, simplified Chinese to English; one vocabulary
+    // for both languages.
     std::wstring mt = dir_ + L"\\mt\\";
+    std::string vocab = NarrowPath(mt + L"vocab.zhen.spm");
     engine_ = load(NarrowPath(mt + L"model.zhen.intgemm.alphas.bin").c_str(),
-                   NarrowPath(mt + L"srcvocab.zhen.spm").c_str(),
-                   NarrowPath(mt + L"trgvocab.zhen.spm").c_str(),
+                   vocab.c_str(), vocab.c_str(),
                    NarrowPath(mt + L"lex.50.50.zhen.s2t.bin").c_str());
     return engine_ != nullptr;
 #else
@@ -933,12 +1065,16 @@ class Service::Impl {
     SendInput(2, inputs, sizeof(INPUT));
   }
 
-  void OnShowDetails(std::pair<std::string, std::string>* request) {
-    std::unique_ptr<std::pair<std::string, std::string>> owned(request);
+  void OnShowDetails(DetailsRequest* request) {
+    std::unique_ptr<DetailsRequest> owned(request);
     dict_.Load(dir_, data_dir_);
     if (!details_)
       details_ = std::make_unique<DetailsWindow>();
-    details_->Show(BuildContent(dict_, request->first, request->second));
+    Content content = BuildContent(dict_, request->chinese, request->english,
+                                   request->simplified);
+    if (request->simplified)
+      Simplify(simplifier_, content);
+    details_->Show(std::move(content), request->simplified);
   }
 
   static LRESULT CALLBACK MessageProc(HWND hwnd,
@@ -955,8 +1091,7 @@ class Service::Impl {
       return 0;
     }
     if (self && msg == WM_SHOW_DETAILS) {
-      self->OnShowDetails(
-          reinterpret_cast<std::pair<std::string, std::string>*>(lp));
+      self->OnShowDetails(reinterpret_cast<DetailsRequest*>(lp));
       return 0;
     }
     return DefWindowProcW(hwnd, msg, wp, lp);
@@ -983,6 +1118,7 @@ class Service::Impl {
   TranslateFn translate_ = nullptr;
   FreeFn free_ = nullptr;
 
+  Simplifier simplifier_;  // read-only once loaded, by both threads
   Dictionary dict_;
   std::unique_ptr<DetailsWindow> details_;
 };
@@ -1010,8 +1146,9 @@ bool Service::Available() {
 }
 
 void Service::ShowDetails(const std::string& chinese,
-                          const std::string& english) {
-  impl_->ShowDetails(chinese, english);
+                          const std::string& english,
+                          bool simplified) {
+  impl_->ShowDetails(chinese, english, simplified);
 }
 
 }  // namespace bilingual

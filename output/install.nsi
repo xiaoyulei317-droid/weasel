@@ -177,9 +177,15 @@ call_uninstaller:
   SetRegView 32
   ; Remove files and uninstaller
   Delete  "$R1\data\opencc\*.*"
+  Delete  "$R1\data\lua\*.*"
+  Delete  "$R1\bilingual\mt\*.*"
+  Delete  "$R1\bilingual\*.*"
   Delete  "$R1\data\*.*"
   Delete  "$R1\*.*"
   RMDir   "$R1\data\opencc"
+  RMDir   "$R1\data\lua"
+  RMDir   "$R1\bilingual\mt"
+  RMDir   "$R1\bilingual"
   RMDir   "$R1\data"
   RMDir   "$R1"
   SetShellVarContext all

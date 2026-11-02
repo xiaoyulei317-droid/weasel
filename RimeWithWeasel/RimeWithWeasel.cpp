@@ -934,13 +934,19 @@ bool RimeWithWeaselHandler::_Respond(WeaselSessionId ipc_id, EatLine eat) {
         // Until the translation is ready, hold its line with a placeholder,
         // so the candidates do not jump down under the mouse when it comes.
         // Once every word is picked, the sentence waits to be typed.
+        // In the script of the 汉字 (simplification) switch.
         std::wstring english = m_bilingual->Translate(source);
+        bool simplified = !!rime_api->get_option(session_id, "simplification");
         const wchar_t* hint =
-            has_candidates ? L"　〔Ctrl+Enter 或點這裡打英文〕"
-                           : L"　〔空白鍵打中文，Ctrl+Enter 或點這裡打英文〕";
-        std::wstring line = english.empty()
-                                ? std::wstring(L"整句　翻譯中…")
-                                : L"整句　" + english + hint;
+            has_candidates
+                ? (simplified ? L"　〔Ctrl+Enter 或点这里打英文〕"
+                              : L"　〔Ctrl+Enter 或點這裡打英文〕")
+                : (simplified ? L"　〔空格键打中文，Ctrl+Enter 或点这里打英文〕"
+                              : L"　〔空白鍵打中文，Ctrl+Enter 或點這裡打英文〕");
+        std::wstring line =
+            english.empty()
+                ? std::wstring(simplified ? L"整句　翻译中…" : L"整句　翻譯中…")
+                : L"整句　" + english + hint;
         body.append(L"ctx.aux=").append(escape_string(line)).append(L"\n");
       }
     }
@@ -1661,8 +1667,9 @@ void RimeWithWeaselHandler::BilingualCommand(UINT command,
   if (command < WEASEL_BILINGUAL_DETAILS)
     return;
   int index = (int)(command - WEASEL_BILINGUAL_DETAILS);
+  RimeSessionId session_id = to_session_id(ipc_id);
   RIME_STRUCT(RimeContext, ctx);
-  if (!rime_api->get_context(to_session_id(ipc_id), &ctx))
+  if (!rime_api->get_context(session_id, &ctx))
     return;
   if (index < ctx.menu.num_candidates) {
     auto is_english = [&](int i) {
@@ -1682,7 +1689,9 @@ void RimeWithWeaselHandler::BilingualCommand(UINT command,
     } else {
       chinese = ctx.menu.candidates[index].text;
     }
-    m_bilingual->ShowDetails(chinese, english);
+    m_bilingual->ShowDetails(
+        chinese, english,
+        !!rime_api->get_option(session_id, "simplification"));
   }
   rime_api->free_context(&ctx);
 }

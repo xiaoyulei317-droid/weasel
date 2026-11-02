@@ -17,8 +17,8 @@ int main(int argc, char** argv) {
   }
   std::string dir = argv[1];
   void* engine = bmt_load((dir + "/model.zhen.intgemm.alphas.bin").c_str(),
-                          (dir + "/srcvocab.zhen.spm").c_str(),
-                          (dir + "/trgvocab.zhen.spm").c_str(),
+                          (dir + "/vocab.zhen.spm").c_str(),
+                          (dir + "/vocab.zhen.spm").c_str(),
                           (dir + "/lex.50.50.zhen.s2t.bin").c_str());
   if (!engine) {
     std::fprintf(stderr, "load failed\n");

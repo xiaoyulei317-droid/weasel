@@ -3,7 +3,8 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 #
 # Downloads the two models that are too big for git, into $1 (default: models):
-#  - Firefox Translations zh-Hant -> en (translations-models-v2, 3.0), MPL-2.0 -> mt/
+#  - Firefox Translations zh-Hans -> en (translations-models-v2, 3.1 base-memory),
+#    MPL-2.0 -> mt/. It reads simplified Chinese; traditional is converted first.
 #  - rime-octagram zh-hant language model (lotem/rime-octagram-data@hant), LGPL-3.0
 set -euo pipefail
 out=${1:-models}
@@ -14,10 +15,9 @@ while read -r id name sha; do
   curl -fsSL "$base/$id.zst" | zstd -dq -o "$out/mt/$name" -f
   echo "$sha  $out/mt/$name" | sha256sum -c --quiet
 done <<'LIST'
-931f8f78-1b3e-4c16-8514-2b17df2cf9cf lex.50.50.zhen.s2t.bin aa7daf6cfc85c0cd2c10e2944d66f6da55497c9c6408789f3adfded4074c2fb1
-32debe3a-b7f3-4e08-a771-e0cfa573d1fa model.zhen.intgemm.alphas.bin 0aee91790894458f5d367551f6edcd4c9cb97852c34f221bcbf9f4701ebcf0cd
-981d1f3a-8b0f-4773-bde8-1fb82af4e654 srcvocab.zhen.spm 5cc6a76611dbf86219f109141533606b15ecb34eee83673bb86b2c16b14734db
-113f0d05-ad64-4311-b74f-9366f2a8c628 trgvocab.zhen.spm 7bf002db37c10d3b114cc5588d7fdcb16c57d0fd1e2c34354c22cc9f0b6c3c29
+a2261cbe-7fe7-498d-a128-c08d918b42fc lex.50.50.zhen.s2t.bin 8524dd4c93ffd7f0ae7be32f77a7c14fea7cdbbebe34ea6ad0ec368d5ddd8b13
+8bb74789-fad9-40e0-8f49-d3e017106138 model.zhen.intgemm.alphas.bin 5cd149601802fc8a18124a1c1306144dbbedc058630c4ddb2d53aa76fa9c7c06
+369efa59-d98e-4aa9-8a91-363ba16c3ba7 vocab.zhen.spm dff594318ab7d8b7b60b844ab98ebe6b932ae8045fab15235404c787715965b3
 LIST
 
 gram=$out/zh-hant-t-essay-bgw.gram
