@@ -920,15 +920,17 @@ bool RimeWithWeaselHandler::_Respond(WeaselSessionId ipc_id, EatLine eat) {
     if (m_bilingual) {
       std::string source =
           is_composing ? _TranslationSource(ctx, session_id) : std::string();
-      if (source.empty()) {
+      if (source.empty() || !m_bilingual->Available()) {
         m_bilingual->Idle();
       } else {
+        // Until the translation is ready, hold its line with a placeholder,
+        // so the candidates do not jump down under the mouse when it comes.
         std::wstring english = m_bilingual->Translate(source);
-        if (!english.empty())
-          body.append(L"ctx.aux=")
-              .append(escape_string(L"整句　" + english +
-                                    L"　〔Ctrl+Enter 或點這裡輸出〕"))
-              .append(L"\n");
+        std::wstring line =
+            english.empty() ? std::wstring(L"整句　翻譯中…")
+                            : L"整句　" + english +
+                                  L"　〔Ctrl+Enter 或點這裡輸出〕";
+        body.append(L"ctx.aux=").append(escape_string(line)).append(L"\n");
       }
     }
     if (has_candidates) {
@@ -1548,6 +1550,12 @@ std::string RimeWithWeaselHandler::_TranslationSource(
       ctx.menu.num_candidates <= 0)
     return {};
   std::string preview = ctx.commit_text_preview;
+  // Pinyin left unconverted (a shorter candidate is highlighted, or no
+  // conversion exists) would only garble the translation.
+  if (std::any_of(preview.begin(), preview.end(), [](char c) {
+        return (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z');
+      }))
+    return {};
   std::wstring text = u8tow(preview);
   int han = 0;
   for (wchar_t c : text)

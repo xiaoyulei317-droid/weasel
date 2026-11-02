@@ -810,6 +810,11 @@ class Service::Impl {
     pending_.clear();
   }
 
+  bool Available() {
+    std::lock_guard<std::mutex> lock(mutex_);
+    return !unavailable_;
+  }
+
   void ShowDetails(const std::string& chinese, const std::string& english) {
     auto* request = new std::pair<std::string, std::string>(chinese, english);
     if (!hwnd_ || !PostMessageW(hwnd_, WM_SHOW_DETAILS, 0, (LPARAM)request))
@@ -828,9 +833,13 @@ class Service::Impl {
         text.swap(pending_);
       }
       if (!engine_ && !LoadEngine()) {
-        std::lock_guard<std::mutex> lock(mutex_);
-        unavailable_ = true;
-        pending_.clear();
+        {
+          std::lock_guard<std::mutex> lock(mutex_);
+          unavailable_ = true;
+          pending_.clear();
+        }
+        // Have the client drop the "translating" line.
+        PostMessageW(hwnd_, WM_TRANSLATED, 0, 0);
         continue;
       }
       std::string out(1024, '\0');
@@ -882,7 +891,8 @@ class Service::Impl {
   void OnTranslated() {
     {
       std::lock_guard<std::mutex> lock(mutex_);
-      if (wanted_.empty() || !cache_.count(wanted_) || wanted_ == nudged_)
+      if (wanted_.empty() || wanted_ == nudged_ ||
+          !(unavailable_ || cache_.count(wanted_)))
         return;
       nudged_ = wanted_;
     }
@@ -959,6 +969,10 @@ std::wstring Service::Translate(const std::string& text) {
 
 void Service::Idle() {
   impl_->Idle();
+}
+
+bool Service::Available() {
+  return impl_->Available();
 }
 
 void Service::ShowDetails(const std::string& chinese,

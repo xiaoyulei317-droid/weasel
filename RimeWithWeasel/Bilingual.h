@@ -30,6 +30,8 @@ class Service {
   std::wstring Translate(const std::string& text);
   // Nothing is being typed; drop any queued translation.
   void Idle();
+  // False once the translation engine failed to load (or on 32-bit Windows).
+  bool Available();
 
   // Opens the details window. Either word may be empty; both are UTF-8.
   // Safe to call from any thread.
