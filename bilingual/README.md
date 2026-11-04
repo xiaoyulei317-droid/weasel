@@ -5,6 +5,7 @@
 - **簡體**：候選和輸出是簡體字（方案選單的「简体／繁體」可以暫時切到繁體，用臺灣字形），整句那一行和單字詳情也跟著用簡體。
 - **候選旁的英文**：每個中文候選旁顯示英文；第一個候選後面列出它的英文（標示〔英〕），按數字鍵就輸出英文。
 - **整句翻譯**：打一句話時，候選窗上方顯示整句的英文（離線翻譯，不用網路）。按 **Ctrl+Enter** 或點一下那一行，就輸出英文。
+- **成語**：翻譯模型會把成語逐字翻（指点江山 → "pointing to the mountains"），所以只打一個詞（成語或其他詞）時，整句那一行和 Ctrl+Enter 都用詞典裡的英文（talk idly about important matters），和候選旁的英文一樣；句子裡有常用成語時，先把成語換成白話再翻（跟他讲道理就是对牛弹琴 → "To reason with him is a waste of words."，對照表是 `bilingual/data/idioms.tsv`，215 條，每條都拿例句比過換和不換的翻譯）。候選旁的英文，成語只列意思、不列字面義。
 - **逐詞選好再決定**：整句的第一個候選不對時，可以用數字鍵一個詞一個詞選。選完最後一個詞，整句會先留在候選窗，不會自動送出；這時按**空白鍵**或 **Enter** 打中文，按 **Ctrl+Enter** 或點「整句」那一行打英文。按 Backspace 會退回最後一個詞重選。一次選整句的話照舊直接打出。
 - **單字詳情**：在候選詞上**按滑鼠右鍵**，看拼音、中文釋義、英文詞性、釋義、動詞變形、近義詞和例句。按「朗讀」或連按兩下任一行，用 Windows 的語音朗讀。
 - **記住習慣**：選過的英文下次排前面（存在使用者資料夾的 `bilingual_usage.txt`）；中文詞頻由 Rime 自己學。
@@ -20,7 +21,7 @@
 | `WeaselUI/WeaselPanel.cpp`、`WeaselTSF/CandidateList.cpp` | 候選窗的右鍵和點擊翻譯 |
 | `bilingual/mt/` | `bilingual_mt.dll`：用 [slimt](https://github.com/DavidVentura/slimt) 執行 Firefox Translations 的簡中→英模型（桌面版 Firefox 用的 base 模型），以 MinGW-w64 編譯（繁體字先用 `t2s.tsv` 轉成簡體再翻） |
 | `bilingual/rime/` | 雙語拼音的 Rime 方案、詞典（匯入白霜拼音的詞庫）、以簡體詞為鍵的英文表、Lua（候選旁的英文、逐詞選好的整句先留著） |
-| `bilingual/data/` | 單字詳情的資料（CC-CEDICT、WordNet、LemmInflect、Tatoeba 整理而成）；`t2s.tsv` 是繁轉簡字表（取自 OpenCC 的 TSCharacters） |
+| `bilingual/data/` | 單字詳情的資料（CC-CEDICT、WordNet、LemmInflect、Tatoeba 整理而成；CC-CEDICT 的長釋義已用 2026-11-03 版補全）；`t2s.tsv` 是繁轉簡字表（取自 OpenCC 的 TSCharacters）；`idioms.tsv` 是翻譯前把成語換成白話的對照表 |
 | `bilingual/fetch-models.sh` | 下載翻譯模型、語言模型和白霜拼音的詞庫（太大，沒放進 git；固定版本並核對 SHA-256） |
 | `bilingual/install-data.py` | 把上面的檔案放進安裝檔 |
 

@@ -10,6 +10,7 @@
 #include <algorithm>
 #include <chrono>
 #include <condition_variable>
+#include <cstdint>
 #include <deque>
 #include <filesystem>
 #include <fstream>
@@ -113,6 +114,27 @@ bool ReadAll(const std::wstring& path, std::string& out) {
   return true;
 }
 
+// Calls f(line) for each non-empty line of text, without its line break.
+template <typename F>
+void ForEachLine(std::string_view all, F f) {
+  size_t start = 0;
+  while (start < all.size()) {
+    size_t end = all.find('\n', start);
+    if (end == std::string_view::npos)
+      end = all.size();
+    auto line = all.substr(start, end - start);
+    if (!line.empty() && line.back() == '\r')
+      line.remove_suffix(1);
+    if (!line.empty())
+      f(line);
+    start = end + 1;
+  }
+}
+
+size_t Utf8Length(unsigned char lead) {
+  return lead < 0x80 ? 1 : lead < 0xE0 ? 2 : lead < 0xF0 ? 3 : 4;
+}
+
 std::string wtou8(const std::wstring& s) {
   if (s.empty())
     return {};
@@ -134,20 +156,11 @@ class Simplifier {
   void Load(const std::wstring& path) {
     if (!ReadAll(path, file_))
       return;
-    std::string_view all(file_);
-    size_t start = 0;
-    while (start < all.size()) {
-      size_t end = all.find('\n', start);
-      if (end == std::string_view::npos)
-        end = all.size();
-      auto line = all.substr(start, end - start);
-      if (!line.empty() && line.back() == '\r')
-        line.remove_suffix(1);
+    ForEachLine(file_, [this](std::string_view line) {
       auto tab = line.find('\t');
       if (tab != std::string_view::npos && tab > 0 && tab + 1 < line.size())
         map_[line.substr(0, tab)] = line.substr(tab + 1);
-      start = end + 1;
-    }
+    });
   }
 
   std::string Convert(std::string_view text) const {
@@ -156,8 +169,7 @@ class Simplifier {
     std::string out;
     out.reserve(text.size());
     for (size_t i = 0; i < text.size();) {
-      unsigned char lead = text[i];
-      size_t n = lead < 0x80 ? 1 : lead < 0xE0 ? 2 : lead < 0xF0 ? 3 : 4;
+      size_t n = Utf8Length(text[i]);
       std::string_view ch = text.substr(i, n);
       auto it = map_.find(ch);
       out += it == map_.end() ? ch : it->second;
@@ -177,6 +189,91 @@ class Simplifier {
  private:
   std::string file_;
   std::unordered_map<std::string_view, std::string_view> map_;
+};
+
+// ---------------------------------------------------------------------------
+// The English of whole words, as the candidates show it (the schema's
+// bilingual_english.txt: a simplified word, a tab, options split by "|").
+// A word typed on its own is translated with its first option: the model
+// takes an idiom word by word (指点江山: "Pointing to the mountains").
+
+class WordTable {
+ public:
+  void Load(const std::wstring& path) {
+    if (!ReadAll(path, file_))
+      return;
+    ForEachLine(file_, [this](std::string_view line) {
+      auto tab = line.find('\t');
+      if (tab == std::string_view::npos || tab == 0)
+        return;
+      auto options = line.substr(tab + 1);
+      first_[line.substr(0, tab)] = options.substr(0, options.find('|'));
+    });
+  }
+
+  // Empty if the (simplified) word is not in the table.
+  std::string_view English(std::string_view word) const {
+    auto it = first_.find(word);
+    return it == first_.end() ? std::string_view() : it->second;
+  }
+
+ private:
+  std::string file_;
+  std::unordered_map<std::string_view, std::string_view> first_;
+};
+
+// ---------------------------------------------------------------------------
+// Idioms in a sentence, put in plain words before the model translates it
+// (idioms.tsv: an idiom, a tab, plain Chinese; both simplified). The model
+// reads 跟他讲道理就是对牛弹琴 as "To reason with him is to play the harp on
+// the cow"; with 浪费口舌 for the idiom, "To reason with him is a waste of
+// words."
+
+class Paraphraser {
+ public:
+  void Load(const std::wstring& path) {
+    if (!ReadAll(path, file_))
+      return;
+    ForEachLine(file_, [this](std::string_view line) {
+      auto tab = line.find('\t');
+      if (tab == std::string_view::npos || tab == 0 || tab + 1 == line.size())
+        return;
+      auto idiom = line.substr(0, tab);
+      plain_[idiom] = line.substr(tab + 1);
+      longest_ = std::max<size_t>(longest_, idiom.size());
+      shortest_ = std::min<size_t>(shortest_, idiom.size());
+    });
+  }
+
+  std::string Apply(std::string_view text) const {
+    if (plain_.empty())
+      return std::string(text);
+    std::string out;
+    out.reserve(text.size() * 2);
+    for (size_t i = 0; i < text.size();) {
+      // The longest idiom that starts here, if any.
+      size_t n = std::min<size_t>(longest_, text.size() - i);
+      for (; n >= shortest_; --n) {
+        auto it = plain_.find(text.substr(i, n));
+        if (it != plain_.end()) {
+          out += it->second;
+          break;
+        }
+      }
+      if (n < shortest_) {
+        n = Utf8Length(text[i]);
+        out += text.substr(i, n);
+      }
+      i += n;
+    }
+    return out;
+  }
+
+ private:
+  std::string file_;
+  std::unordered_map<std::string_view, std::string_view> plain_;
+  size_t longest_ = 0;
+  size_t shortest_ = SIZE_MAX;
 };
 
 // ---------------------------------------------------------------------------
@@ -281,23 +378,6 @@ class Dictionary {
   }
 
  private:
-  template <typename F>
-  static void ForEachLine(const std::string& text, F f) {
-    std::string_view all(text);
-    size_t start = 0;
-    while (start < all.size()) {
-      size_t end = all.find('\n', start);
-      if (end == std::string_view::npos)
-        end = all.size();
-      auto line = all.substr(start, end - start);
-      if (!line.empty() && line.back() == '\r')
-        line.remove_suffix(1);
-      if (!line.empty())
-        f(line);
-      start = end + 1;
-    }
-  }
-
   bool loaded_ = false;
   std::string english_file_, zh_file_, en_file_, examples_file_;
   std::unordered_map<std::string_view, std::string_view> english_;
@@ -923,6 +1003,11 @@ class Service::Impl {
     wanted_ = text;
     if (unavailable_ || text.size() > kMaxSentence * 3)
       return {};
+    std::wstring word = WordEnglish(text);
+    if (!word.empty()) {
+      pending_.clear();
+      return word;
+    }
     auto it = cache_.find(text);
     if (it != cache_.end())
       return it->second;
@@ -936,6 +1021,11 @@ class Service::Impl {
     wanted_ = text;
     if (unavailable_ || text.size() > kMaxSentence * 3)
       return {};
+    std::wstring word = WordEnglish(text);
+    if (!word.empty()) {
+      pending_.clear();
+      return word;
+    }
     // The caller uses the translation itself: no refresh of the client.
     nudged_ = text;
     auto ready = [&] { return unavailable_ || cache_.count(text) != 0; };
@@ -973,9 +1063,23 @@ class Service::Impl {
   }
 
  private:
+  // The English of `text` if it is one word of the table, once the table is
+  // loaded. With mutex_ held.
+  std::wstring WordEnglish(const std::string& text) const {
+    if (!words_loaded_)
+      return {};
+    return u8tow(words_.English(simplifier_.Convert(text)));
+  }
+
   void Work() {
-    // Load the model right away (about a second), so that the first sentence
-    // is translated as quickly as the rest.
+    // Load the tables and the model right away (about a second), so that the
+    // first sentence is translated as quickly as the rest.
+    words_.Load(data_dir_ + L"\\bilingual_english.txt");
+    paraphraser_.Load(dir_ + L"\\idioms.tsv");
+    {
+      std::lock_guard<std::mutex> lock(mutex_);
+      words_loaded_ = true;
+    }
     if (!LoadEngine()) {
       {
         std::lock_guard<std::mutex> lock(mutex_);
@@ -997,16 +1101,21 @@ class Service::Impl {
       }
       if (!engine_)
         continue;
-      // The model reads simplified Chinese.
+      // The model reads simplified Chinese. A word queued before its table
+      // was loaded gets its English from the table all the same.
       std::string source = simplifier_.Convert(text);
-      std::string out(1024, '\0');
-      int n = translate_(engine_, source.c_str(), &out[0], (int)out.size());
-      if (n >= (int)out.size()) {
-        out.assign(n + 1, '\0');
-        n = translate_(engine_, source.c_str(), &out[0], (int)out.size());
+      std::wstring result = u8tow(words_.English(source));
+      if (result.empty()) {
+        source = paraphraser_.Apply(source);
+        std::string out(1024, '\0');
+        int n = translate_(engine_, source.c_str(), &out[0], (int)out.size());
+        if (n >= (int)out.size()) {
+          out.assign(n + 1, '\0');
+          n = translate_(engine_, source.c_str(), &out[0], (int)out.size());
+        }
+        if (n > 0)
+          result = u8tow(std::string_view(out.data(), n));
       }
-      std::wstring result = n > 0 ? u8tow(std::string_view(out.data(), n))
-                                  : std::wstring();
       {
         std::lock_guard<std::mutex> lock(mutex_);
         if (cache_.size() >= kCacheSize) {
@@ -1119,6 +1228,9 @@ class Service::Impl {
   FreeFn free_ = nullptr;
 
   Simplifier simplifier_;  // read-only once loaded, by both threads
+  WordTable words_;        // read-only once words_loaded_, by both threads
+  bool words_loaded_ = false;
+  Paraphraser paraphraser_;  // the worker's
   Dictionary dict_;
   std::unique_ptr<DetailsWindow> details_;
 };

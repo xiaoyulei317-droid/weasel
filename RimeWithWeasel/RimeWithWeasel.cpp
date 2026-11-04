@@ -766,6 +766,23 @@ inline std::string _GetLabelText(const std::vector<Text>& labels,
   return wtou8(std::wstring(buffer));
 }
 
+// 雙語拼音: the comment of the English candidates (bilingual_english.lua).
+static const std::string kEnglishMark = "〔英〕";
+
+// 雙語拼音: the English of the first candidate when it is all of `source`:
+// the first of the English candidates that follow it, which come in the
+// order the user picks them most. Empty otherwise.
+static std::string MenuEnglish(const RimeContext& ctx,
+                               const std::string& source) {
+  const RimeMenu& menu = ctx.menu;
+  if (!source.empty() && menu.page_no == 0 && menu.num_candidates > 1 &&
+      menu.candidates[0].text && source == menu.candidates[0].text &&
+      menu.candidates[1].text && menu.candidates[1].comment &&
+      kEnglishMark == menu.candidates[1].comment)
+    return menu.candidates[1].text;
+  return {};
+}
+
 bool RimeWithWeaselHandler::_Respond(WeaselSessionId ipc_id, EatLine eat) {
   std::wstring body;
   body.reserve(4096);
@@ -935,8 +952,14 @@ bool RimeWithWeaselHandler::_Respond(WeaselSessionId ipc_id, EatLine eat) {
         // so the candidates do not jump down under the mouse when it comes.
         // Once every word is picked, the sentence waits to be typed.
         // In simplified characters unless the schema's 繁體
-        // (traditionalization) switch is on.
-        std::wstring english = m_bilingual->Translate(source);
+        // (traditionalization) switch is on. A word of the dictionary (an
+        // idiom, say) has its English as shown next to it, which is what
+        // Ctrl+Enter types.
+        std::wstring english = u8tow(MenuEnglish(ctx, source));
+        if (english.empty())
+          english = m_bilingual->Translate(source);
+        else
+          m_bilingual->Idle();
         bool simplified =
             !rime_api->get_option(session_id, "traditionalization");
         const wchar_t* hint =
@@ -1557,9 +1580,6 @@ void RimeWithWeaselHandler::_GetContext(Context& weasel_context,
   }
 }
 
-// 雙語拼音: the comment of the English candidates (bilingual_english.lua).
-static const std::string kEnglishMark = "〔英〕";
-
 static int CountHan(const std::string& utf8) {
   int han = 0;
   for (wchar_t c : u8tow(utf8))
@@ -1628,12 +1648,7 @@ bool RimeWithWeaselHandler::_CommitTranslation(WeaselSessionId ipc_id) {
     composing = ctx.composition.length > 0;
     source = _TranslationSource(ctx, session_id, true);
     // A word from the dictionary: its first English, as shown next to it.
-    const RimeMenu& menu = ctx.menu;
-    if (!source.empty() && menu.page_no == 0 && menu.num_candidates > 1 &&
-        menu.candidates[0].text && source == menu.candidates[0].text &&
-        menu.candidates[1].text && menu.candidates[1].comment &&
-        kEnglishMark == menu.candidates[1].comment)
-      english = u8tow(menu.candidates[1].text);
+    english = u8tow(MenuEnglish(ctx, source));
     rime_api->free_context(&ctx);
   }
   if (!composing)
