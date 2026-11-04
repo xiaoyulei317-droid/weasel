@@ -709,6 +709,7 @@
 万般无奈	have no way out|have no alternative
 万艾可	Viagra
 万花筒	kaleidoscope
+万荣	Vang Vieng, town in central Laos
 万象	Vientiane, capital of Laos|every manifestation of nature
 万象更新	nature takes on a new look
 万豪	Marriott International
@@ -1429,7 +1430,7 @@
 不了	unable to|without end|incessantly|no thanks
 不了了之	settle a matter by leaving it unsettled|end up with nothing definite
 不予理会	ignore|brush off|dismiss|pay no attention to
-不予置评	make no comment
+不予置评	make no comment|no comment
 不予评论	No comment!
 不争	widely known|incontestable|undeniable|not strive for|not contend for
 不争气	be disappointing|fail to live up to expectations
@@ -1439,6 +1440,7 @@
 不亚	no less than|not inferior to
 不亚于	no less than|not inferior to
 不亢不卑	neither haughty nor humble|neither overbearing nor servile|neither supercilious nor obsequious
+不亦	isn't it truly …?|how … it is!
 不亦乐乎	extremely|awfully
 不人道	inhuman
 不仁	not benevolent|heartless|numb
@@ -1909,6 +1911,7 @@
 不甚	not very
 不用	need not
 不用客气	you're welcome|don't mention it|no need to stand on ceremony
+不用找	keep the change
 不用说	needless to say|it goes without saying
 不用谢	You're welcome|Don't mention it
 不由	can't help
@@ -2474,6 +2477,7 @@
 东中国海	East China sea
 东乡	Dongxiang or East village|Donxiang
 东亚	East Asia
+东亚病夫	the Sick Man of Asia
 东亚运动会	East Asian Games
 东亚银行	Bank of East Asia
 东京	Tokyo, capital of Japan|Tonkin
@@ -3345,7 +3349,8 @@
 临难	in peril|facing disaster
 临高	Lingao County, Hainan
 临高县	Lingao County, Hainan
-丵	thick grass
+丵	thick grass|"bush" component in Chinese characters
+丷	"eight" component in Chinese characters
 丸	ball|pellet|pill
 丸剂	pill
 丸子	pills|balls|meatballs
@@ -4132,7 +4137,8 @@
 书香门第	family with a literary reputation|literary family
 乩	divine
 乪	a bend in a river
-乭	rock
+乫	phonetic "gal" used in place names
+乭	rock|phonetic "dol" used in names
 买	buy|purchase
 买一送一	buy one, get one free|two for the price of one
 买下	purchase|acquire
@@ -4264,7 +4270,9 @@
 乳黄色	cream
 乳齿	deciduous tooth|milk tooth|baby tooth
 乴	grasp
+乷	phonetic "sal"
 乸	feminine suffix|postfix indicating feminine
+乺	phonetic "sol" used in place names
 乼	rope
 乾	male principle|☰|ancient Chinese compass point: 315°
 乾坤	yin and yang|heaven and earth|the universe
@@ -4703,6 +4711,7 @@
 五官端正	have regular features
 五常	the Permanent Five
 五度	five degrees|fifth
+五形	Wuxing - "Five Animals" - Martial Art
 五彩	five colors|multicolored
 五彩缤纷	all the colors in profusion|a garish display
 五指	the five fingers of one's hand
@@ -4887,6 +4896,7 @@
 亟	urgently|anxiously|earnestly|repeatedly|frequently
 亟待	need urgently|need doing without delay
 亟需	urgently need|urgent need
+亠	"lid" radical in Chinese characters
 亡	die|lose|be gone|flee|deceased
 亡佚	nonextant|lost to the ages
 亡兵纪念日	Memorial Day
@@ -5269,7 +5279,7 @@
 人世	the world|this world|the world of the living
 人世间	the secular world
 人丛	crowd of people
-人中	philtrum|infranasal depression
+人中	philtrum|infranasal depression|the "human center" acupuncture point
 人中龙凤	a giant among men
 人为	artificial|man-made|having human cause or origin|human attempt or effort
 人之常情	human nature|a behavior that is only natural
@@ -5549,6 +5559,7 @@
 人高马大	tall and strong
 人鱼	mermaid|dugong|sea cow|manatee|giant salamander
 人龙	a queue of people
+亻	"person" radical in Chinese characters
 亿	100 million
 亿万	millions and millions
 亿万富翁	billionaire|multimillionaire
@@ -6753,6 +6764,7 @@
 伯利恒	Bethlehem
 伯劳	shrike
 伯劳鸟	shrike
+伯南克	Bernanke
 伯叔祖母	father's father's brother's wife|great aunt
 伯叔祖父	father's father's brother|great uncle
 伯多禄	Peter
@@ -6769,6 +6781,7 @@
 伯特兰德	Bertrand
 伯罗奔尼撒	Peloponnese
 伯莎	Bertha
+伯颜	Bayan
 估	estimate
 估产	assess|estimate
 估价	value|appraise|be valued at|estimate|valuation
@@ -6839,6 +6852,7 @@
 似的	seems as if|rather like|Taiwan pr
 似笑非笑	like a smile yet not a smile
 似雪	snowy
+伽	traditionally used as phonetic for "ga"|used to transliterate Sanskrit "gha"
 伽倻琴	gayageum
 伽利略	Galileo Galilei, Italian scientist
 伽玛射线	gamma ray
@@ -8695,7 +8709,7 @@
 做生日	celebrate a birthday
 做生活	work|do manual labor
 做眉做眼	frown
-做眼	serve as eyes and ears|be a scout
+做眼	make an "eye"|serve as eyes and ears|be a scout
 做眼色	give someone a meaningful look
 做礼拜	worship|pray
 做祷告	pray
@@ -9892,6 +9906,7 @@
 八月之光	Light in August
 八月份	August
 八正道	the Eight-fold Noble Way
+八法拳	Ba Fa Quan "Eight Methods" - Martial Art
 八点档	8:00 p.m. time slot
 八爪鱼	octopus
 八目鳗	lamprey
@@ -10535,6 +10550,7 @@
 养生法	regime
 养生送死	be looked after in life and given a proper burial thereafter
 养病	recuperate|convalesce|take care of one's health after illness
+养痈贻患	tolerating budding evil|cherish a viper in one's bosom
 养痈遗患	cherish a viper in one's bosom|tolerating budding evil can only lead to disaster
 养眼	visually attractive|eye candy|easy on the eyes|protect the eyes
 养神	rest|recuperate|regain composure
@@ -11649,6 +11665,7 @@
 几乎完全	almost entirely|almost completely
 几何	geometry|how much
 几何光学	geometric optics
+几何原本	Euclid's "Elements"
 几何图形	geometric figure
 几何学	geometry
 几何平均数	geometric mean
@@ -11933,6 +11950,7 @@
 出巡	go on an inspection tour
 出差	go on an official or business trip
 出师	finish apprenticeship|graduate|send out troops
+出师未捷身先死	he failed to complete his quest before death
 出席	attend|participate|present
 出席者	attendee
 出庭	appear in court
@@ -12673,7 +12691,7 @@
 初审	preliminary trial
 初小	lower elementary school
 初年	early years
-初心	original intention, aspiration etc
+初心	original intention, aspiration etc|beginner's mind
 初恋	first love
 初恋感觉	feelings of first love
 初战	first battle|initial engagement
@@ -12908,6 +12926,7 @@
 到来	arrive|arrival|advent
 到案	make an appearance in court
 到此	hereto|hereunto
+到此一游	... was here
 到此为止	stop at this point|end here|call it a day
 到点	it's time|the time has come
 到现在	up until now|date
@@ -13473,6 +13492,7 @@
 劈开	cleave|split open|spread open
 劈情操	have a friendly chat
 劈手	with a lightning move of the hand
+劈挂拳	Piguaquan "Chop-Hanging Fist"
 劈柴	chop firewood|split logs|chopped wood|firewood
 劈离	split
 劈空扳害	damaged by groundless slander
@@ -15332,6 +15352,7 @@
 南征北讨	war on all sides|fighting from all four quarters
 南投	Nantou city and county in central Taiwan
 南投县	Nantou County in central Taiwan
+南拳	Nanquan - "Southern Fist"
 南拳妈妈	Nan Quan Mama, a Taiwanese Music Group
 南斯拉夫	Yugoslavia
 南方	south|southern direction
@@ -15639,6 +15660,7 @@
 卧龙	sleeping dragon
 卧龙岗	Wollongong, Australia
 卨	phonetic seol used in Korean names
+卩	"seal" radical in Chinese characters
 卫	guard|protect|defend|health
 卫兵	guard|bodyguard
 卫冕	defend the crown
@@ -15650,7 +15672,7 @@
 卫星	satellite|moon
 卫星图	satellite photo
 卫星图像	satellite photo
-卫星城	edge city|exurb
+卫星城	"satellite" town|edge city|exurb
 卫星定位系统	GPS
 卫星导航	satellite navigation|sat-nav
 卫星导航系统	satellite navigation system|sat-nav
@@ -19306,6 +19328,7 @@
 呜咽	sob|whimper
 呠	spurt|blow out|puff out|snort
 呡	the corners of the mouth|the lips
+呢	particle for inquiring about location|particle indicating strong affirmation|dense wool fabric
 呢呢	garrulous|talkative
 呢呢痴痴	docile
 呢喃	twittering of birds|whispering|murmuring
@@ -19411,7 +19434,7 @@
 呵欠	yawn
 呵禁	berate|shout loudly
 呵责	abuse|berate
-呶	clamor|pout
+呶	clamor|look!|pout
 呶呶	talk endlessly, annoying everyone
 呷	sip|drink|Taiwan pr
 呷呷	quack|honk
@@ -19592,7 +19615,8 @@
 咎由自取	have only oneself to blame|bring trouble through one's own actions
 咏	sing
 咏叹调	aria
-咏春	Wing Chun
+咏春	Wing Chun|Yongchun - "Singing Spring Fist"
+咏春拳	Yongchun - "Singing Spring Fist"
 咑	da!
 咒	incantation|magic spell|curse|malediction|revile|put a curse on someone
 咒文	incantation|spell|curse
@@ -20191,7 +20215,7 @@
 唱反调	express a different view|take a different position
 唱名	solfege
 唱和	antiphon|sung reply|reply with a poem in the same rhythm
-唱喏	open the way
+唱喏	open the way|answer respectfully "yes"
 唱头	pickup
 唱对台戏	put on a rival show|set oneself up against someone|get into confrontation
 唱念	call out
@@ -21195,7 +21219,7 @@
 回赠	give someone in return
 回跌	fall back
 回路	return|circuit|loop
-回车	turn a vehicle around
+回车	turn a vehicle around|"carriage return" character|the "Enter" key|hit the "Enter" key
 回车键	enter key|return key
 回转	revolve|rotate|turn around|turn back|go back|return
 回过头来	turn one's head|turn around|return|come back|look back|reflect on the past
@@ -21495,7 +21519,7 @@
 国情	current state of a country
 国手	member of the national team|national representative
 国技	national pastime|national sport
-国政	national politics|common given name
+国政	national politics|archaic rank, "Minister of State"|common given name
 国教	state religion
 国旗	flag
 国有	nationalized|public|government owned|state-owned
@@ -22223,6 +22247,7 @@
 地质学家	geologist
 地质年代表	geological time scale
 地质年表	geological time scale
+地躺拳	Di Tang Quan - "Ground-Prone Fist"|"Ground Tumbling Boxing" - Martial Art
 地轴	the earth's axis
 地速	groundspeed
 地道	authentic|genuine|proper|tunnel|causeway
@@ -22307,6 +22332,7 @@
 坍方	collapse|landslide
 坎	pit|threshold|☵|hole
 坎儿	critical juncture|key moment
+坎儿井	karez, qanat or "horizontal well"
 坎坎	just now
 坎坷	bumpy|rough|be down on one's luck|be full of frustrations and dashed hopes
 坎坷不平	potholed and bumpy road|full of disappointment and dashed hopes
@@ -22734,6 +22760,7 @@
 城墙	city wall
 城外	outside of a city
 城市	city|town
+城市依赖症	urban dependence disease
 城市化	urbanization
 城市规划	town planning
 城府	subtle|shrewd|sophisticated
@@ -24324,7 +24351,7 @@
 大巴	large bus|coach
 大帅	commander-in-chief
 大师	great master|master
-大帝	heavenly emperor
+大帝	heavenly emperor|the Great
 大幅	large-format|substantially|by a wide margin
 大幅度	substantially|by a wide margin
 大干	go all out|work energetically
@@ -24808,7 +24835,7 @@
 天头	the upper margin of a page
 天妇罗	tempura
 天妒英才	heaven is jealous of heroic genius|those whom the Gods love die young|the great have great hardship to contend with
-天子	the emperor
+天子	the emperor|Son of Heaven
 天孙娘娘	Goddess of Fertility
 天安门广场	Tiananmen Square
 天宫	Temple in Heaven|Tiangong, Chinese space station program
@@ -26242,7 +26269,7 @@
 妪	old woman|brood over|protect
 妫	name of a river
 妭	beautiful woman
-妮	girl|Taiwan pr
+妮	girl|phonetic "ni"|Taiwan pr
 妮子	lass|little girl
 妮维娅	Nivea, skin and body care brand
 妮维雅	Nivea, skin and body care brand
@@ -26992,6 +27019,7 @@
 孙子定理	the Chinese remainder theorem
 孙悦	Sun Yue, PRC female pop star|Sun Yue, PRC basketball star
 孙犁	Sun Li, novelist
+孙膑兵法	Sun Bin's "The Art of War"
 孚	trust|believe in
 孛	comet
 孛星	comet
@@ -27619,7 +27647,7 @@
 官能团	functional group
 官舱	second class
 官衔	title|official rank
-官话	bureaucratic language|Mandarin
+官话	officialese|bureaucratic language|Mandarin
 官费	government funded|paid by state stipend
 官运亨通	everything is going smoothly
 官逼民反	a government official drives the people to revolt
@@ -28072,7 +28100,7 @@
 宰	slaughter|butcher|kill|fleece|rip off|overcharge
 宰了	kill
 宰予	Zai Yu, disciple of Confucius
-宰予昼寝	Zai Yu sleeps by day|refers to story in Analects of Confucius remonstra
+宰予昼寝	Zai Yu sleeps by day
 宰人	overcharge|rip someone off
 宰制	rule|dominate
 宰割	slaughter|ride roughshod over|take advantage of
@@ -28756,7 +28784,7 @@
 对生	opposite leaf arrangement|paired leaf arrangement
 对症	correct diagnosis|prescribe the right cure for an illness|suit the medicine to the illness
 对症下药	take appropriate steps|study a problem to find the right way to solve it
-对症发药	study a pro|take appropriate steps
+对症发药	take appropriate steps
 对白	dialogue
 对眼	squint|one's liking
 对着干	adopt confrontational posture|meet head-on|compete
@@ -29286,6 +29314,7 @@
 小碟子	saucer
 小祖宗	brat|little devil
 小票	receipt|banknote of small denomination
+小秘	secretary
 小笔电	mini laptop or notebook|netbook
 小笼包	steamed dumpling
 小算盘	selfish calculations|bean-counting|small abacus
@@ -31359,7 +31388,7 @@
 幕后黑手	hidden hand
 幕墙	curtain wall
 幕布	curtain
-幕府	administration of a military government
+幕府	administration of a military government|"bakufu", administration of the shogun
 幕间	interval
 幛	hanging scroll
 幠	arrogant|rude|cover
@@ -33399,6 +33428,7 @@
 彝剧	Yi opera
 彝器	sacrificial vessel
 彝族	Yi ethnic group
+彡	"bristle" radical in Chinese characters
 形	appear|look|form|shape
 形上	metaphysics
 形于色	show one's feelings|show it in one's face
@@ -34106,7 +34136,7 @@
 心毒	cruel|vicious
 心毒手辣	vicious and ruthless
 心气	intention|motive|state of mind|ambition|aspiration
-心流	flow
+心流	flow|being "in the zone"
 心满意足	perfectly contented|perfectly satisfied
 心潮澎湃	be overwhelmed by emotions
 心灰意冷	discouraged|downhearted
@@ -34536,7 +34566,7 @@
 怊	sad|sorrowful|disappointed|frustrated
 怍	ashamed
 怎	how
-怎一个愁字了得	how can words express such sadness?
+怎一个愁字了得	how can words express such sadness?|how can it be expressed in one word, "sorrow"?
 怎么	how?|what?|why?
 怎么了	What's up?|What's going on?|What happened?
 怎么办	what's to be done
@@ -35390,7 +35420,7 @@
 悬案	unresolved question|unresolved case
 悬梁刺股	study assiduously and tirelessly
 悬殊	vastly different|poles apart
-悬河	waterfall|cataract|torrent of words
+悬河	"hanging" river|waterfall|cataract|torrent of words
 悬浮	float|suspension
 悬浮微粒	particulates|particulate matter
 悬浮物	suspended matter
@@ -35466,7 +35496,6 @@
 情事	circumstances|facts|case|feelings|love affair
 情人	lover|sweetheart
 情人眼里出西施	beauty is in the eye of the beholder
-情人眼里有西施	In the eyes of the lover, a famous beauty . Beauty in the eye of the beho
 情人节	Valentine's Day
 情伤	romantic heartbreak
 情何以堪	how can this be endured!
@@ -37418,6 +37447,7 @@
 扬帆远航	set sail on a voyage to a distant place|undertake a great mission
 扬幡招魂	try to revive what is obsolete or dead
 扬抑格	trochaic
+扬清激浊	eliminate vice and exalt virtue
 扬琴	yangqin|dulcimer
 扬眉	raise eyebrows
 扬科维奇	Jankovic|Yankovic|Yankovich|Jelena Jankovic, Serbian tennis player
@@ -37553,7 +37583,7 @@
 批评家	critic
 批评者	critic|detractor
 批语	criticism|commentary
-批转	approve and forward|endorse
+批转	approve and forward|endorse|stamp "approved for distribution"
 批郤导窾	get right to the heart of the matter
 批量	batch|lot
 批量生产	mass produce
@@ -39581,6 +39611,7 @@
 振奋	stir oneself up|raise one's spirits|inspire
 振幅	amplitude
 振振有词	speak forcefully and with justice|argue with the courage of one's convictions
+振振有辞	speak forcefully and with justice|argue with the courage of one's
 振聋发聩	rousing even the apathetic
 振臂一呼	issue a call for action|raise one's hand and issue a rousing call
 振频	frequency of vibration
@@ -40825,6 +40856,7 @@
 搴旗	pull and capture the enemy's flag
 搷	beat|winnow
 携	carry|take along|bring along|hold
+携家带口	take all one's family along|encumbered by a family
 携家带眷	take all one's family along|encumbered by a family|tied down by family obligations
 携带	carry|support|Taiwan pr
 携带者	carrier
@@ -42109,7 +42141,7 @@
 教材	teaching material
 教条	doctrine|dogma|creed|dogmatic
 教条主义	dogmatism
-教案	lesson plan|teaching plan
+教案	lesson plan|teaching plan|a "missionary case"
 教母	godmother
 教民	adherent to a religion|convert
 教法	teaching method|teachings|doctrine
@@ -43201,6 +43233,7 @@
 施行	put in place|put into practice|take effect
 斾	banner
 斿	scallops along lower edge of flag
+旀	phonetic "myeo" used in place names
 旁	one side|other|different|lateral component of a Chinese character
 旁人	other people|bystanders|onlookers|outsiders
 旁听	sit in on|be present at a meeting as an observer|audit
@@ -44066,6 +44099,7 @@
 时式	fashionable style|tense
 时态	tense
 时戳	timestamp
+时报	Times
 时政	current politics|political situation of the time
 时效	timeliness|period of viability or validity|prescription|limitation|aging
 时效性	sensitivity to timing|time-sensitive|timeliness
@@ -44113,6 +44147,7 @@
 时间区间	time interval
 时间序列	time series
 时间戳	timestamp
+时间简史	"A Brief History of Time" by Stephen Hawking
 时间线	timeline
 时间表	schedule|timetable
 时间轴	time axis|timeline
@@ -46557,6 +46592,7 @@
 杜衡	Asarum forbesii
 杜邦	DuPont
 杜门	close the door
+杜门不出	shut oneself indoors|avoid social contact
 杜鹃	cuckoo|Indian azalea
 杜鹃啼血	extreme grief
 杜鹃座	Tucana
@@ -47313,6 +47349,7 @@
 查扣	seize|confiscate
 查找	search for|look up
 查抄	search and confiscate|raid
+查拳	Cha Quan - "Cha Fist" - Martial Art
 查探	check|investigate|probe
 查收	check for receipt of
 查明	investigate and find out|ascertain
@@ -48068,6 +48105,7 @@
 梅红	pinkish-red
 梅纳德	Maynard
 梅花	plum blossom|clubs ♣|wintersweet
+梅花拳	Meihua Quan - "Plum Blossom Fist"
 梅花鹿	sika deer
 梅萨林	muslin or mousseline silk fabric
 梅西	Lionel Messi, Argentine footballer
@@ -48526,7 +48564,7 @@
 榕	Chinese banyan
 榕树	banyan
 榖	paper mulberry tree
-榛仁	hazelnut kernel
+榛仁	hazelnut kernel|hazelnut "meat"
 榛子	hazelnut
 榛实	hazelnut
 榛果	filbert|hazelnut|cobnut
@@ -50855,7 +50893,7 @@
 汉语	Chinese language
 汉语水平考试	HSK
 汉诺威	Hanover
-汉贼不两立	two enemies cannot live under the same sky
+汉贼不两立	gentlemen and thieves cannot coexist|two enemies cannot live under the same sky
 汊	branching stream
 汋	pour
 汍	shed tears
@@ -51365,6 +51403,7 @@
 河村	Kawamura
 河槽	river bed|channel
 河水	river water
+河水不犯井水	Mind your own business
 河沟	brook|ditch
 河流	river
 河清海晏	the world is at peace|the Yellow River is clear and the sea is calm
@@ -51995,6 +52034,7 @@
 泰山北斗	an outstanding figure in one's field
 泰山鸿毛	as weighty as Mt Tai, as light as a feather
 泰式	Thai-style
+泰拳	Muay Thai - "Thai fist" - Martial Art
 泰文	Thai
 泰晤士	the Times|River Thames, through London
 泰晤士报	Times
@@ -53657,6 +53697,7 @@
 混日子	idle|waste time
 混杂	mix|mingle
 混杂物	adulteration|impurities
+混水摸鱼	fish in troubled water
 混沌	primal chaos|confused|chaotic|muddle-headed|simple-minded
 混沌学	chaos theory
 混浊	turbid|muddy|dirty
@@ -55381,7 +55422,7 @@
 炒蛋	scrambled eggs
 炒货	roasted snacks
 炒锅	wok|frying pan
-炒面	stir-fried noodles
+炒面	stir-fried noodles|chow mein
 炒饭	fried rice
 炒鱿鱼	fire someone|sack someone
 炒鸡蛋	scrambled eggs
@@ -56431,6 +56472,7 @@
 爪尖儿	pig's trotters
 爪牙	pawn|lackey|accomplice|collaborator|henchman|claws and teeth
 爪蟾	Xenopus
+爫	"claw" radical in Chinese characters
 爬	crawl|climb|get up or sit up
 爬上	climb up
 爬升	rise|ascend|climb|go up|gain promotion
@@ -57280,6 +57322,7 @@
 狗带	go away|slink off
 狗年	Year of the Dog
 狗急跳墙	a cornered dog will jump over the wall|be driven to desperate action
+狗拳	Gou Quan - "Dog Fist" - Martial Art
 狗拿耗子	be meddlesome
 狗改不了吃屎	bad habits are hard to change
 狗日	contemptible|lousy, fucking|fucked or spawned by a dog
@@ -57502,6 +57545,7 @@
 猎手	hunter
 猎捕	hunt|hunting
 猎杀	kill
+猎杀红色十月号	"The Hunt for Red October", a novel by Tom Clancy
 猎枪	hunting gun|shotgun
 猎潜	anti-submarine
 猎潜艇	anti-submarine vessel
@@ -57587,6 +57631,7 @@
 猪下水	pig offal
 猪仔	piglet
 猪倌	swineherd
+猪八戒	Pigsy in Arthur Waley's translation
 猪圈	pigsty
 猪场	piggery
 猪头	pig head|fool|jerk
@@ -57666,6 +57711,7 @@
 猴年马月	long time off|time that will never come
 猴急	impatient|be in a rush|anxious|fretful|agitated
 猴戏	monkey show
+猴拳	Hou Quan - "Monkey Fist" - Martial Art
 猴痘	monkeypox|mpox
 猴皮筋	rubber band
 猴面包树	boabab tree|monkey-bread tree|Adansonia digitata
@@ -58288,7 +58334,7 @@
 理想	an ideal|a dream|ideal|perfect
 理想主义	idealism
 理想化	idealize
-理想国	ideal state|utopia
+理想国	ideal state|utopia|Plato's "The Republic"
 理所应当	it's only right and proper|it goes without saying
 理所当然	as it should be by rights|inevitable and right|proper and to be expected as a matter of course
 理据	grounds|justification|logical basis|motivation
@@ -60353,6 +60399,7 @@
 白水江自然保护区	Baishuijiang Nature Reserve, Gansu
 白水泥	white cement
 白汤	clear soup
+白沙	Baisha|Baisha Lizu autonomous county, Hainan
 白沙县	Baisha Lizu autonomous county, Hainan
 白沙瓦	Peshawar, city in north Pakistan
 白沙黎族自治县	Baisha Lizu autonomous county, Hainan
@@ -60383,6 +60430,7 @@
 白皙	fair and clear
 白皮书	white paper|white book
 白皮松	lacebark pine
+白眉拳	Pak Mei or Bak Mei - "White Eyebrow"
 白眼	give someone a dirty look|cast a supercilious glance|a disdainful look
 白眼狼	thankless wretch|an ingrate
 白眼珠	white of the eye
@@ -60443,6 +60491,7 @@
 白蜡虫	Chinese white wax bug
 白血球	white blood cell|leukocyte
 白血病	leukemia
+白衣天使	angel in white
 白衣战士	warrior in white|medical worker
 白衣苍狗	the unpredictable changeability of the world
 白话	spoken language|vernacular
@@ -61263,6 +61312,7 @@
 直选	direct election
 直通	lead directly to
 直通火车	through train
+直通车	through train
 直道而行	act with integrity
 直销	sell directly|direct sale|direct marketing
 直陈	say straight out|point out bluntly|give a straightforward account|disclose
@@ -63359,6 +63409,7 @@
 神山	sacred mountain
 神州	old name for China
 神工鬼斧	supernaturally fine craft|the work of the Gods|uncanny workmanship|superlative craftsmanship
+神差鬼使	the work of gods and devils|curious coincidence
 神庙	temple
 神异	magical|miraculous|mystical
 神往	be fascinated|be rapt|long for|dream of
@@ -63456,6 +63507,7 @@
 神采奕奕	in glowing spirits|bursting with life|radiating health and vigor
 神采飞扬	in high spirits|glowing with health and vigor
 神隐	be concealed by supernatural forces|disappear mysteriously|be out of the public eye
+神雕侠侣	The Return of the Condor Heroes
 神韵	charm or grace
 神风特攻队	Kamikaze Unit|kamikaze
 神马	mythical horse
@@ -63902,7 +63954,7 @@
 种族主义	racism
 种族主义者	racist
 种族歧视	racial discrimination|racism
-种族清洗	genocide
+种族清洗	ethnic cleansing|genocide
 种族清除	ethnic cleansing
 种族灭绝	genocide
 种族隔离	racial segregation|apartheid
@@ -64156,7 +64208,7 @@
 积非成是	a wrong repeated becomes right
 积食	retain in stomach due to indigestion
 称	weigh|state|name|appellation|praise|fit
-称为	be called|be known as
+称为	be called|be known as|call it "..."
 称之为	call it|known as
 称作	be called|be known as
 称做	be called|be known as
@@ -65612,6 +65664,7 @@
 管保	guarantee|assuredly
 管制	control|restrict
 管取	sure
+管圆线虫	"eel worm", a parasitic worm carrying meningitis
 管套	pipe sleeve
 管委会	administrative committee|management committee
 管子	tube|pipe|drinking straw
@@ -65656,7 +65709,7 @@
 管道	tubing|pipeline|channel|means
 管道运输	pipeline transport
 管钳	pipe wrench
-管闲事	meddle
+管闲事	meddle|be a "nosy Parker"
 管风琴	organ|pipe organ
 管龠	flute|pipe|key
 箢	Taiwan pr
@@ -67232,7 +67285,7 @@
 织女	Vega|Weaving girl of folk tales
 织布	woven cloth|weave cloth
 织布机	loom
-织当访婢	if it's weaving, ask the maid|when managing a matter, consult the appro
+织当访婢	if it's weaving, ask the maid
 织机	loom
 织物	fabric|textile
 织纴	spinning and weaving
@@ -68055,6 +68108,7 @@
 缓征	suspend taxes momentarily|postpone military draft
 缓急	priority|whether something is urgent
 缓急相济	help one another in difficulty|mutual assistance in extremity
+缓急轻重	deal with important matter|sense of priority|slight or important, urgent or non-urgent
 缓慢	slow
 缓期	defer|put off|postpone
 缓期付款	defer payment
@@ -69150,6 +69204,7 @@
 老大	old age|very|eldest child in a family|leader of a group|boss|captain of a boat
 老大不小	no longer a child
 老大哥	big brother
+老大妈	Madam
 老大娘	old lady|Madam
 老大徒伤悲	vain regrets of old age
 老大爷	uncle|grandpa
@@ -69176,7 +69231,7 @@
 老娘	my old mother|I, this old woman|my old lady|maternal grandmother|midwife
 老婆	wife
 老婆孩子热炕头	wife, kids and a warm bed|the simple and good life
-老子	father|daddy|I
+老子	father|daddy|I, your father|I
 老实	honest|sincere|well-behaved|naive|gullible
 老实巴交	docile|well-behaved|biddable
 老实说	honestly speaking|be frank
@@ -69248,7 +69303,7 @@
 老狐狸	old fox|cunning person
 老玉米	corn
 老生常谈	an old observation|a truism|banal comments
-老百姓	ordinary people
+老百姓	ordinary people|the "person in the street"
 老皇历	ancient history|obsolete practice|old-fashioned principle|past years' almanac
 老眼昏花	blurred vision of an old person
 老着脸	shamelessly
@@ -69268,6 +69323,7 @@
 老花镜	presbyopic glasses
 老茧	callus|corns
 老虎	tiger
+老虎伍兹	Eldrick "Tiger" Woods, American golfer
 老虎机	slot machine
 老虎灶	old-style large kitchen stove
 老虎钳	vise|pincer pliers
@@ -69440,7 +69496,7 @@
 耕作	farming
 耕地	arable land|plow land
 耕奴	agricultural slave|serf
-耕当问奴	if it's plowing, ask the laborer|when managing a matter, consult the ap
+耕当问奴	if it's plowing, ask the laborer
 耕犁	plow
 耕田	cultivate soil|till fields
 耕畜	draft animal
@@ -69859,7 +69915,7 @@
 肉包子打狗	flush down the toilet|kiss something goodbye
 肉商	meat merchant|butcher
 肉嘟嘟	chubby
-肉夹馍	meat wedged in steamed bun
+肉夹馍	Chinese burger|meat wedged in steamed bun
 肉干	dried meat|jerky
 肉弹	suicide attacker|suicide bomber|voluptuous woman|muscular man
 肉感	sexiness|sexy|sensuality|sensual|voluptuous
@@ -70542,6 +70598,7 @@
 能上能下	ready to take any job, high or low
 能事	particular abilities|one's forte
 能人	capable person
+能伸能屈	can bow and submit, or can stand tall|flexible
 能力	capability|ability
 能动性	initiative|active role
 能否	whether or not|can it or can't it|is it possible?
@@ -72121,7 +72178,7 @@
 艺术馆	art gallery|museum of art
 艺校	art school
 艺能	artistic skill
-艾	Chinese mugwort or wormwood|moxa|stop or cut short
+艾	Chinese mugwort or wormwood|moxa|stop or cut short|phonetic "ai" or "i"
 艾丁湖	Ayding Lake in Xinjiang
 艾叶	mugwort leaf|Folium Artemisiae argyi
 艾哈迈德	Ahmed
@@ -72869,7 +72926,7 @@
 茄	eggplant
 茄二十八星瓢虫	28-spotted ladybird|hadda beetle|Henosepilachna vigintioctopunctata
 茄克衫	jacket
-茄子	eggplant|aubergine|brinjal|Guinea squash
+茄子	eggplant|aubergine|brinjal|Guinea squash|phonetic "cheese"|equivalent of "say cheese"
 茄科	Solanaceae
 茄红素	Lycopene
 茅	reeds|rushes
@@ -73289,7 +73346,7 @@
 莅会	be present at a meeting
 莅止	approach|come close
 莆	place name
-莎	katydid
+莎	katydid|phonetic "sha" used in transliteration
 莎士比亚	Shakespeare|William Shakespeare, poet and playwright
 莎拉	Sara or Sarah
 莎拉波娃	Sharapova
@@ -73630,6 +73687,7 @@
 营救	rescue
 营火	campfire
 营生	job|work|earn a living
+营盘	Yingpan, common place name|Yingpan township, place name|Yingpan in Shangluo prefecture, Shaanxi|Yingpan township in Yunnan
 营私	gain from corrupt dealing|engage in graft|feather one's nest
 营谋	do business|manage|strive for|use every possible means
 营运	running|operation
@@ -74042,6 +74100,7 @@
 蓝图	blueprint
 蓝天	blue sky
 蓝宝石	sapphire
+蓝屏死机	crash and display the "blue screen of death"
 蓝巨星	blue giant star
 蓝星	the Blue Planet|planet Earth
 蓝晶	blue topaz|topaz
@@ -74307,6 +74366,7 @@
 藏匿	cover up|conceal|go into hiding
 藏品	museum piece|collector's item|precious object
 藏器待时	conceal one's abilities and wait|lie low and await the opportune moment
+藏垢纳污	hide dirt, to conceal corruption|aiding and abetting wicked deeds
 藏头露尾	hide the head and show the tail|give a partial account|half-truths
 藏奸	harbor evil intentions
 藏宝图	treasure map
@@ -74394,7 +74454,7 @@
 蘼	millet
 蘼芜	Gracilaria confervoides
 虀	fragment|salted vegetables|spices
-虍	stripes of a tiger
+虍	stripes of a tiger|"tiger" radical in Chinese characters
 虎	tiger
 虎不拉	shrike|Taiwan pr
 虎列拉	cholera
@@ -75732,6 +75792,7 @@
 被卧	quilt|cover
 被告	the defendant|the accused
 被告人	defendant
+被和谐	be "harmonized" i.e. censored
 被困	be trapped|be stranded
 被墙	get blocked
 被套	duvet cover|quilt cover
@@ -76126,6 +76187,7 @@
 西洋镜	hanky-panky|trickery
 西洛赛宾	psilocybin
 西海	Yellow Sea
+西湖	Xihu or West lake
 西湖区	West lake district
 西澳大利亚	Western Australia, Australian state
 西澳大利亚州	Western Australia, Australian state
@@ -76896,6 +76958,7 @@
 计议	deliberate|talk over|plan
 计谋	stratagem|scheme
 计较	bother about|haggle|bicker|argue|plan|stratagem
+计都	imaginary star presaging disaster
 计量	measurement|calculate
 计量制	system of weights and measures
 计量棒	measuring rod|dipstick
@@ -77908,6 +77971,7 @@
 请罪	apologize humbly|beg forgiveness
 请调	request a transfer
 请辞	tender one's resignation
+请进	please come in
 请问	Excuse me, may I ask...?
 诸	all|various
 诸事	everything|every matter
@@ -78508,6 +78572,7 @@
 豸	worm-like invertebrate|mythical animal|radical in Chinese characters
 豹	leopard|panther
 豹子	leopard
+豹拳	Bao Quan - "Leopard Fist" - Martial Art
 豹猫	leopard cat
 豹纹	leopard pattern|leopard print
 豺	dog-like animal|ravenous beast|dhole|jackal
@@ -78528,6 +78593,7 @@
 貊	name of a wild tribe|silent
 貌	looks|outward form
 貌似	appear to be|seem as if
+貌合心离	the appearance of unity, but divided at heart
 貌合神离	the appearance of unity, but divided at heart|seeming harmony belies underlying disagreement
 貌相	appearance|looks|judge a person by appearances
 貌美	good looks|pretty
@@ -80903,7 +80969,7 @@
 轮机手	helmsman
 轮椅	wheelchair
 轮次	in turn|by turns|lap|turn|round|classifier for laps, turns, rounds
-轮毂	hub of a wheel|the whole metal part of a wheel
+轮毂	hub of a wheel|the whole metal part of a wheel|rim
 轮毂罩	hubcap
 轮流	alternate|take turns
 轮渡	ferry
@@ -81605,7 +81671,7 @@
 过时不候	being late is not acceptable
 过期	be overdue|exceed the time limit|expire
 过来	come over|manage|handle|be able to take care of
-过来人	an experienced person|someone who has personally experienced it
+过来人	an experienced person|someone who has "been around "|someone who has personally experienced it
 过桥米线	rice noodle soup from Yunnan province
 过气	past one's prime|has-been
 过氧	peroxy-|peroxide
@@ -85012,6 +85078,7 @@
 钻机	drilling machine
 钻洞	bore|burrow|crawl through a tunnel
 钻版	cut a woodblock
+钻牛角	bash one's head against a brick wall|a wild goose chase|a blind alley|split hairs|honing a bull's horn
 钻牛角尖	obsess over an insoluble or trivial problem
 钻眼	drill a hole|drilling
 钻石	diamond
@@ -85173,7 +85240,7 @@
 铜锣	gong
 铜锣湾	Causeway Bay
 铜锣烧	dorayaki
-铜锤	mace
+铜锤	mace|tongchui
 铜鼓	bronze drum|drum
 铝	aluminum
 铝合金	aluminum alloy
@@ -85208,6 +85275,7 @@
 铭	engrave|inscribed motto
 铭刻	a carved inscription
 铭心刻骨	etched in one's memory|remembered with gratitude as long as one lives
+铭心镂骨	undying gratitude|engraved in one's heart and carved in one's bones
 铭文	inscription
 铭牌	nameplate|data plate
 铭言	motto|slogan
@@ -86100,7 +86168,7 @@
 闭门造车	work on a project in isolation, without caring for outside realities
 闭音节	closed syllable
 闭馆	be closed
-闭麦	go silent
+闭麦	switch one's microphone to "mute"|go silent
 问	ask|inquire
 问世	be published|come out
 问事	ask for information|inquire
@@ -86714,6 +86782,8 @@
 阿哥	elder brother
 阿嚏	a-choo
 阿囡	honey
+阿图什	Atushi city near Kashgar in Xinjiang
+阿图什市	Atushi city near Kashgar in Xinjiang
 阿土	country bumpkin|redneck
 阿基米德	Archimedes
 阿堵	this|money
@@ -86756,6 +86826,7 @@
 阿尔都塞	Louis Pierre Althusser, Marxist philosopher
 阿巴	Aba, southeast Nigerian city
 阿巴拉契亚	Appalachian Mountains in North America
+阿巴斯	Abbas
 阿布叔醇	albuterol, chemical used in treating asthma
 阿布哈兹	Abkhazia
 阿布贾	Abuja, capital of Nigeria
@@ -88589,6 +88660,7 @@
 革职	sack|remove from a position|depose
 革退	dismiss from a post
 革除	eliminate|expel|abolish
+革面洗心	turn over a new leaf
 靪	cobble|patch
 靮	reins|bridle
 靲	leather shoes|leather belt|thin bamboo strips
@@ -89594,6 +89666,7 @@
 飞蚊症	eye floaters
 飞蛾	moth
 飞蛾扑火	the moth flies into the flame|fatal attraction
+飞蛾投火	like a moth flying into the fire
 飞蝗	flying locusts
 飞行	fly|flying|flight|aviation
 飞行云	contrail
@@ -89619,6 +89692,7 @@
 飞速	swift|rapidly
 飞针走线	flying needle and running seam|skillful needlework
 飞镖	darts|dart
+飞雪	Flying Snow, a character in "Hero"
 飞马	at the gallop
 飞马座	Pegasus
 飞驰	speed|rush
@@ -90101,7 +90175,8 @@
 香蕉人	banana person|Westernized person of Asian appearance
 香薄荷	savory
 香薰	aromatherapy
-香轮宝骑	magnificent carriage and precious horses|rich family with extravagant l|ostentatious display of luxury
+香车宝马	magnificent carriage and precious horses|ostentatious display of luxury
+香轮宝骑	magnificent carriage and precious horses|ostentatious display of luxury
 香辣椒	all-spice|Jamaican pepper
 香酥	crisp-fried
 香醇	rich and mellow
@@ -90887,7 +90962,7 @@
 高居	stand above|occupy an important position|rank
 高山	high mountain|alpine mountain
 高山区	alpine district
-高山族	Taiwanese aborigines
+高山族	Gaoshan aborigines, "mountain tribes"|Taiwanese aborigines
 高山病	altitude sickness|acute mountain sickness
 高山症	altitude sickness|acute mountain sickness
 高岭土	kaolin|china clay
@@ -91559,7 +91634,7 @@
 鸐	Reeves's pheasant
 鸒	the eastern jackdaw
 鸓	flying squirrel
-鸟	bird|pay attention to|damned|goddamn|penis
+鸟	bird|"bird" radical in Chinese characters|pay attention to|damned|goddamn|penis
 鸟不生蛋	deserted
 鸟人	damned wretch|fucker
 鸟儿	bird
@@ -91699,6 +91774,7 @@
 鸳鸯戏水	make love
 鸳鸯浴	taking a bath together as a couple
 鸳鸯蝴蝶	Mandarin ducks and butterfly
+鸳鸯锅	"mandarin ducks" pot
 鸴	various species of finch
 鸵	ostrich
 鸵鸟	ostrich
@@ -92035,6 +92111,7 @@
 黄豆	soybean
 黄赤色	golden colored|yellow red
 黄道	the ecliptic
+黄酒	yellow wine
 黄酮	flavone
 黄酱	yellow soybean paste
 黄酶	yellow enzyme
@@ -92607,7 +92684,7 @@
 龙马精神	old but still full of vitality
 龙驹	fine horse|brilliant young man
 龙驹凤雏	brilliant young man|talented young scholar
-龙骨	breastbone|keel
+龙骨	dragon bones|breastbone|keel
 龙骨车	water wheel
 龛	shrine
 龟	tortoise|turtle|cuckold
