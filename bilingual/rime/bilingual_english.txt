@@ -28,6 +28,7 @@
 一丁点	a tiny bit
 一下	a bit|a little|all at once|suddenly
 一下子	in a short while|all at once|all of a sudden
+一不做二不休	in for a penny, in for a pound
 一不小心	be a little bit careless|have a moment of inattentiveness|accidentally
 一世	generation|period of 30 years|one's whole lifetime|lifelong|age|era
 一丘之貉	jackals of the same tribe|They are all just as bad as each other
@@ -42,6 +43,7 @@
 一个人	by oneself|alone
 一个劲	continuously|persistently|incessantly
 一个半	one and a half
+一个天南一个地北	live miles apart
 一个头两个大	feel as though one's head could explode
 一个巴掌拍不响	it takes two persons to start a dispute|it takes two to tango|it's difficult to achieve anything without support
 一个接一个	one by one|one after another
@@ -65,6 +67,7 @@
 一以贯之	consistently upheld|adhered to from beginning to end
 一会	a moment|a while|in a moment
 一会儿	a moment|a while|in a moment|now...now
+一传十十传百	spread like wildfire|be disseminated far and wide
 一体	an integral whole|all concerned|everybody
 一体两面	two sides of the same coin
 一体化	integrate|unify
@@ -83,11 +86,14 @@
 一刀切	impose uniformity|one size fits all|one solution fits a diversity of problems
 一分一毫	the tiniest bit
 一分为二	one divides into two|be two-sided|there are two sides to everything|see both someone's good points and shortcomings
+一分耕耘一分收获	you reap what you sow
 一分钱一分货	you get what you pay for
 一切	everything|every|all
 一切向钱看	put money above everything else
 一切就绪	everything in its place and ready
+一切都会好起来的	Everything will be fine
 一则	on the one hand
+一则以喜一则以忧	happy on the one hand, but worried on the other
 一刹那	a moment|an instant|in a flash
 一刻千金	time is gold|every minute is precious
 一动不动	motionless
@@ -157,6 +163,7 @@
 一天到晚	all day long|the whole day
 一夫一妻	monogamy
 一夫多妻	polygamy
+一夫当关万夫莫开	one man guarding the pass can prevent the passage of ten thousand
 一失足成千古恨	a single slip may cause everlasting sorrow
 一头	one head|a head full of something|one end|one side|headlong|directly
 一头热	one-sided enthusiasm
@@ -184,6 +191,7 @@
 一家人	the whole family|members of the same family
 一家子	the whole family
 一寸光阴一寸金	time is precious
+一寸光阴一寸金寸金难买寸光阴	time is precious
 一对	couple|pair
 一对一	one-to-one|one-on-one
 一对一斗牛	one-on-one basketball game
@@ -232,6 +240,7 @@
 一战	World War I
 一房一厅	one bedroom and one living room
 一手	a skill|mastery of a trade|by oneself|without outside help
+一手交钱一手交货	pay for what you want in cash|simple and direct transaction
 一手包办	take care of a matter all by oneself|run the whole show
 一手遮天	hide the truth from the masses
 一打	dozen
@@ -271,6 +280,8 @@
 一无是处	not one good point|everything about it is wrong
 一日三秋	a single day apart seems like three seasons
 一日三餐	have three meals a day
+一日不见如隔三秋	one day apart seems like three years
+一日为师终身为父	teacher for one day, father forever
 一日之计在于晨	make your day's plan early in the morning|early morning is the golden time of the day
 一日之雅	casual acquaintance
 一日千里	rapid progress
@@ -284,6 +295,7 @@
 一时半霎	a short time|a little while
 一时间	for a moment|momentarily
 一星半点	just the tiniest bit|a hint of
+一是一二是二	things are perfectly clear-cut|unequivocal
 一晃	in an instant|in a flash
 一曝十寒	one day's sun, ten days' frost|work for a bit then skimp|sporadic effort|lack of sticking power|short attention span
 一月	January|first month
@@ -292,6 +304,7 @@
 一望而知	be evident at a glance
 一朝一夕	in a short period of time|overnight
 一朝天子一朝臣	new emperor, new officials|a new chief brings in new aides
+一朝被蛇咬十年怕井绳	once bitten, twice shy
 一木难支	one is helpless alone
 一本万利	small capital, huge profit|put in a little and get a lot out
 一本正经	in deadly earnest|deadpan
@@ -319,6 +332,7 @@
 一次性	one-off|one-time|single-use|disposable
 一次方程	linear equation
 一次方程式	linear equation
+一次生两次熟	an acquired taste|unfamiliar at first but you get used to it|strangers are first meeting, but soon friends
 一步一个脚印	one step, one footprint|steady progress|reliable
 一步到位	settle a matter in one go
 一步登天	reaching heaven in a single bound|instant success
@@ -331,6 +345,7 @@
 一氧化碳	carbon monoxide CO
 一水儿	of the same type|identical
 一波三折	calligraphic flourish with many twists|many twists and turns
+一波未平一波又起	many twists and turns to a story|one thing after another|before the first wave subsides, a new wave rises|a new problem arises before the old is solved
 一派胡言	a bunch of nonsense
 一派谎言	a pack of lies
 一流	top quality|front ranking
@@ -351,6 +366,7 @@
 一点水一个泡	honest and trustworthy
 一点点	a little bit
 一物降一物	every item has a weakness
+一瓶子不响半瓶子晃荡	a half-filled bottle sloshes|empty vessels make the most noise
 一生	all one's life|throughout one's life
 一生一世	a whole lifetime|all my life
 一甲子	sixty years
@@ -369,6 +385,7 @@
 一眼	a glance|a quick look|a glimpse
 一眼望去	as far as the eye can see
 一眼看穿	see through something at first glance
+一着不慎满盘皆输	One careless move and the whole game is lost
 一睹	look|have a glimpse at|observe
 一瞥	glance|glimpse
 一瞬	one instant|very short time|the twinkle of an eye
@@ -416,6 +433,7 @@
 一统	unify|unified
 一维	one-dimensional
 一网打尽	scoop up the whole lot|capture them all in one go
+一而再再而三	again and again
 一肚子	bellyful|full of
 一股子	a whiff of|a taint of|a thread of
 一股脑	all of it|lock, stock and barrel
@@ -468,6 +486,7 @@
 一言千金	one word worth a thousand in gold|valuable advice|words of enormous weight
 一言堂	prices fixed – no bargaining|autocratic rule
 一言抄百总	cut a long story short
+一言既出驷马难追	a promise must be kept
 一言难尽	hard to explain in a few words|complicated and not easy to express succinctly
 一语不发	not say a word
 一语中的	hit the mark with a comment|say something spot on
@@ -564,6 +583,7 @@
 丁字街	T-junction
 丁字裤	thong
 丁字镐	hammer pick
+丁是丁卯是卯	meticulous|conscientious|unambiguous
 丁点	tiny bit
 丁烯	butene or butylene C4H8
 丁烷	butane
@@ -624,10 +644,12 @@
 万世师表	model teacher of every age|eternal paragon
 万事	all things
 万事亨通	everything is going smoothly
+万事俱备只欠东风	All that's missing is the final touch|lacking only one crucial thing|lacking only one tiny crucial item
 万事大吉	everything is fine|all is well with the world
 万事如意	have all one's wishes|best wishes|all the best|may all your hopes be fulfilled
 万事开头难	every beginning is difficult|getting started is always the hardest part
 万事得	Mazda Motor Corporation
+万事总有开头	There's a first time for everything|Everything has a beginning
 万事起头难	the first step is the hardest
 万事达	MasterCard
 万事通	jack-of-all-trades|know-it-all
@@ -730,6 +752,7 @@
 万马齐喑	thousands of horses, all mute|no-one dares to speak out|an atmosphere of political oppression
 万齐融	Wan Qirong, Tang dynasty poet
 丈	measure of length, ten Chinese feet|measure|husband|polite appellation for an older male
+丈二和尚摸不着头脑	at a total loss
 丈人	wife's father|old man
 丈夫	husband
 丈母	wife's mother|mother-in-law
@@ -750,15 +773,22 @@
 三不管	of undetermined status|unregulated
 三世	the Third
 三两	two or three
+三个和尚没水吃	Too many cooks spoil the broth|Everybody's business is nobody's business
 三个和尚没水喝	everybody's business is nobody's business
 三个女人一个墟	three women makes a crowd
 三个女人一台戏	three women are enough for a drama
+三个臭皮匠合成一个诸葛亮	collective wisdom
+三个臭皮匠胜过诸葛亮	Two heads are better than one
+三个臭皮匠赛过一个诸葛亮	Two heads are better than one|collective wisdom
+三个臭皮匠赛过诸葛亮	Two heads are better than one|collective wisdom
+三个臭皮匠顶个诸葛亮	Two heads are better than one|collective wisdom
 三五	several|three or five
 三五成群	in groups of three or four
 三井	Mitsui
 三亲六故	old friends and relatives
 三人成虎	three men talking makes a tiger|repeated rumor becomes a fact
 三人行	threesome
+三人行必有我师	you have something to learn from everyone
 三代	three generations of a family|the three earliest dynasties
 三代同堂	three generations under one roof
 三令五申	order again and again
@@ -787,6 +817,8 @@
 三十二相	the thirty-two physical characteristics of Buddha
 三十八度线	38th parallel
 三十六计	all the possible schemes and stratagems
+三十六计走为上策	the best thing to do is leave
+三十年河东三十年河西	change is the only constant
 三十而立	thirty years old and therefore independent
 三厢	sedan
 三叉戟	trident
@@ -804,7 +836,9 @@
 三合星	triple star system
 三和弦	triad|three-note chord
 三国	Three Kingdoms period in Chinese history
+三天不打上房揭瓦	spare the rod, spoil the child
 三天两头	practically every day|frequently
+三天打鱼两天晒网	not to persevere in doing something|do something by fits and starts
 三头六臂	superhuman abilities|exceptional capability
 三头肌	triceps muscle|triceps brachii
 三姑六婆	women with disreputable or illegal professions
@@ -819,7 +853,7 @@
 三度	third
 三得利	Suntory, Japanese beverage company
 三心二意	in two minds about something|half-hearted|shilly-shallying
-三思而后行	think again and again before acting|consider carefully in advance
+三思而后行	Look before you leap|Think twice before you act|think again and again before acting|consider carefully in advance
 三思而行	think three times then go
 三振	strike out|strikeout|eliminate from consideration
 三教	the Three Doctrines
@@ -965,6 +999,7 @@
 三鹿	Sanlu
 上	upper|above|previous|first|climb|get onto
 上一个	previous one
+上一次当学一次乖	take something as a lesson for next time|once bitten, twice shy
 上一页	preceding page
 上万	over ten thousand|untold numbers|innumerable|thousands upon thousands
 上上之策	the best policy|the best thing one can do in the circumstances
@@ -991,6 +1026,8 @@
 上佳	excellent|outstanding|great
 上供	make offerings
 上农	a rich farmer|stress the importance of agriculture
+上刀山下油锅	go through trials and tribulations
+上刀山下火海	go through trials and tribulations
 上分	progress to the next level|level up
 上刑	severe punishment|worst punishment|torture
 上前	advance|step forward
@@ -1033,6 +1070,7 @@
 上夜	be on night duty
 上天	Heaven|Providence|God|the sky above|fly skywards|die
 上天入地	go to great lengths|search heaven and earth
+上天无路入地无门	be at the end of one's rope|be trapped in a hopeless situation
 上头	go to one's head|get into one's head|capture one's attention|the top|the upper part|surface
 上夸克	up quark
 上好	first-rate|top-notch
@@ -1077,6 +1115,7 @@
 上星期	last week|previous week
 上映	screen|show
 上月	last month
+上有天堂下有苏杭	the beauty and affluence of Suzhou and Hangzhou is comparable with heaven
 上期	previous period
 上来	come up|approach
 上架	put goods on shelves|be available for sale
@@ -1450,6 +1489,7 @@
 不以为意	not to mind|unconcerned
 不以为然	not to accept as correct|object|disapprove|take exception to
 不以人废言	not to reject a word because of the speaker
+不以规矩不能成方圆	without rules, nothing can be done|one must follow some rules
 不以辞害志	don't let rhetoric spoil the message
 不休	endlessly|ceaselessly
 不会	improbable|unlikely|will not|not able|not having learned to do something|don't mention it
@@ -1481,6 +1521,7 @@
 不假思索	act without taking time to think|react instantly|fire from the hip
 不偏不倚	even-handed|impartial|unbiased
 不偏斜	not leaning to one side|impartial|even-handed
+不做亏心事不怕鬼敲门	you can rest with a clear conscience
 不做声	keep silent|not say a word
 不停	incessant
 不偷不抢	be law-abiding
@@ -1492,6 +1533,7 @@
 不免	inevitably
 不免一死	cannot avoid being killed|cannot escape death|be mortal
 不入时宜	out of step with current thinking|outmoded|inappropriate for the occasion
+不入虎穴焉得虎子	Nothing ventured, nothing gained
 不公	unjust|unfair
 不共戴天	cannot live under the same sky|absolutely irreconcilable
 不关痛痒	unimportant|of no consequence
@@ -1629,6 +1671,7 @@
 不吝赐教	be so kind as to enlighten me
 不含糊	unambiguous|unequivocal|explicit|prudent|cautious|not negligent
 不听命	disobey
+不听老人言吃亏在眼前	ignore your elders at your peril
 不周	not satisfactory|thoughtless|inconsiderate
 不周延	undistributed
 不咋的	not that great|not up to much|nothing special
@@ -1678,6 +1721,7 @@
 不孕症	female infertility
 不孚众望	not living up to expectations|unpopular|failing to inspire confidence among people
 不孝	unfilial
+不孝有三无后为大	there are three ways to be unfilial|having no sons is the worst
 不学无术	without learning or skills|ignorant and incompetent
 不安	unpeaceful|unstable|uneasy|disturbed|restless|worried
 不安其室	be unfaithful|have extramarital affairs
@@ -1718,6 +1762,7 @@
 不带	not to have|without|un-
 不带电	uncharged|electrically neutral
 不干不净	unclean|filthy|foul-mouthed
+不干不净吃了没病	a little dirt never killed anybody|a couple of germs won't do you any harm
 不干涉	noninterference|nonintervention
 不平	uneven|injustice|unfairness|wrong|grievance|indignant
 不平凡	marvelous|marvelously
@@ -1761,6 +1806,8 @@
 不怎么	not very|not particularly
 不怎么样	not up to much|very indifferent|nothing great about it|nothing good to be said about it
 不怕	fearless|not worried|even if|even though
+不怕一万就怕万一	better to be safe than sorry|be prepared just in case
+不怕官只怕管	be obliged to comply with people in authority
 不怠	unremitting in one's efforts
 不急之务	a matter of no great urgency
 不恤	not to worry|not to show concern
@@ -1880,6 +1927,7 @@
 不毛之地	barren land|desert
 不求人	backscratcher
 不求收获	not expecting any reward|not asking for favors
+不求有功但求无过	take a risk-averse approach
 不求甚解	only looking for an overview|not bothered with the details|superficial|content with shallow understanding
 不治之症	incurable disease
 不法	lawless|illegal|unlawful
@@ -1987,10 +2035,12 @@
 不管三七二十一	regardless of the consequences
 不管不顾	pay scant regard to|unheeding|reckless
 不管怎样	in any case|no matter what
+不管白猫黑猫捉住老鼠就是好猫	it doesn't matter whether a cat is white or black|as long as it catches mice it's a good cat
 不粘锅	non-stick pan
 不紧不慢	take one's time|unhurried|leisurely
 不约而同	all of them, independently|as if by prior agreement|take the same action without prior consultation
 不终天年	die before one's allotted lifespan has run its course
+不经一事不长一智	wisdom only comes with experience
 不经之谈	absurd statement|cock-and-bull story
 不经意	not paying attention|carelessly|by accident
 不经意间	without paying attention|without noticing|unconsciously|inadvertently
@@ -2019,6 +2069,7 @@
 不能自已	unable to control oneself|be beside oneself
 不自在	uneasy|ill at ease
 不自然	unnatural|artificial
+不自由毋宁死	give me liberty or give me death
 不自量	not take a proper measure of oneself|overrate one's own abilities
 不自量力	overestimate one's capabilities
 不至于	unlikely to go so far as to|not as bad as
@@ -2181,6 +2232,7 @@
 与世长辞	die|depart from the world forever
 与世隔绝	be cut off from the rest of the world
 与人为善	be of service to others|help others|benevolent
+与人方便自己方便	Help others, and others may help you
 与众不同	stand out from the crowd|distinctive|different from the rest
 与会	participate in a meeting
 与全世界为敌	fight the whole world
@@ -2318,6 +2370,7 @@
 丕变	radical change
 世	life|age|generation|era|world|lifetime
 世上	on earth
+世上无难事只怕有心人	Nothing is impossible to a willing heart
 世世	from age to age
 世世代代	for many generations
 世事	affairs of life|things of the world
@@ -2657,6 +2710,7 @@
 两回事	two quite different things|two unrelated matters
 两国	both countries|the two countries
 两国之间	between the two countries|bilateral
+两国相争不斩来使	when two kingdoms are at war, they don't execute envoys
 两头	both ends|both parties to a deal
 两宋	the Song dynasty|refers to the Northern and Southern Song
 两小无猜	innocent playmates
@@ -2703,6 +2757,7 @@
 两肋插刀	go to any lengths for a friend|sacrifice oneself out of loyalty
 两节棍	nunchaku
 两虎相争	fierce contest between evenly matched adversaries
+两虎相争必有一伤	if you start a war, someone is bound to get hurt
 两袖清风	having clean hands|uncorrupted|unsoiled by corrupt practices
 两讫	received and paid for|the goods delivered and the bill settled
 两败俱伤	both sides suffer|neither side wins
@@ -3323,6 +3378,7 @@
 临水	facing the water
 临海	overlook the sea|on the waterfront
 临海县	Linhai county in east Zhejiang
+临渊羡鱼不如退而结网	better to go home and weave a net than to stand by the pond longing for fish|one should take practical steps to achieve one's aim
 临渴掘井	be unprepared and seek help at the last minute
 临渴穿井	not to make adequate provision|act when it is too late
 临界	critical|boundary
@@ -4065,6 +4121,7 @@
 乡音	local accent|accent of one's native place
 书	book|letter|document|write
 书不尽言	I have much more to say than can be written in this letter
+书中自有黄金屋书中自有颜如玉	be diligent in your studies, success and glory will follow
 书亭	book kiosk
 书会	calligraphy society|village school|literary society
 书体	calligraphic style|font
@@ -4342,6 +4399,7 @@
 争鸣	contend
 事	matter|thing|item|work|affair
 事不关己	a matter of no concern to oneself
+事不关己高高挂起	feel unconcerned and let matters rest
 事不宜迟	the matter should not be delayed|there's no time to lose
 事不过三	don't repeat the same mistake again and again|bad things don't happen more than three times
 事与愿违	things turn out contrary to the way one wishes
@@ -5201,6 +5259,7 @@
 亲代	parent's generation|previous generation
 亲们	darlings|fans|followers
 亲信	trusted aide|confidant|put one's trust in
+亲兄弟明算帐	even with your own brother, keep clear accounts
 亲切	amiable|cordial|close and dear|familiar
 亲力亲为	do something oneself
 亲北京	pro-Beijing
@@ -5282,6 +5341,9 @@
 人中	philtrum|infranasal depression|the "human center" acupuncture point
 人中龙凤	a giant among men
 人为	artificial|man-made|having human cause or origin|human attempt or effort
+人为刀俎我为鱼肉	be at someone's mercy
+人为财死鸟为食亡	man will do anything in his means to become rich
+人之初性本善	man at birth is fundamentally good in nature
 人之常情	human nature|a behavior that is only natural
 人事	personnel|human resources|human affairs|ways of the world|sexuality|the facts of life
 人事处	human resources department
@@ -5331,10 +5393,12 @@
 人命关天	human life is beyond value
 人品	character|moral strength|integrity|looks|appearance|bearing
 人困马乏	riders tired and horses weary|worn out|exhausted|spent|fatigued
+人在江湖身不由己	you can't always do as you like|one has to compromise in this world
 人均	per capita
 人墙	human barricade|defensive wall
 人士	person|figure|public figure
 人声鼎沸	hubbub|brouhaha
+人外有人天外有天	in the wider world there are people more talented than oneself
 人多势众	many men, a great force|many hands provide great strength|There is safety in numbers
 人大	Renmin University of China
 人夫	married man|husband
@@ -5375,6 +5439,7 @@
 人师	mentor|role model
 人形	human form|human-shaped|humanoid
 人影	the shadow of a human figure|a trace of a person's presence
+人往高处走水往低处流	one should constantly strive to make progress
 人微言轻	what lowly people think counts for little
 人心	popular feeling|the will of the people
 人心不古	moral standards are much lower now than in former times
@@ -5411,6 +5476,7 @@
 人族	Hominini
 人无完人	nobody is perfect|everyone has their defect
 人有三急	need to answer the call of nature
+人有失手马有失蹄	everyone makes mistakes|even the best fall down sometimes
 人望	prestige|esteem
 人机工程	ergonomics|man-machine engineering
 人机界面	user interface
@@ -5469,6 +5535,7 @@
 人猿	anthropoid ape
 人瑞	very old person|venerable old person
 人生	life
+人生一世草木一春	Man has but one life, grass but one spring . fig. the brevity of human existence
 人生何处不相逢	it's a small world
 人生地不熟	be a stranger in a strange land|in an unfamiliar place without friends or family
 人生如朝露	human life as the morning dew|ephemeral and precarious nature of human existence
@@ -5598,6 +5665,7 @@
 仁民爱物	love to all creatures|universal benevolence
 仁波切	Rinpoche
 仁爱	benevolence|charity|compassion
+仁者见仁智者见智	Different views are admissible
 仁至义尽	extreme benevolence, utmost duty|meticulous virtue and attention to duty
 仁言利博	Words of benevolence apply universally . Humanitarian expressions benefit all
 仂	surplus|tithe
@@ -5618,6 +5686,7 @@
 仆街	drop dead!|go to hell!|fuck you!
 仇	hatred|animosity|enmity|foe|enemy|feel animosity toward
 仇人	foe|one's personal enemy
+仇人相见分外眼红	when the enemies come face to face, their eyes blaze with hatred
 仇外	xenophobia
 仇外心理	xenophobia
 仇家	enemy|foe
@@ -5698,6 +5767,7 @@
 从句	clause
 从命	obey an order|comply|do someone's bidding|do as requested
 从善如流	readily following good advice|willing to accept other people's views
+从善如登从恶如崩	doing good is like a hard climb, doing evil is like an easy fall
 从天而降	fall from the sky|appear unexpectedly|drop into one's lap
 从头	anew|from the start
 从头到尾	from start to finish|from head to tail|the whole
@@ -5979,6 +6049,7 @@
 以偏概全	generalize
 以儆效尤	warn against following bad examples|as a warning to others
 以免	in order to avoid|so as not to
+以其人之道还治其人之身	give someone a taste of his own medicine|get revenge by playing someone back at his own game
 以内	within|less than
 以军	Israeli soldiers
 以利于	for the sake of|in order to
@@ -6003,6 +6074,8 @@
 以太网络端口	Ethernet port
 以失败而告终	succeed through failure|achieve one's final aim despite apparent setback
 以夷制夷	use foreigners to subdue foreigners|let the barbarians fight it out among themselves
+以子之矛攻子之盾	turning a weapon against its owner|attack an opponent using his own devices|hoist with his own petard
+以小人之心度君子之腹	gauge the heart of a gentleman with one's own mean measure
 以少胜多	using the few to defeat the many|win from a position of weakness
 以工代赈	provide work to relieve poverty
 以弗所	Ephesus, city of ancient Greece
@@ -6039,6 +6112,7 @@
 以物易物	barter
 以眦睚杀人	kill someone for a trifle
 以眼还眼	an eye for an eye|use the enemy's methods against him|give someone a taste of his own medicine
+以眼还眼以牙还牙	an eye for an eye, a tooth for a tooth|use the enemy's methods against him|give someone a taste of his own medicine
 以礼相待	treat someone with due respect
 以至	down to|up to|such an extent as to
 以至于	down to|up to|the extent that
@@ -6050,6 +6124,7 @@
 以西	the west of
 以西结书	Book of Ezekiel
 以言代法	substitute one's words for the law|high-handedly putting one's orders above the law
+以言代法以权压法	completely lawless behavior|Might makes right
 以讹传讹	spread falsehoods|increasingly distort the truth|pile errors on top of errors
 以貌取人	judge someone by appearances
 以资	by way of|serve as
@@ -6145,12 +6220,15 @@
 任人宰割	get trampled on|be taken advantage of
 任从	at one's discretion
 任何	any|whatever|whichever
+任何事情都有第一次	There's a first time for everything
+任何事都有第一次	There's a first time for everything
 任侠	chivalrous|helping the weak for the sake of justice
 任便	as you see fit|do as one likes
 任免	appoint and dismiss
 任其自然	let things take their course|leave it to nature|laissez-faire
 任内	period in office
 任凭	no matter what|despite|allow
+任凭风浪起稳坐钓鱼台	stay calm in a tense situation
 任务	mission|assignment|task|duty|role
 任务栏	taskbar
 任务管理器	task manager
@@ -7352,6 +7430,7 @@
 你死我活	irreconcilable adversaries|two parties cannot coexist
 你看着办吧	You figure it out for yourself|Do as you please
 你真行	you're incredible
+你走你的阳关道我过我的独木桥	you go your way, I'll go mine|you do it your way, I'll do it mine
 你追我赶	friendly one-upmanship|try to emulate
 佡	light
 佣	hire|employ|servant|hired laborer|domestic help|commission
@@ -7690,6 +7769,7 @@
 便士	pence|penny
 便壶	bed urinal|chamber pot
 便宜	cheap|inexpensive|a petty advantage|let someone off lightly|convenient
+便宜没好货	You get what you pay for
 便宜行事	act at one's discretion|act as one sees fit
 便宜货	a bargain|cheap goods
 便宴	informal dinner
@@ -9197,6 +9277,7 @@
 兄弟	brothers|younger brother|I, me|brotherly|fraternal
 兄弟会	fraternity
 兄弟姐妹	brothers and sisters|siblings
+兄弟阋于墙外御其侮	internal disunity dissolves at the threat of an invasion from outside
 兄弟阋墙	internecine strife|fighting among oneself
 兄长	elder brother
 充	sufficient|full|fill|serve as|act as|act falsely as
@@ -9450,7 +9531,7 @@
 光量	quantity of light|luminosity
 光锥	light cone
 光阴	time available
-光阴似箭	time flies like an arrow|How time flies!
+光阴似箭	Time flies|How time flies!|time flies like an arrow
 光阴荏苒	How time flies!
 光隔离器	opto-isolator
 光面	plain noodles in broth
@@ -9866,6 +9947,7 @@
 八	eight
 八九不离十	pretty close|very near|about right
 八仙	the Eight Immortals
+八仙过海各显神通	give full play to one's unique capabilities
 八会穴	the eight influential points
 八位元	8-bit
 八佰伴	Yaohan retail group
@@ -10159,6 +10241,7 @@
 公证处	notary office
 公诉	public prosecution|criminal prosecution
 公诉人	district attorney|public prosecutor|procurator
+公说公有理婆说婆有理	both sides claim they're right
 公诸于世	announce to the world|make public|let everyone know
 公诸同好	share pleasure in the company of others|shared enjoyment with fellow enthusiasts
 公费	at public expense
@@ -10323,9 +10406,12 @@
 关之琳	Rosamund Kwan, Hong Kong actress
 关乎	relate to|concerning|about
 关于	pertaining to|concerning|with regard to|about|a matter of
+关你什么事	none of your business
+关你屁事	none of your business
 关停	shut down
 关公	Lord Guan
 关公面前耍大刀	make a fool of oneself by showing off in front of an expert
+关关难过关关过	meet with great difficulties but pull through
 关切	be deeply concerned|be troubled
 关卡	checkpoint|barrier|hurdle|red tape|Taiwan pr
 关厂	shut down|close a facility|a lockout
@@ -10450,6 +10536,8 @@
 兵戎	arms|weapons
 兵戎相见	meet on the battlefield
 兵权	military leadership|military power
+兵来将挡水来土掩	different situations call for different action|adopt measures appropriate to the actual situation
+兵来将敌水来土堰	different situations call for different action|adopt measures appropriate to the actual situation
 兵棋推演	war-gaming|simulation of a military operation
 兵法	art of war|military strategy and tactics
 兵源	manpower resources|sources of troops
@@ -10470,6 +10558,7 @@
 兵饷	pay and provisions for soldiers
 兵马	troops and horses|military forces
 兵马俑	Terracotta Army
+兵马未动粮草先行	an army marches on its stomach|logistics comes before military maneuvers
 其	his|her|its|their|that|such
 其一	one of the given|the first|firstly
 其三	thirdly|the third
@@ -10526,6 +10615,8 @@
 养乐多	Yakult
 养伤	heal a wound|recuperate
 养兵	train troops
+养兵千日用兵一时	extensive preparation eventually pays off
+养兵千日用在一朝	extensive preparation eventually pays off
 养分	nutrient
 养地	maintain the land
 养大	raise
@@ -10578,6 +10669,7 @@
 兼任	hold a concurrent post|part-time|adjunct
 兼优	an all-rounder|good at everything
 兼具	combine|have both
+兼听则明偏信则暗	listen to both sides and you will be enlightened|heed only one side and you will remain ignorant
 兼善天下	work for the common good beyond one's own interests
 兼备	have both
 兼容	compatible
@@ -10637,6 +10729,7 @@
 内化	internalization|internalize
 内华达	Nevada, US state
 内卡河	Neckar River in Germany
+内卷	involution|rat race|cutthroat competition
 内参	palace eunuch
 内向	reserved|introverted|domestic-oriented
 内含	contain|include
@@ -11112,6 +11205,7 @@
 冤屈	treat unjustly|an injustice
 冤情	facts of an injustice
 冤抑	suffer injustice
+冤有头债有主	for every grievance someone is responsible, for every debt there is a debtor|when settling disputes one should not involve third parties
 冤枉	accuse wrongly|treat unjustly|injustice|wronged|not worthwhile
 冤枉路	pointless trip|not worth the trip
 冤枉钱	wasted money|pointless expense
@@ -11168,6 +11262,7 @@
 冰上运动	ice-sports
 冰冷	ice-cold
 冰冻	freeze
+冰冻三尺非一日之寒	Rome wasn't built in a day|three feet of ice does not form in a single day
 冰凉	ice-cold
 冰凌	icicle
 冰凝器	cryophorus
@@ -11222,6 +11317,7 @@
 冰激凌	ice cream
 冰火	fire and ice
 冰灯	ice lantern
+冰炭不言冷热自明	sincerity is not expressed in words
 冰点	freezing point
 冰片	borneol
 冰球	ice hockey|puck
@@ -11706,6 +11802,8 @@
 几近	be on the brink of|be on the verge of
 凡	ordinary|commonplace|mundane|temporal|of the material world|every
 凡事	everything
+凡事总有第一次	There's a first time for everything
+凡事都有第一次	There's a first time for everything
 凡人	ordinary person|mortal|earthling
 凡例	notes on the use of a book|guide to the reader
 凡俗	lay|ordinary|commonplace
@@ -11894,6 +11992,7 @@
 出入门	entrance and exit door
 出兵	send troops
 出其不意	do something when least expected|catch someone off guard
+出其不意攻其不备	catch an enemy off guard with a surprise attack
 出具	issue|provide
 出击	sally|attack
 出列	leave one's place in the ranks|fall out|emerge|become prominent
@@ -11989,6 +12088,7 @@
 出港大厅	departure lounge
 出游	go on a tour|have an outing
 出溜	slip|slide
+出满勤干满点	be assiduous and work full hours
 出漏子	take a wrong turn|go wrong
 出演	appear|an appearance
 出炉	take out of the furnace|fresh out of the oven|newly announced|recently made available
@@ -12123,6 +12223,7 @@
 凿石场	rock quarry
 凿空	open an aperture|cut a way through|open up a road
 刀	knife|blade|single-edged sword|cutlass|dollar|classifier for knife cuts or stabs
+刀不磨要生锈人不学要落后	a blade will get rusty if it is not sharpened|a man will fall behind if he doesn't study
 刀俎	sacrificial knife and altar
 刀光剑影	intense conflict
 刀光血影	massacre
@@ -12135,6 +12236,7 @@
 刀叶	blade
 刀塔	Defense of the Ancients, video game
 刀子	knife
+刀子嘴豆腐心	have a sharp tongue but a soft heart
 刀客	swordsman|swordswoman
 刀山火海	extreme danger
 刀斧手	lictor
@@ -12164,6 +12266,7 @@
 分	divide|separate|distribute|allocate|distinguish|sub-
 分一杯羹	have a slice of the pie|get a piece of the action
 分为	divide something into|subdivide
+分久必合合久必分	things are constantly changing
 分争	dispute|struggle for mastery
 分享	share
 分会	branch
@@ -12906,6 +13009,7 @@
 刮风	be windy
 到	reach|arrive|leave for|go to|to|until
 到了	at last|finally|in the end
+到什么山上唱什么歌	when in Rome, do as the Romans do
 到付	collect on delivery
 到任	take office|assume a post
 到位	get to the intended location|be in place|be in position|precise|well
@@ -13136,11 +13240,15 @@
 前一天	the day before
 前三甲	top three
 前不久	not long ago|not long before
+前不着村后不着店	be stranded in the middle of nowhere|be in a predicament
+前不见古人后不见来者	unique|unprecedented
 前世	previous generations|previous incarnation
 前世姻缘	a marriage predestined in a former life
 前事	past events|antecedent|what has happened
+前事不忘后事之师	benefit from past experience
 前些	a few ago
 前人	predecessor|forebears|the person facing you
+前人栽树后人乘凉	enjoy the benefits of the hard work of one's predecessors
 前仆后继	one falls, the next follows|advancing wave upon wave
 前仰后合	sway to and fro|rock back and forth
 前件	antecedent
@@ -13211,6 +13319,7 @@
 前敌	front line
 前方	ahead|the front
 前无古人	unprecedented|unheard of
+前无古人后无来者	peerless
 前日	day before yesterday
 前晌	morning|forenoon
 前景	foreground|vista|prospects|perspective
@@ -13262,6 +13371,7 @@
 前赵	Former Zhao of the Sixteen Kingdoms
 前路	the road ahead
 前身	forerunner|predecessor|precursor|previous incarnation|jacket front
+前车之覆后车之鉴	learn from past mistake|once bitten twice shy|draw lesson from the failure of one's predecessor
 前车之鉴	lesson learned by observing others' failures
 前轮	front wheel
 前辈	senior|older generation|precursor
@@ -13276,6 +13386,8 @@
 前锋	vanguard|front line|a forward
 前锯肌	serratus anterior muscle
 前门	front door|main entrance|honest and upright approach
+前门打虎后门打狼	facing one problem after another
+前门拒虎后门进狼	facing one problem after another
 前院	front courtyard|front yard
 前面	ahead|in front|preceding|above
 前额	forehead
@@ -13471,6 +13583,7 @@
 割裂	cut apart|sever|separate|isolate
 割让	cede|cession
 割除	amputate|excise
+割韭菜	fleece small investors|exploit naive people
 割鸡焉用牛刀	waste effort on a trifling matter
 剳	hook|sickle
 剸	slash
@@ -14709,6 +14822,7 @@
 十字花科	Cruciferae or Brassicaceae
 十字路口	crossroads|intersection
 十字镐	pickaxe
+十年树木百年树人	it takes ten years to grow trees, but a hundred years to cultivate people
 十恶不赦	wicked beyond redemption|heinous
 十成	completely
 十戒	the ten commandments
@@ -14743,6 +14857,7 @@
 千兆	giga-|gigabits per second|1000Base-T
 千克	kilogram
 千军万马	impressive display of manpower|magnificent army with thousands of men and horses|all the King's horses and all the King's men
+千军易得一将难求	Easy to raise an army of one thousand, but hard to find a good general
 千刀万剐	hack to pieces
 千分尺	micrometer screw gauge|micrometer
 千千万万	untold numbers|innumerable|thousands upon thousands
@@ -14791,12 +14906,16 @@
 千载难逢	extremely rare|once in a blue moon
 千辛万苦	suffer untold hardships|trials and tribulations|with difficulty|after some effort
 千里	a thousand miles|a thousand li|a long distance
+千里之堤溃于蚁穴	huge damage may result from a moment's negligence
 千里之外	thousand miles distant
+千里之行始于足下	a thousand mile journey begins with the first step
 千里寄鹅毛	goose feather sent from afar
 千里眼	clairvoyance
 千里达和多巴哥	Trinidad and Tobago
 千里迢迢	from a great distance|from afar
 千里送鹅毛	goose feather sent from afar
+千里送鹅毛礼轻人意重	goose feather sent from afar, a slight present but weighty meaning|It's not the present the counts, it's the thought behind it
+千里送鹅毛礼轻情意重	It's not the gift that counts, but the thought behind it
 千里马	fine steed|ten thousand mile horse
 千里鹅毛	goose feather sent from afar|a trifling gift with a weighty thought behind it
 千金	money and riches|invaluable|daughter
@@ -15088,6 +15207,8 @@
 卑	low|base|vulgar|inferior|humble
 卑下	base|low
 卑不足道	not worth mentioning
+卑之无甚高论	my opinion, nothing very involved|my humble point is a familiar opinion|what I say is really nothing out of the ordinary
+卑之毋甚高论	my opinion, nothing very involved|my humble point is a familiar opinion|what I say is really nothing out of the ordinary
 卑亲属	junior relatives
 卑劣	base|mean|despicable
 卑卑不足道	be too petty or insignificant to mention|not be worth mentioning
@@ -16380,6 +16501,7 @@
 又吵又闹	make a lot of noise|be disorderly
 又来了	Here we go again
 又称	also known as
+又要马儿跑又要马儿不吃草	you can't have your cake and eat it, too
 叉	fork|pitchfork|prong|pick|cross|intersect
 叉乘	cross product
 叉头	prong of a fork
@@ -17018,6 +17140,7 @@
 叔祖	grandfather's younger brother
 叕	join together|lack|narrow and shallow
 取	take|get|choose|fetch
+取之不尽用之不竭	limitless supply|inexhaustible
 取乐	find amusement|amuse oneself
 取代	replace|supersede|supplant|substitution
 取代基	substituent
@@ -17026,6 +17149,7 @@
 取信	win the trust of
 取关	unfollow
 取其精华	take the best|absorb the essence
+取其精华去其糟粕	take the cream, discard the dross|keep what is good, discard the rest|You need to be selective when studying
 取决	hinge on|be decided by|depend on
 取决于	hinge on|be decided by|depend on
 取出	take out|extract|draw out
@@ -17568,6 +17692,7 @@
 只	only|merely|just|grain that has begun to ripen
 只不过	only|merely|nothing but|no more than|it's just that
 只争朝夕	seize every minute|make the best use of one's time
+只可意会不可言传	can be understood, but not described|mysterious and subtle
 只好	have no other option but to|have to|be forced to
 只字不提	say not a single word about it
 只当	assume|Taiwan pr
@@ -17577,10 +17702,14 @@
 只有	only have|there is only|it is only if|it is only who|can only|have no choice but to
 只欠东风	all we need is an east wind|lacking only one tiny crucial item
 只消	only need|it only takes
+只知其一不知其二	know the first, but not know the second|only partial information
 只管	solely engrossed in one thing|just|simply|by all means|please feel free|do not hesitate
 只能	can only|obliged to do something|have no other choice
 只要	so long as|provided|if
+只要功夫深铁杵磨成针	Perseverance pays off|persevere in a difficult task|study diligently
 只见	see over and over again|see, to one's surprise
+只见树木不见森林	can't see the wood for the trees
+只许州官放火不许百姓点灯	Gods may do what cattle may not|quod licet Iovi, non licet bovi|only the official is allowed to light the fire
 只说不做	be all talk and no action
 只读	read-only
 只身	alone|by oneself
@@ -17648,6 +17777,7 @@
 可亲	kindly|nice|amiable
 可人	pleasant|agreeable|a person after one's heart|a gifted person
 可以	can|may|possible|able to|not bad|pretty good
+可以意会不可言传	can be understood, but not described|mysterious and subtle
 可伦坡	Colombo, capital of Sri Lanka
 可体	well-fitting
 可作	can be used for
@@ -17793,6 +17923,7 @@
 可食	edible
 台	platform|stage|terrace|stand|support|station
 台上	on stage
+台上一分钟台下十年功	ten years of practice for one minute on the stage
 台东县	Taitung County in southeast Taiwan
 台中	Taichung, city in central Taiwan
 台中市	Taichung, a city in central Taiwan
@@ -18002,6 +18133,7 @@
 吁吁	pant|gasp for breath
 吁请	implore|entreat
 吃	eat|consume|eat at|eradicate|destroy|absorb
+吃一堑长一智	One only learns from one's mistakes|Fall into the moat and you'll be wiser next time
 吃不上	unable to get anything to eat|miss a meal
 吃不下	not feel like eating|be unable to eat any more
 吃不了兜着走	you'll have to take the consequences
@@ -18017,6 +18149,7 @@
 吃亏上当	be taken advantage of
 吃人	exploitative|oppressive
 吃人不吐骨头	ruthless|vicious and greedy
+吃人家的嘴软拿人家的手短	one is partial to those from whom presents have been accepted
 吃住	food and lodging|stay and eat meals
 吃刀	penetration of a cutting tool
 吃到饱	unlimited usage
@@ -18048,6 +18181,7 @@
 吃得住	be able to bear|be able to support
 吃得开	be popular|be getting on well|much in demand
 吃得消	be able to endure|be able to afford
+吃得苦中苦方为人上人	no pain, no gain
 吃惊	be startled|be shocked|be amazed
 吃拿卡要	all kinds of abuse of power
 吃掉	eat up|consume
@@ -18059,12 +18193,15 @@
 吃灰	gather dust
 吃烟	smoke
 吃牢饭	serve time in prison
+吃瓜	watch the drama unfold|eat melon
+吃瓜群众	onlookers enjoying the drama|bystanders
 吃瘪	suffer a humiliation
 吃白食	eat without paying|freeload
 吃白饭	eat plain rice|eat and not pay for it|sponge off others|freeload
 吃的	food
 吃皇粮	serve as a government employee|live off government money|eat from government coffers
 吃相	table manners
+吃着碗里看着锅里	not content with what one already has|have the wandering eye
 吃硬不吃软	susceptible to force but not persuasion
 吃穿	food and clothing
 吃素	be a vegetarian
@@ -18882,10 +19019,12 @@
 君位	royal title
 君士坦丁堡	Constantinople, capital of Byzantium
 君子	nobleman|person of noble character
+君子一言驷马难追	a nobleman's word is his bond
 君子之交	friendship between gentlemen, insipid as water
 君子之交淡如水	a gentleman's friendship, insipid as water
 君子兰	scarlet kafir lily|Clivia miniata
 君子动口不动手	a gentleman uses his mouth and not his fist
+君子报仇十年不晚	revenge is a dish best served cold
 君悦	Grand Hyatt
 君权	monarchical power
 君王	sovereign king
@@ -19046,6 +19185,7 @@
 听证会	hearing
 听诊器	stethoscope
 听话	do what one is told|obedient
+听话听声锣鼓听音	understand the unspoken implications
 听说	hear|one hears|hearsay|listening and speaking
 听说读写	listening, speaking, reading and writing
 听课	attend a class|go to a lecture
@@ -19233,6 +19373,7 @@
 吽牙	the barking of dogs fighting
 吾	my
 吾人	we|us
+吾生也有涯而知也无涯	Life is short, learning is limitless|Ars longa, vita brevis
 吾等	we|us
 吾辈	we|us
 呀	ah|creaking
@@ -19444,6 +19585,7 @@
 呻吟	moan|groan
 呼	call|cry|shout|breath out|exhale|call out
 呼之即来	come when called|ready and compliant|always at someone's beck and call
+呼之即来挥之即去	come when called|ready and compliant|always at someone's beck and call
 呼之欲出	on the verge of coming out into the open|on the point of being disclosed|vividly portrayed
 呼伦湖	Hulun Lake of Inner Mongolia
 呼伦贝尔草原	Hulunbuir grasslands of Inner Mongolia
@@ -19556,6 +19698,7 @@
 和好	become reconciled|on good terms with each other
 和好如初	bury the hatchet|become reconciled
 和尚	Buddhist monk
+和尚打伞无法无天	lawless|defying the law and the principles of heaven
 和局	draw|tied game
 和平	peace|peaceful
 和平主义	pacifism
@@ -19957,6 +20100,7 @@
 哑巴亏	pent-up unspoken grievances
 哑巴吃黄莲	no choice but to suffer in silence
 哑巴吃黄连	no choice but to suffer in silence
+哑巴吃黄连有苦说不出	be forced to suffer in silence|unable to speak of one's bitter suffering
 哑点	blind spot|dead spot
 哑然失笑	laugh involuntarily|Taiwan pr
 哑终端	dumb terminal
@@ -20452,6 +20596,7 @@
 善意的谎言	white lie
 善感	sensitive|emotional
 善有善报	virtue has its rewards|one good turn deserves another
+善有善报恶有恶报	virtue has its reward, evil its retribution
 善本	old book|good book|reliable book|rare book
 善款	contributions|donations
 善用	be good at using|put to good use
@@ -20822,6 +20967,7 @@
 嘲讽	sneer at|ridicule|taunt
 嘲谑	mock and ridicule
 嘴	mouth|beak|nozzle|spout
+嘴上没毛办事不牢	a youth without facial hair cannot be relied upon
 嘴严	prudent in speech
 嘴乖	speak in a clever and lovable way
 嘴唇	lip
@@ -20996,6 +21142,7 @@
 四个全面	Four Comprehensives
 四仰八叉	sprawled out on one's back
 四体	one's four limbs|two arms and two legs
+四体不勤五谷不分	living as a parasite
 四元数	quaternion
 四分之一	one-quarter
 四分五裂	fragmented|scattered|in disarray|at sixes and sevens
@@ -22034,6 +22181,7 @@
 在外	outer|excluded
 在天之灵	soul and spirit of the deceased
 在家	be at home|be in|remain a layman
+在家千日好出门一时难	there's no place like home
 在岗	be at one's post
 在座	be present
 在建	under construction
@@ -22778,6 +22926,7 @@
 城镇化	urbanization
 城镇化水平	urbanization level
 城门	city gate
+城门失火殃及池鱼	the bystander will also suffer|you can't escape responsibility for your actions
 城阙	watchtower on either side of a city gate|city|imperial palace
 城防	city defense
 城隍	Shing Wong
@@ -24128,6 +24277,7 @@
 大乌鸦	a raven
 大乘	Mahayana, the Great Vehicle
 大事	major event|major political event|major social event|in a big way
+大事化小小事化了	turn big problems into small ones, and small problems into no problems at all
 大二	second year of university
 大于	greater than|bigger than|more than
 大五码	Big5 Chinese character coding
@@ -24209,6 +24359,7 @@
 大势	overall trend
 大势所趋	the prevailing trend|the trend of the times|an inevitable direction
 大勇若怯	a great hero may appear timid|the really brave person remains level-headed
+大勇若怯大智若愚	the general public may not recognize great talent
 大包大揽	take complete charge
 大匠	master craftsman|Han dynasty official title
 大千世界	great wide world|marvelously diverse world|cosmos
@@ -24286,6 +24437,7 @@
 大墓地	necropolis
 大声	loud voice|in a loud voice|loudly
 大声疾呼	call loudly|get people's attention|make one's views known
+大处着眼小处着手	think of the big picture, start with the little things
 大多	for the most part|many|most|the greater part|mostly
 大多数	majority
 大夜班	graveyard shift|late night shift
@@ -24768,6 +24920,10 @@
 天下大乱	the whole country in rebellion
 天下大势	the overall state of affairs in the world|the prevailing trend across the nation or empire
 天下太平	the whole world at peace|peace and prosperity
+天下无不散之筵席	All good things must come to an end
+天下无难事只怕有心人	Nothing is impossible to a willing heart|persistence will overcome
+天下没有不散的宴席	All good things must come to an end
+天下没有免费的午餐	There's no such thing as a free lunch
 天下第一	first under heaven|number one in the country
 天不怕地不怕	fearing nothing in Heaven or Earth|fearless
 天主	God
@@ -24784,6 +24940,7 @@
 天价	extremely expensive|sky-high price
 天伦	family bonds|ethical family relations
 天伦之乐	family love and joy|domestic bliss
+天低吴楚眼空无物	nothing to see to the broad horizon
 天体	celestial body|nude body
 天体主义	nudism
 天体力学	celestial mechanics
@@ -24878,6 +25035,8 @@
 天明	dawn|daybreak
 天星码头	Star Ferry terminal, Hong Kong
 天晓得	Heaven knows!
+天有不测风云	Anything can happen|Life is unpredictable
+天有不测风云人有旦夕祸福	something unexpected may happen at any moment
 天朝	Taiping Heavenly Kingdom
 天机	mystery known only to heaven|inscrutable twist of fate|top secret
 天机不可泄漏	must not be revealed|I am not at liberty to inform you
@@ -24960,6 +25119,7 @@
 天经地义	right and proper|right and unalterable|a matter of course
 天网	Skynet
 天网恢恢	you can't run from the long arm of the law
+天网恢恢疏而不漏	you can't run from the long arm of the law
 天罗地网	inescapable net|trap|dragnet
 天翻地覆	sky and the earth turning upside down|complete confusion|everything turned on its head
 天职	vocation|duty|mission in life
@@ -24980,6 +25140,7 @@
 天蟹座	Cancer
 天行赤眼	acute contagious conjunctivitis
 天衣无缝	flawless
+天要下雨娘要嫁人	some things are inevitable
 天诛	heavenly punishment|king's punishment
 天谴	the wrath of Heaven|imperial displeasure
 天象仪	planetarium projector
@@ -25023,6 +25184,7 @@
 太仆	ministerial title in imperial China
 太保	a very high official in ancient China|juvenile delinquents
 太公	great-grandfather|father
+太公钓鱼愿者上钩	put one's head in the noose
 太初	the absolute beginning
 太医	imperial physician
 太半	more than half|a majority|most|mostly
@@ -25154,7 +25316,11 @@
 失业率	unemployment rate
 失业者	an unemployed person
 失主	owner of something lost or stolen
+失之东隅收之桑榆	lose at sunrise but gain at sunset|compensate later for one's earlier loss
 失之交臂	miss narrowly|let a great opportunity slip
+失之毫厘差之千里	a tiny lapse can lead to a huge mistake|a minor discrepancy leading to enormous losses
+失之毫厘差以千里	a tiny lapse can lead to a huge mistake|a minor discrepancy leading to enormous losses
+失之毫厘谬以千里	a tiny lapse can lead to a huge mistake|a minor discrepancy leading to enormous losses
 失事	have an accident|mess things up
 失仪	discourteous|failure of etiquette
 失传	die out|lost|extinct
@@ -25295,6 +25461,7 @@
 头巾	headscarf|kerchief|turban
 头座	headstock
 头彩	first prize in a lottery
+头悬梁锥刺股	study assiduously and tirelessly
 头戴式耳机	headphones
 头挡	first gear
 头文字	initial|first letter of word
@@ -25322,6 +25489,7 @@
 头疼	headache
 头痛	have a headache
 头痛医头	treat the symptoms|reactive
+头痛医头脚痛医脚	reactive
 头癣	favus of the scalp
 头皮	scalp
 头皮屑	dandruff
@@ -25957,6 +26125,7 @@
 好久	quite a while
 好久不见	long time no see
 好事	good action, deed, thing or work|charity|happy occasion|be meddlesome
+好事不出门恶事传千里	a good deed goes unnoticed, but scandal spreads fast
 好事之徒	busybody
 好事多磨	the road to happiness is strewn with setbacks
 好事者	busybody
@@ -25992,6 +26161,7 @@
 好好	well|carefully|nicely|properly
 好好儿	in good condition|perfectly good|carefully|well|thoroughly
 好好先生	Mr Goody-goody|yes-man
+好好学习天天向上	study hard and every day you will improve
 好学	eager to study|studious|erudite|easy to learn
 好客	hospitality|treat guests well|enjoy having guests|hospitable|friendly
 好容易	with great difficulty|have a hard time|so easy
@@ -26074,6 +26244,7 @@
 如临大敌	cautious|with great preoccupation|with strict precaution
 如临深渊	extremely cautious
 如云	like the clouds in the sky
+如人饮水冷暖自知	self-awareness comes from within|know best by personal experience
 如今	nowadays|now
 如何	how|what way|what
 如假包换	replacement guaranteed if not genuine|authentic
@@ -26383,8 +26554,9 @@
 姚	handsome|good-looking
 姚文元	Yao Wenyuan, one of the Gang of Four
 姜	ginger
+姜太公钓鱼愿者上钩	put one's head in the noose
 姜汁	ginger ale
-姜还是老的辣	ginger gets spicier as it gets older|the older, the wiser
+姜还是老的辣	Experience counts|the older, the wiser|ginger gets spicier as it gets older
 姜饼	gingerbread
 姜黄	turmeric
 姜黄色	ginger
@@ -26726,6 +26898,7 @@
 嫁祸于人	pass the misfortune on to someone else|blame others|pass the buck
 嫁资	dowry
 嫁鸡随鸡	If you marry a chicken, follow the chicken|A woman should follow whatever her husband orders|We must learn to accept the people around us
+嫁鸡随鸡嫁狗随狗	if you marry a chicken follow the chicken, if you marry a dog follow the dog
 嫂	sister-in-law
 嫂嫂	older brother's wife|sister-in-law|sister
 嫂子	older brother's wife|sister-in-law
@@ -27198,6 +27371,7 @@
 学级	class
 学者	scholar
 学而不厌	study tirelessly
+学而不厌诲人不倦	study tirelessly, teach with endless enthusiasm
 学而优则仕	one who is successful in one's studies, can become an official
 学舍	school building|school
 学艺	learn a skill or art
@@ -27257,10 +27431,13 @@
 孽缘	ill-fated relationship
 孽障	evil creature
 宁	would rather|prefer|how|Taiwan pr
+宁为玉碎不为瓦全	Better broken jade than intact tile|Death is preferable to dishonor
+宁做鸡头不做凤尾	prefer to be a big fish in a small pond rather than a small fish in a big pond
 宁可	preferably|one would prefer to|would rather|be better to|the lesser of two evils
 宁宗	Emperor Ningzong of Southern Song
 宁左勿右	prefer left rather than right
 宁愿	would rather
+宁拆十座庙不毁一桩婚	rather destroy ten temples than a single marriage
 宁死不屈	rather die than submit
 宁缺毋滥	better to have nothing
 宁肯	would rather|it would be better|would prefer
@@ -27333,6 +27510,7 @@
 守望	keep watch
 守望相助	keep watch and defend one another|mutual help and protection|join forces to defend against external aggressors
 守株待兔	wait idly for opportunities|trust to chance rather than show initiative
+守株待兔缘木求鱼	without any practical course of action
 守正不阿	be strictly just and impartial
 守法	abide by the law
 守活寡	stay at home while one's husband is away|grass widow
@@ -28233,6 +28411,7 @@
 家禽	poultry|domestic fowl
 家私	family property|family wealth
 家童	servant
+家累千金坐不垂堂	a rich man does not expose himself to danger
 家给人足	comfortably off
 家臣	counselor of king or feudal warlord|henchman
 家蚕	the common silkworm
@@ -29413,6 +29592,8 @@
 小铲子	trowel
 小镇	small town|village
 小除夕	the day before New Year's Eve
+小隐隐于林大隐隐于市	the true recluse chooses the city
+小隐隐于野大隐隐于市	the true recluse chooses the city
 小雁塔	Small Wild Goose Pagoda in Xi'an
 小集团	faction|clique
 小雨	light rain|drizzle
@@ -29645,6 +29826,7 @@
 尺子	ruler
 尺寸	size|dimensions|measurements|propriety
 尺度	scale|yardstick
+尺有所短寸有所长	everyone has their strong and weak points|everything has its advantages and disadvantages
 尺牍	letter|written message
 尺码	size|fitting
 尺素	letter|written message
@@ -29696,6 +29878,7 @@
 尼龙搭扣	nylon buckle|velcro
 尽	use up|exhaust|end|finish|the utmost|exhausted
 尽义务	fulfill one's duty|work without asking for reward
+尽人事听天命	do one's best and leave the rest to fate
 尽人皆知	known by everyone|well known|a household name
 尽先	in the first instance|as a first priority
 尽兴	enjoy oneself to the full|one's heart's content
@@ -30055,6 +30238,7 @@
 山东半岛	Shandong Peninsula
 山东大学	Shandong University
 山中圣训	the Sermon on the Mount
+山中无老虎猴子称大王	in the country of the blind the one-eyed man is king
 山丹	coral lily
 山乡	mountain area
 山体	form of a mountain
@@ -30076,6 +30260,7 @@
 山埃	cyanide
 山墙	gable
 山壑	gullies|valleys
+山外有山天外有天	however good something is, there is always something better
 山头	mountain top
 山奈	cyanide
 山奈钾	potassium cyanide KCN
@@ -30655,6 +30840,7 @@
 左箭头	left-pointing arrow
 左箭头键	left arrow key
 左翼	left-wing
+左耳入右耳出	in one ear and out the other
 左膀右臂	trusted assistant|key aide
 左至右	left-to-right
 左舵	left rudder
@@ -30751,6 +30937,8 @@
 差不多	almost|nearly|more or less|about the same|good enough|not bad
 差不多的	the great majority
 差不离	not much different|similar|ordinary|nearly
+差之毫厘失之千里	a miss is as good as a mile|the slightest difference leads to a huge loss
+差之毫厘谬以千里	a miss is as good as a mile|the slightest difference leads to a huge error
 差事	errand|assignment|job|commission|poor|not up to standard
 差价	difference in price
 差使	send|assign|appoint|servants of an official|official messenger|official post
@@ -30789,6 +30977,7 @@
 巯	hydrosulfuryl
 己	self|oneself|sixth in order|hexa
 己型肝炎	hepatitis F
+己所不欲勿施于人	Do as you would be done by
 己方	our side|one's own
 己见	one's own viewpoint
 已	already|stop|then|afterwards
@@ -31316,6 +31505,7 @@
 常务	routine|everyday business|daily operation
 常务委员会	standing committee
 常务理事	permanent member of council
+常在河边走哪有不湿鞋	it comes with the territory
 常委	standing committee|member of the standing committee
 常委会	standing committee
 常客	frequent visitor|something that crops up frequently
@@ -31433,6 +31623,7 @@
 干戈	weapons of war|arms
 干才	ability|capable
 干打垒	rammed earth|adobe house
+干打雷不下雨	all thunder but no rain|a lot of noise but no action
 干扰	disturb|interfere|perturbation|interference
 干扰素	interferon
 干掉	get rid of
@@ -31599,6 +31790,7 @@
 平滑肌	smooth muscle|non-striated muscle
 平版	lithographic plate
 平生	all one's life
+平生不做亏心事半夜敲门心不惊	Rest with a clear conscience
 平畴	level farmland|well-cultivated land
 平白	for no reason|gratuitously
 平白无故	for no reason whatever|inexplicably
@@ -31827,6 +32019,7 @@
 幼儿园	kindergarten|nursery school
 幼兽	cub
 幼发拉底河	Euphrates River
+幼吾幼以及人之幼	care for other's children as one's own
 幼女	young girl
 幼妹	younger sister
 幼小	young|immature
@@ -32980,6 +33173,7 @@
 张	open up|spread|sheet of paper|classifier for flat objects, sheet|classifier for votes
 张三	wolf
 张三李四	any Tom, Dick or Harry
+张三李四王五赵六	Tom, Dick and Harry
 张丹	Zhang Dan, Chinese figure skater
 张伯伦	Chamberlain|Wilt Chamberlain, US basketball player
 张冠李戴	attribute something to the wrong person|confuse one thing with another
@@ -32987,6 +33181,7 @@
 张口	open one's mouth|gape|start talking
 张口结舌	agape and tongue-tied|at a loss for words|gaping and speechless
 张嘴	open one's mouth|gape
+张家长李家短	gossip about the neighbors
 张岱	Zhang Dai, late Ming scholar
 张开	open up|spread|extend
 张弛	tension and relaxation
@@ -33360,6 +33555,7 @@
 当家	manage the household|be the one in charge of the family|call the shots|be in charge
 当家作主	be in charge in one's own house|be the master of one's own affairs
 当局	authorities
+当局者迷旁观者清	an outsider can see things more clearly or objectively than those involved
 当年	in those days|back then|in those years|be in the prime of life|that very same year
 当归	Angelica sinensis
 当当	ding dong|Dangdang|pawn
@@ -33395,6 +33591,7 @@
 当量剂量	equivalent dose
 当铺	pawnshop
 当面	someone's face|in someone's presence
+当面锣对面鼓	come together to thrash out the issue face to face
 当驾	imperial driver
 录	diary|record|hit|copy|carve wood
 录供	take down a confession|Taiwan pr
@@ -34098,7 +34295,7 @@
 心态	attitude|state of one's psyche|way of thinking|mentality
 心思	mind|thoughts|inclination|mood
 心急	anxious|impatient
-心急吃不了热豆腐	hasty men don't get to eat hot tofu|one just has to be patient|haste will ruin everything
+心急吃不了热豆腐	Good things come to those who wait|Haste makes waste|hasty men don't get to eat hot tofu|one just has to be patient|haste will ruin everything
 心急火燎	burn with anxiety
 心怦怦跳	The heart thumps wildly
 心性	one's nature|temperament
@@ -34124,6 +34321,7 @@
 心无旁骛	completely focused|free of distractions
 心旷神怡	carefree and relaxed
 心智	wisdom
+心有余力不足	The will is there, but not the strength
 心有余悸	have lingering fears|trepidation remaining after a trauma
 心有余而力不足	the will is there, but not the strength|the spirit is willing but the flesh is weak
 心有灵犀一点通	two hearts beat as one
@@ -35397,7 +35595,7 @@
 患者	patient|sufferer
 患难	trials and tribulations
 患难之交	a friend in times of tribulations|a friend in need is a friend indeed
-患难见真情	true sentiments are seen in hard times
+患难见真情	A friend in need is a friend indeed|true sentiments are seen in hard times
 悦	pleased
 悦纳	find acceptable
 悦耳	sweet-sounding|beautiful
@@ -36319,9 +36517,11 @@
 成丁	come of age|an adult male
 成串	be lined up|form a cluster|come one after the other
 成为	become|turn into
+成也萧何败也萧何	a situation where one's success and failure are both due to the same factor
 成书	finish|appear in book form|a book already in circulation
 成了	be done|be ready|that's enough!|that will do!
 成事	accomplish the objective|succeed
+成事不足败事有余	unable to do anything right|never make, but always mar
 成交	complete a contract|reach a deal
 成交价	sale price|negotiated price|price reached at auction
 成亲	get married
@@ -36340,6 +36540,7 @@
 成全	help someone accomplish his aim|help someone succeed|complete|make whole|round off
 成军	set up|found|opening|commission|graduate from an apprenticeship|form an army
 成分	composition|ingredient|element|component|one's social status
+成则为王败则为寇	losers are always in the wrong
 成功	succeed|success|successful|fruitful
 成功感	sense of accomplishment
 成千	thousands
@@ -36538,6 +36739,8 @@
 战斧	battle-ax
 战旗	a war flag|an army banner
 战无不胜	all-conquering|invincible
+战无不胜攻无不克	all-conquering|ever victorious|nothing they can't do|triumph in every battle and win every fight
+战无不胜攻无不取	all-conquering|ever victorious|nothing they can't do|triumph in every battle and win every fight
 战时	wartime
 战术	tactics
 战术导弹	tactical missile
@@ -37019,6 +37222,7 @@
 扒钉	cramp
 扒高踩低	crawl high, step low|toadying and bullying
 打	hit|strike|fight|from|since|dozen
+打一巴掌给个甜枣	deal harshly with someone, then offer something by way of consolation
 打下	lay|conquer|shoot down
 打下手	act in a supporting role|play second fiddle
 打不过	be unable to defeat|be no match for
@@ -37149,6 +37353,7 @@
 打拼	work hard|try to make a living
 打捞	salvage|dredge|fish out
 打掉	tear down|destroy|dismantle|abort
+打掉门牙往肚子里咽	endure bullying or insults stoically
 打探	make discreet inquiries|scout out
 打搅	disturb|trouble|bother
 打擂台	enter a contest
@@ -38502,6 +38707,7 @@
 拉伸	draw|stretch
 拉伸强度	tensile strength
 拉倒	forget it|drop it|let it go|pull down
+拉倒吧	forget it|give me a break
 拉克替醇	lactitol, a sugar alcohol
 拉入	pull into|draw in
 拉关系	suck up to someone
@@ -41108,7 +41314,7 @@
 摸索	feel about|grope about|fumble|do things slowly
 摸脉	feel someone's pulse
 摸象	touch an elephant
-摸鱼	catch fish|loaf on the job|be slack|take it easy
+摸鱼	slack off|loaf on the job|catch fish|be slack|take it easy
 摸黑	grope about in the dark
 摹	copy
 摹写	trace over|copy|facsimile|depict|portray
@@ -41137,6 +41343,7 @@
 撑持	sustain|shore up
 撑杆	a pole|a prop
 撑死	full to the point of bursting|at most
+撑死胆大的饿死胆小的	fullness for the bold, famine for the timid
 撑破	burst
 撑竿跳	pole-vaulting
 撑竿跳高	pole vault
@@ -41727,6 +41934,7 @@
 攻城略地	take cities and seize territories
 攻心	mount a psychological attack|try to demoralize|try to win over|try to persuade
 攻打	attack
+攻无不克战无不胜	all-conquering|ever victorious|nothing they can't do|triumph in every battle and win every fight
 攻灭	conquer|defeat
 攻略	storm and capture|strategy|directions|guide|how-to
 攻破	make a breakthrough|break through|breach
@@ -41737,6 +41945,7 @@
 放	put|place|release|free|let go|let out
 放下	lay down|put down|let go of|relinquish|set aside|lower
 放下包袱	lay down a heavy burden
+放下屠刀立地成佛	instant rehabilitation|repent and be absolved of one's crimes
 放不下	have no room to put something|be unable to let go
 放不下心	cannot stop worrying
 放之四海而皆准	applicable anywhere
@@ -43388,6 +43597,7 @@
 无义	without meaning|nonsense|immoral|faithless
 无争议	uncontroversial|accepted
 无事不登三宝殿	visit someone with an ulterior motive
+无事献殷勤非奸即盗	one who is unaccountably solicitous is hiding evil intentions
 无事生非	make trouble out of nothing
 无产者	proletariat|non-propertied person
 无产阶级	proletariat
@@ -43753,6 +43963,7 @@
 既成事实	fait accompli
 既是	is both|since|as|being the case that
 既有	existing
+既来之则安之	Since this is so, we should accept it
 既然	since|as|this being the case
 既而	soon after|later|then
 既视感	déjà vu
@@ -43761,6 +43972,7 @@
 日久	with the passage of time|over time
 日久岁深	for a long period of time|for a number of years
 日久生情	familiarity breeds fondness
+日久见人心	Time reveals a person's true character
 日产	Nissan, Japanese car make
 日人	Japanese person|the Japanese
 日俄战争	the war of 1904-1905 between Russia and Japan
@@ -43779,6 +43991,7 @@
 日冕层	the sun's corona
 日军	Japanese army|Japanese troops
 日出	sunrise
+日出而作日入而息	lead a plain and hardworking life
 日刊	daily
 日前	the other day|a few days ago
 日化	household chemicals and toiletries|rhotacize|rhotic
@@ -43942,6 +44155,7 @@
 旧疾	old illness|former affliction
 旧病	old illness|former affliction
 旧病复发	old illness recurs|a relapse|repeat an old error|the same old problem
+旧的不去新的不来	You can't make progress by clinging to old notions
 旧皇历	old calendar|out-of-date customs
 旧知	old acquaintance|former friend
 旧石器时代	Paleolithic Era
@@ -44025,6 +44239,7 @@
 早衰	age prematurely|premature senescence
 早课	matins|morning service|morning chorus
 早起	get up early
+早起的鸟儿有虫吃	The early bird catches the worm
 早车	morning bus|early train
 早退	leave early|retire early
 早逝	early demise|untimely death
@@ -44145,6 +44360,7 @@
 时长	duration
 时间	time
 时间区间	time interval
+时间就是金钱	Time is money
 时间序列	time series
 时间戳	timestamp
 时间简史	"A Brief History of Time" by Stephen Hawking
@@ -44230,6 +44446,7 @@
 明令	decree
 明体	Mincho|Song font
 明信片	postcard
+明修栈道暗渡陈仓	feign one thing while doing another|cheat under cover of a diversion
 明儿	tomorrow|one of these days|some day
 明儿个	tomorrow
 明净	bright and clean|luminous
@@ -44282,6 +44499,7 @@
 明末	late Ming|first half of the 17th century
 明末清初	late Ming and early Qing|around the middle of the 17th century
 明杖	white cane
+明枪易躲暗箭难防	it is hard to guard against secret conspiracies
 明查暗访	open enquiries and secret search|investigate openly and in secret|taking information from all sides
 明沟	open drainage channel|ditch
 明治维新	Meiji Restoration
@@ -44299,6 +44517,7 @@
 明眸皓齿	have bright eyes and white teeth
 明眼人	perspicacious person|someone with a discerning eye|sighted person
 明知	be fully aware of|know perfectly well
+明知山有虎偏向虎山行	take a risk despite knowing the dangers
 明知故犯	deliberate violation|intentional crime
 明知故问	ask a question, already knowing the answer
 明矾	alum
@@ -44405,6 +44624,7 @@
 星斗	stars
 星星	a star|the stars in the sky
 星星之火	a single spark|an insignificant cause can have a massive effect
+星星之火可以燎原	a single spark can start a huge blaze|an insignificant cause can have a massive effect
 星曜	heavenly bodies
 星月	the moon and the stars
 星期	week|day of the week|Sunday
@@ -44491,6 +44711,7 @@
 春游	spring outing|spring excursion
 春灌	spring irrigation
 春灯谜	Spring lantern riddles
+春生夏长秋收冬藏	sow in spring, develop in summer, harvest in autumn, store in winter
 春画	erotic print|pornographic picture
 春秋	spring and autumn|four seasons|year|a person's age|annals|Spring and Autumn Period
 春秋大梦	grand dreams|unrealistic ideas
@@ -44540,9 +44761,11 @@
 是	be|correct|right|true|very well
 是不是	is or isn't|yes or no|whether or not
 是以	therefore|thus|so
+是可忍孰不可忍	if this can be tolerated, what cannot?|enough is enough
 是否	whether|if|is or isn't
 是故	therefore|so|consequently
 是的	yes, that's right
+是金子总会发光的	True talent always shines through
 是非	right and wrong|quarrel
 是非不分	unable to distinguish right and wrong
 是非之地	trouble spot|sketchy area
@@ -44550,6 +44773,7 @@
 是非曲直	merits and demerits|pros and cons
 是非自有公论	determine right and wrong based on public opinion|Public opinion will judge what's right and wrong
 是非莫辨	unable to distinguish right and wrong
+是骡子是马牵出来遛遛	show what one is made of|the proof of the pudding is in the eating
 昱	bright light
 昳	the declining sun in the west
 昴	the Pleiades
@@ -44873,6 +45097,7 @@
 智慧齿	wisdom tooth
 智珠在握	be endowed with extraordinary intelligence
 智者	sage|wise man|clever and knowledgeable person
+智者千虑必有一失	nobody is infallible
 智育	intellectual development
 智能	intelligent|able|smart
 智能卡	smart card
@@ -45233,6 +45458,7 @@
 曾祖父母	great-grandparents
 曾经	once|already|former|previously|ever
 曾经沧海	widely experienced in the vicissitudes of life
+曾经沧海难为水除却巫山不是云	one who has seen the world doesn't stop at small things
 替	substitute for|take the place of|replace|for|on behalf of|stand in for
 替代	substitute for|replace|supersede
 替代品	substitute|alternative
@@ -45403,6 +45629,7 @@
 有一点儿	a bit|a little
 有一腿	have an affair
 有一说一	speak plainly|speak one's mind|say directly
+有一说一有二说二	call something as it is
 有丝分裂	mitosis
 有两下子	have real skill|know one's stuff
 有为	promising|show promise
@@ -45425,11 +45652,13 @@
 有何贵干	What brings you here?|May I help you?|What can I do for you?
 有余	have an abundance
 有作用	effective|have impact
+有借有还再借不难	return what you borrowed on time, you may borrow again next time
 有偿	paying|paid
 有关	have something to do with|relate to|related to|concern|concerning
 有关各方	all parties involved
 有关联	related to|concerning|be correlated
 有兴趣	interested|interesting
+有其师必有其徒	As the teacher, so the pupil
 有其父必有其子	like father, like son
 有决心	determined
 有创造力	ingenious|creative
@@ -45487,6 +45716,7 @@
 有子存焉	I still have sons, don't I?
 有孔虫	foraminifera
 有学问	learned|erudite|scholarly|require expertise
+有完没完	are you done yet?|enough already
 有害	destructive|harmful|damaging
 有害无利	harmful and without benefit|more harm than good
 有害无益	harmful and without benefit|more harm than good
@@ -45527,6 +45757,7 @@
 有意义	make sense|have meaning|have significance|meaningful|significant|worthwhile
 有意思	interesting|meaningful|enjoyable|fun
 有意无意	intentionally or otherwise
+有意栽花花不发无心插柳柳成阴	things do not always turn out as one would expect
 有意识	conscious
 有感而发	speak from the heart
 有戏	promising|likely to turn out well
@@ -45639,6 +45870,8 @@
 有神论	theism
 有神论者	theist
 有福	be blessed
+有福同享有祸同当	for better or for worse|To enjoy blessings and endure misfortune together
+有福同享有难同当	for better or for worse|To enjoy blessings and endure misfortune together
 有种	have guts|have courage|be brave
 有穷	exhaustible|limited|finite
 有空	have time
@@ -46219,6 +46452,8 @@
 朵颐	munch
 机	mechanism|pivot|flexible
 机不可失	No time to lose!
+机不可失失不再来	opportunity knocks but once
+机不可失时不再来	Opportunity knocks but once
 机件	component
 机会	opportunity|chance|occasion
 机会主义	opportunism|pragmatism
@@ -46628,6 +46863,7 @@
 杠头	argumentative person
 杠子	thick bar|solid carrying pole
 杠杆	lever|pry bar|crowbar|financial leverage
+杠精	contrarian|someone who argues for the sake of it
 杠铃	barbell
 杠龟	meet with failure
 条	strip|item|article|clause|classifier for long thin things
@@ -46690,6 +46926,7 @@
 来得及	have enough time|can do it in time|can still make it
 来意	one's purpose in coming
 来文	received document|sent document
+来无影去无踪	come and go without a trace
 来日	future days|the next day
 来日方长	the future is long|there will be ample time for that later|We'll cross that bridge when we get there
 来港	come to Hong Kong
@@ -46706,6 +46943,7 @@
 来硬的	get tough|use force
 来福枪	rifle
 来福线	rifling
+来者不善善者不来	Be careful not to trust foreigners|Beware of Greeks bearing gifts!
 来者不拒	refuse nobody|all comers welcome
 来而不往非礼也	not to reciprocate is against etiquette|respond in kind
 来自	come from|From:
@@ -47007,6 +47245,7 @@
 林壑	woods and ravines|tranquillity of trees and valleys
 林奈	Carl Linnaeus|Carl Linné
 林子	woods|grove|forest
+林子大了什么鸟都有	it takes all sorts
 林学	forestry
 林德布拉德	Lindeblatt
 林忆莲	Sandy Lam, Hong Kong pop singer
@@ -47122,7 +47361,7 @@
 枪弹	bullet
 枪战	gun battle|firefight
 枪手	gunman|sharpshooter|someone who takes an exam for someone else
-枪打出头鸟	nonconformity gets punished|the shot hits the bird that pokes its head out
+枪打出头鸟	The nail that sticks out gets hammered down|nonconformity gets punished|the shot hits the bird that pokes its head out
 枪托	butt of a gun|stock
 枪把儿	butt of a gun
 枪支	a gun|guns in general
@@ -47318,6 +47557,7 @@
 柠檬水	lemonade
 柠檬汁	lemon juice
 柠檬片	slice of lemon
+柠檬精	jealous person
 柠檬茶	lemon tea
 柠檬草	lemongrass
 柠檬酸	citric acid
@@ -47581,6 +47821,7 @@
 树屋	tree house
 树干	tree trunk
 树懒	sloth
+树挪死人挪活	human beings, unlike trees, thrive on change
 树敌	antagonize people|make an enemy of someone
 树木	tree
 树林	woods|grove|forest
@@ -47611,6 +47852,7 @@
 树袋熊	koala
 树身	tree trunk
 树阴	shade
+树高千丈叶落归根	everything has its ancestral home|in old age, an expatriate returns home
 树龄	age of a tree
 栒	cross bar
 栓	bottle stopper|plug|bolt|pin
@@ -47701,6 +47943,7 @@
 样板	template|prototype|model|example
 样板戏	model theater
 样样	all kinds
+样样通样样松	jack of all trades, master of none
 样貌	appearance|manifestation
 核	pit|stone|nucleus|nuclear|examine|check
 核不扩散	nuclear nonproliferation
@@ -49077,6 +49320,7 @@
 欬	cough
 欲	wish for|desire|appetite|passion|lust|greed
 欲仙欲死	experience sheer ecstasy
+欲加之罪何患无辞	Give a dog a bad name, then hang him
 欲取姑与	make concessions for the sake of future gains
 欲壑难填	insatiably greedy
 欲念	desire
@@ -49371,6 +49615,7 @@
 正骨	bonesetting|Chinese osteopathy
 正骨八法	the eight methods of bonesetting|Chinese osteopathy
 此	this|these
+此一时彼一时	that was then, this is now|times have changed
 此事	this matter
 此刻	this moment|now|at present
 此前	before this|before then|previously
@@ -49400,6 +49645,7 @@
 步兵	infantry|foot|infantryman|foot soldier
 步哨	sentry|sentinel
 步子	step|pace
+步子太大容易扯着蛋	take things one step at a time
 步履	gait|walk
 步履紊乱	be in complete disorder
 步履维艰	have difficulty walking|walk with difficulty
@@ -49513,6 +49759,7 @@
 死不要脸	know no shame|be totally shameless
 死中求生	seek life in death|fight for one's life
 死乞白赖	pester someone again and again
+死了张屠夫不吃混毛猪	nobody is indispensable
 死于非命	violent death|die in a disaster|an unnatural death
 死亡	die|death
 死亡人数	number of people killed|death toll
@@ -49903,6 +50150,7 @@
 毓	produce|foster|nurture
 比	compare|ratio|gesture|Belgium
 比一比	make a comparison|engage in a contest
+比上不足比下有余	neither the best nor the worst|not too bad|better than some
 比下去	defeat|be superior to
 比不上	can't compare with
 比不了	cannot compare to|be no match for
@@ -50674,6 +50922,7 @@
 水肿	suffer from edema
 水能	hydroelectric power
 水能源	hydroelectric power
+水能载舟亦能覆舟	things can be double-edged|the people can support a regime or overturn it
 水花	spray of water|splash|chickenpox
 水草	aquatic plants|water and grass|drinking straw
 水菖蒲	Acorus calamus|sweet sedge or sweet flag
@@ -50938,6 +51187,7 @@
 江南水乡	patchwork of waterways, esp. in Jiangsu
 江原道	Kangwon province of North Korea
 江山	rivers and mountains|landscape|country|state power
+江山易改本性难移	A leopard can't change its spots|you can't change who you are|Can the leopard change his spots?
 江心	middle of a river
 江户	Edo
 江水	river water
@@ -51311,6 +51561,8 @@
 没有意义	not to have any meaning|meaningless
 没有意思	boring|of no interest
 没有法	at a loss|unable to do anything about it|have no choice
+没有规矩不成方圆	without rules, nothing can be done|one must follow some rules
+没有规矩何以成方圆	without rules, how can anything be done|one must follow some rules
 没来由	without any reason|for no reason
 没水平	disgraceful|poor quality|substandard
 没治	hopeless|helpless|incurable|fantastic|out of this world
@@ -51956,6 +52208,7 @@
 泥腿	peasant|yokel
 泥腿子	peasant|yokel
 泥菩萨	clay Bodhisattva
+泥菩萨过江自身难保	unable to save oneself, let alone others
 泥质	muddy
 泥质岩	mudstone
 泥质页岩	mudstone
@@ -52384,6 +52637,7 @@
 活像	look exactly like|be the spitting image of
 活儿	work|things to do
 活分	nimble
+活到老学到老	One is never too old to learn
 活力	energy|vitality|vigor|vital force
 活力四射	dynamic|enthusiastic|energetic
 活动	exercise|move about|work out|shaky|unsteady|loose
@@ -52565,6 +52819,7 @@
 流氓集团	gang of hoodlums
 流水	running water|turnover
 流水不腐	flowing water does not rot
+流水不腐户枢不蠹	constant activity prevents decay
 流水线	assembly line|pipeline
 流水账	day-to-day account|current account
 流汗	sweat
@@ -52937,6 +53192,7 @@
 海关部门	customs section
 海内	the whole world|throughout the land|everything under the sun
 海内外	domestic and international|at home and abroad
+海内存知己天涯若比邻	close in spirit although far away
 海军	navy
 海军上校	captain
 海军中校	commander
@@ -54422,7 +54678,7 @@
 滕王阁	Tengwang Tower in Nanchang, Jiangxi
 滗	pour off|decant|strain off
 滘	place name in Guangdong
-滚	boil|roll|take a hike|Get lost!
+滚	get lost|roll|boil|take a hike
 滚刀	gear hob
 滚刀肉	annoying person|troublemaker|pain in the neck
 滚动	roll|in a loop|scroll|progressively expand|rumble
@@ -54431,7 +54687,7 @@
 滚奏	drum roll
 滚子	roller
 滚子轴承	roller bearing
-滚开	boil|boiling hot|get out!|go away!|fuck off!
+滚开	get lost|go away|get out|boil|boiling hot|fuck off!
 滚彩蛋	egg rolling
 滚水	boiling water
 滚沸	boil
@@ -54510,6 +54766,7 @@
 满意度	degree of satisfaction
 满手	handful
 满打满算	taking everything into account|when all is said and done
+满招损谦受益	pride comes before a fall|complacency leads to loss, modesty brings profit
 满拧	totally inconsistent|completely at odds
 满文	Manchurian written language
 满族	Manchu ethnic group of Liaoning province
@@ -56306,7 +56563,7 @@
 熟稔	be very familiar with|well acquainted with|fully conversant with
 熟练	practiced|proficient|skilled|skillful
 熟络	familiar|close
-熟能生巧	with familiarity you learn the trick|practice makes perfect
+熟能生巧	Practice makes perfect|with familiarity you learn the trick
 熟荒	abandoned land
 熟菜	cooked food
 熟虑	careful thought
@@ -56574,6 +56831,7 @@
 爱称	term of endearment|pet name|diminutive
 爱立信	Ericsson
 爱美	pay attention to one's appearance|like to be well-groomed|on very friendly terms
+爱美之心人皆有之	everyone loves beauty
 爱耳日	Ear Care Day
 爱莉丝	Iris
 爱莫能助	My hands are tied|unable to help however much one would like to
@@ -56601,6 +56859,7 @@
 父执辈	person of one's father's generation
 父权制	patriarchy
 父母	father and mother|parents
+父母之命媒妁之言	parents' orders and matchmaker's services
 父母亲	parents
 父母双亡	have lost both one's parents
 父爱	paternal love
@@ -56818,6 +57077,7 @@
 牛角椒	Cayenne pepper|red pepper|chili
 牛角面包	croissant
 牛轧糖	nougat
+牛逼	awesome|badass
 牛郎	Altair|cowherd boy|male prostitute
 牛郎织女	Cowherd and Weaving maid|separated lovers|Altair and Vega
 牛鞭	pizzle|bull's penis
@@ -56900,6 +57160,7 @@
 物产	products|produce|natural resources
 物以稀为贵	the rarer something is, the greater its value
 物以类聚	similar things come together|like draws like|Birds of a feather flock together
+物以类聚人以群分	Birds of a feather flock together
 物件	object
 物价	prices
 物价指数	price index
@@ -57309,6 +57570,7 @@
 狗刨	dog paddle
 狗吃屎	fall flat on one's face
 狗吠	bark
+狗咬吕洞宾不识好人心	a dog biting Lü Dongbin|ill reward a person's kindness
 狗咬狗	dog-eat-dog|dogfight
 狗头军师	inept advisor|a good-for-nothing adviser|one who offers bad advice
 狗子	dog
@@ -57846,6 +58108,7 @@
 王士禛	Wang Shizhen, early Qing poet
 王太后	Queen Dowager|widowed queen|Queen mother
 王妃	princess
+王婆卖瓜自卖自夸	every potter praises his own pot|all one's geese are swans
 王子	prince|son of a king
 王孙	children of the nobility
 王室	royal family|royal household
@@ -58531,6 +58794,7 @@
 瓜果	fruit|melons and fruit
 瓜熟蒂落	when the melon is ripe, it falls
 瓜田	melon field
+瓜田不纳履李下不整冠	innocent acts may be misconstrued|don't do anything that might arouse suspicion
 瓜脐	the umbilicus of a melon
 瓜菜	fruit and vegetables
 瓜葛	connection|association|involvement
@@ -58722,6 +58986,7 @@
 生不逢时	born at the wrong time|unlucky|born under an unlucky star|ahead of his time
 生丝	raw silk
 生事	make trouble
+生于忧患死于安乐	thrive in calamity and perish in soft living
 生产	produce|manufacture|give birth to a child
 生产企业	manufacturer
 生产关系	relations between levels of production|socio-economic relations
@@ -58762,6 +59027,7 @@
 生吃	eat raw
 生吞活剥	swallow whole|apply uncritically
 生命	life|living being|creature
+生命不息战斗不止	while there is life, the fight continues|fight to the last
 生命体征	vital signs
 生命力	vitality
 生命周期	life cycle
@@ -59086,6 +59352,7 @@
 由	follow|from|because of|due to|by|via
 由不得	cannot help|be beyond control of
 由于	due to|as a result of|thanks to|owing to|since|because
+由俭入奢易由奢入俭难	the reverse is not so easy|it is easy to go from frugality to extravagance
 由头	pretext|excuse|justification|reason
 由径	follow a narrow path
 由来	origin
@@ -59096,6 +59363,7 @@
 由表及里	proceed from the outside to the inside
 由衷	heartfelt|sincere|unfeigned
 甲	first|armor plating|shell or carapace
+甲之蜜糖乙之砒霜	one man's meat is another man's poison
 甲二醇	methylene glycol
 甲亢	hyperthyroidism
 甲午战争	First Sino-Japanese War
@@ -59442,7 +59710,9 @@
 电鳗	electric eel
 男丁	adult male
 男中音	baritone
+男主外女主内	men go out to work and women stay at home
 男人	a man|a male|men
+男人不坏女人不爱	women love bad guys
 男人婆	tomboy
 男人膝下有黄金	a man who does not easily kneel in front of others
 男低音	bass voice
@@ -59525,6 +59795,7 @@
 画地自限	impose restrictions on oneself
 画坛	painting world|painting circles
 画外音	voice-over|background narration
+画大饼	make empty promises
 画室	artist's studio|atelier
 画家	painter
 画展	art exhibition
@@ -59634,6 +59905,7 @@
 留底	keep a copy|copy kept for archiving|put aside a portion
 留影	take a photo as a souvenir|a souvenir photo
 留待	leave something for later|postpone
+留得青山在不怕没柴烧	While there's life, there's hope
 留心	be careful|pay attention to
 留念	keep as a souvenir|recall fondly
 留恋	reluctant to leave|hate to have to go|recall fondly
@@ -59920,6 +60192,7 @@
 疾风	strong wind|gale
 疾风劲草	strength of character is revealed in a crisis
 疾风知劲草	strength of character is revealed in a crisis
+疾风知劲草烈火见真金	strength of character is revealed in a crisis
 疾首	extremely angry|infuriated|enraged|headache caused by anger
 疾驰	speed along
 疾驰而过	sweep past|hurtle past|swoosh past
@@ -59973,6 +60246,7 @@
 病房	ward|sickroom
 病故	die of an illness
 病机	interpretation of the cause|onset and process of an illness|pathogenesis
+病来如山倒病去如抽丝	expect to convalesce slowly
 病株	diseased or infected plant
 病根	an incompletely cured illness|an old complaint|the root cause of trouble
 病案	medical record
@@ -60350,11 +60624,12 @@
 白头鹎	light-vented bulbul
 白头鹰	bald eagle
 白奴	white slave|white-collar slave
-白嫖	visit a prostitute without paying|consume a service without paying
+白嫖	freeload|get something for free|visit a prostitute without paying|consume a service without paying
 白嫩	fair|delicate
 白子	white Go chess piece|bee pupa|albino
 白宫	White House
 白宫群英	The West Wing
+白富美	fair-skinned, rich and beautiful woman
 白居易	Bai Juyi, Tang dynasty poet
 白屈菜	greater celandine
 白山宗	Sufi sect of Islam in central Asia
@@ -60652,6 +60927,7 @@
 百般巴结	assiduous fawning|flatter someone in a hundred different ways
 百花园	Garden of Many Flowers
 百花齐放	a hundred flowers bloom|let the arts have free expression
+百花齐放百家争鸣	a hundred flowers bloom, a hundred schools of thought contend
 百草	all kinds of grass|all kinds of flora
 百草枯	paraquat
 百褶裙	pleated skirt
@@ -61618,6 +61894,7 @@
 看管	look after
 看花眼	be dazzled|not believe one's own eyes
 看菜吃饭	act according to actual circumstances
+看菜吃饭量体裁衣	act according to actual circumstances
 看见	see|catch sight of
 看诊	see a patient|give a consultation|see a doctor
 看走眼	make an error of judgment|be taken in
@@ -61770,10 +62047,12 @@
 眼	eye|a look|a glance|small hole|classifier for wells, cave-dwellings etc
 眼下	now|at present|subocular
 眼不见为净	what remains unseen is deemed to be clean
+眼不见心不烦	what the eye doesn't see, the heart doesn't grieve over
 眼不转睛	with fixed attention
 眼中	in eyes
 眼中刺	a thorn in one's eye|a thorn in one's flesh
 眼中钉	a thorn in one's side
+眼中钉肉中刺	a thorn in one's side
 眼光	gaze|insight|foresight|vision|way of looking at things
 眼光短	short-sighted
 眼冒金星	see stars|dazed
@@ -61861,6 +62140,7 @@
 眼见为实	seeing is believing
 眼见得	obviously|clearly
 眼观六路耳听八方	be observant and alert
+眼观四面耳听八方	be observant and alert
 眼角	outer or inner corner of the eye|canthus
 眼角膜	cornea
 眼距宽	orbital hypertelorism
@@ -62147,6 +62427,7 @@
 知子莫若父	nobody understands one's son better than his father
 知己	know oneself|be intimate or close|intimate friend
 知己知彼	know yourself, know your enemy
+知己知彼百战不殆	Know your enemy and know yourself, and you will win every battle
 知府	prefectural magistrate
 知彼知己	know the enemy and know oneself
 知心	caring|intimate
@@ -62155,6 +62436,7 @@
 知情	know the facts|understand|be familiar with the situation
 知情人	person in the know|insider|informed source
 知情同意	informed consent
+知无不言言无不尽	frank|outspoken
 知易行难	easier said than done|easy to grasp but difficult to put into practice
 知晓	know|understand
 知更鸟	redbreast|robin
@@ -62646,7 +62928,7 @@
 破镜重圆	long-separated lovers are reunited|a broken relationship is restored
 破门	burst or force open a door|excommunicate someone|score a goal
 破门而入	break the door down and enter
-破防	break through an opponent's defenses|get to someone|make someone feel upset or moved
+破防	be emotionally overwhelmed|be deeply moved or upset|break through an opponent's defenses|get to someone|make someone feel upset or moved
 破除	eliminate|do away with|get rid of
 破除迷信	eliminate superstition
 破鞋	broken shoes|worn-out footwear|loose woman|slut
@@ -63216,6 +63498,7 @@
 礼贤下士	respect for the wise
 礼赞	praise|well done, bravo!
 礼轻人意重	slight present but weighty meaning
+礼轻人意重千里送鹅毛	goose feather sent from afar, a slight present but weighty meaning|It's not the present the counts, it's the thought behind it
 礼轻情意重	It's not the gift that counts, but the thought behind it
 礼遇	courtesy|deferential treatment|polite reception
 礼部	Ministry of Rites
@@ -63400,6 +63683,7 @@
 神奈川县	Kanagawa prefecture, Japan
 神奥	mysterious|an enigma
 神女	goddess
+神女有心襄王无梦	the fairy is willing, but King Xiang doesn't dream
 神妙	marvelous|wondrous
 神学	theological|theology
 神学士	student of theology|Bachelor of Divinity|Taleban
@@ -63803,6 +64087,8 @@
 秀场	live show venue
 秀外慧中	good-looking and intelligent
 秀才	scholar|skillful writer|fine talent
+秀才不出门全知天下事	a learned person need not leave his home to know what's going on in the world
+秀才不出门能知天下事	a learned person need not leave his home to know what's going on in the world
 秀气	delicate|graceful
 秀美	elegant|graceful
 秀色可餐	a feast for the eyes|gorgeous|graceful|beautiful
@@ -63962,6 +64248,7 @@
 种植	plant|grow|cultivate
 种植业	plantation
 种植园	plantation
+种瓜得瓜种豆得豆	As you sow, so shall you reap|You've made your bed, now must lie on it
 种田	farm|farming
 种畜	breeding stock|stud
 种禽	cock|male breeding poultry
@@ -64484,6 +64771,7 @@
 穷困	destitute|wretched poverty
 穷困潦倒	live in poverty and despair|down and out|destitute and without hope
 穷国	poor country
+穷在闹市无人问富在深山有远亲	the poor are ignored in the busiest city
 穷奢极侈	extravagant in the extreme
 穷奢极欲	indulge in a life of luxury|extreme extravagance
 穷家富路	at home be frugal, but when traveling be prepared to spend
@@ -65053,6 +65341,7 @@
 端菜	serve food
 端详	full details|full particulars|look over carefully|scrutinize
 端赖	depend ultimately on|absolutely reliant on
+端起碗吃肉放下筷子骂娘	complain despite being privileged|be ungrateful for what one has been given
 端面	end face|end surface of a cylindrical object
 竹	Kangxi radical 118
 竹丝鸡	black-boned chicken|silky fowl|silkie|Gallus gallus domesticus Brisson
@@ -65079,6 +65368,7 @@
 竹管	bamboo pipe
 竹篮	wicker basket
 竹篮打水	using a wicker basket to draw water|wasted effort
+竹篮打水一场空	using a wicker basket to draw water|wasted effort
 竹篱笆	fence
 竹篾	bamboo strip
 竹编	wickerwork
@@ -65128,6 +65418,7 @@
 笋尖	bamboo shoot tip
 笎	bamboo with black patches
 笑	laugh|smile|laugh at
+笑一笑十年少	Laughter keeps you young
 笑不可仰	double up with laughter
 笑剧	comedy|farce
 笑口弥勒	laughing Maitreya
@@ -66202,6 +66493,7 @@
 精装	hardcover|elaborately packaged
 精诚	sincerity|absolute good faith
 精诚所至	no difficulty is insurmountable if one is sincere
+精诚所至金石为开	no difficulty is insurmountable if one is sincere
 精读	read carefully and thoroughly|intensive reading
 精读课	intensive reading course
 精辟	clear and penetrating|incisive|insightful
@@ -67684,6 +67976,7 @@
 绝笔	words written on one’s deathbed|an artist's final work|swansong
 绝粮	provisions are exhausted|out of food
 绝经	menopause
+绝绝子	amazing|the best
 绝缘	have no contact with|be cut off from|insulate
 绝缘体	electrical insulation|heat insulation
 绝罚	excommunicate
@@ -68553,6 +68846,7 @@
 罗雀掘鼠	try every possible means of obtaining food
 罗非鱼	tilapia
 罗马	Rome, capital of Italy
+罗马不是一天建成的	Rome wasn't built in a day
 罗马书	Epistle of St Paul to the Romans
 罗马公教	Roman Catholicism
 罗马化	romanization
@@ -68598,6 +68892,7 @@
 罢论	abandoned idea
 罢课	student strike|boycott classes
 罢黜	dismiss from office|ban|reject
+罢黜百家独尊儒术	sole dominant ideology
 罥	bird catching net|bind|hang
 罨	foment|valve
 罩	cover|spread over|a cover|a shade|a hood|bamboo fish trap
@@ -69194,6 +69489,7 @@
 老叟	old man
 老古板	overly conservative|old-fashioned|old fogey|a square
 老司机	an old hand at something
+老吾老以及人之老	honor old people as we do our own aged parents
 老土	old-fashioned|unstylish
 老地方	same place as before|usual place|stomping ground
 老城	old town|old district of a city
@@ -69232,6 +69528,7 @@
 老婆	wife
 老婆孩子热炕头	wife, kids and a warm bed|the simple and good life
 老子	father|daddy|I, your father|I
+老子英雄儿好汉老子反动儿混蛋	like father, like son
 老实	honest|sincere|well-behaved|naive|gullible
 老实巴交	docile|well-behaved|biddable
 老实说	honestly speaking|be frank
@@ -69302,6 +69599,7 @@
 老牛舐犊	dote on one's children
 老狐狸	old fox|cunning person
 老玉米	corn
+老王卖瓜自卖自夸	every potter praises his own pot|all one's geese are swans
 老生常谈	an old observation|a truism|banal comments
 老百姓	ordinary people|the "person in the street"
 老皇历	ancient history|obsolete practice|old-fashioned principle|past years' almanac
@@ -69351,6 +69649,7 @@
 老马识途	an old horse knows the way|an experienced worker knows what to do|an old hand knows the ropes
 老骥	old thoroughbred|aged person with great aspirations
 老骥伏枥	aged person with great aspirations
+老骥伏枥志在千里	old people may still cherish high aspirations
 老骥嘶风	old steed sniffs the wind|aged person with great aspirations
 老骨头	weary old body
 老鸟	old hand|veteran
@@ -69361,7 +69660,10 @@
 老黑	black person
 老鼠	rat|mouse
 老鼠尾巴	a follower of inferior stature
+老鼠拉龟无从下手	no clue where to start
+老鼠拖木锨大头在后头	the tip of the iceberg|the cockroach principle
 老鼠洞	mouse hole
+老鼠过街人人喊打	everyone detests a lowlife
 老鼻子	many
 老龄	old age|aging|aged|geriatric|the aged
 老龄化	aging
@@ -69545,6 +69847,7 @@
 耳光	a slap on the face
 耳刮子	a slap on one's face|a cuff
 耳力	hearing ability
+耳听为虚眼见为实	seeing is believing
 耳坠子	eardrops|earrings
 耳垂	earlobe
 耳垢	earwax
@@ -69865,6 +70168,7 @@
 聪慧	bright|intelligent
 聪敏	bright|sharp|quick-witted
 聪明	intelligent|clever|bright|acute
+聪明一世糊涂一时	every man has a fool in his sleeve
 聪明伶俐	bright|clever|quick-witted
 聪明反被聪明误	cleverness may overreach itself|too smart for one's own good
 聪明才智	intelligence and ability
@@ -70372,6 +70676,7 @@
 胚芽米	semipolished rice
 胛	shoulder blade
 胜	victory|success|beat|defeat|surpass|victorious
+胜不骄败不馁	no arrogance in victory, no despair in defeat
 胜之不武	fight a one-sided battle|have an unfair advantage in a contest
 胜仗	victory|victorious battle
 胜任	qualified|competent|be up to a task
@@ -71816,6 +72121,7 @@
 舍弃	give up|abandon|abort
 舍弟	my younger brother
 舍得	be willing to part with something
+舍得一身剐敢把皇帝拉下马	a fearless person, no fence is high enough
 舍本逐末	neglect the root and pursue the tip|neglect fundamentals and concentrate on details
 舍正从邪	be corrupted by evil influences
 舍生取义	give up life for righteousness|choose honor over life
@@ -71985,6 +72291,8 @@
 船位	ship's position
 船体	hull|body of a ship
 船到桥头自然直	everything will be all right
+船到江心补漏迟	It's too late to plug the leak once ship is in the middle of the river
+船到码头车到站	The job is over, it's time to relax
 船厂	shipyard|shipbuilder's yard
 船只	ship|boat|vessel
 船员	sailor|crew member
@@ -72694,6 +73002,7 @@
 苟合	illicit sexual relations
 苟同	agree blindly
 苟存	drift through life
+苟富贵勿相忘	don't forget your friends when you become rich
 苟延残喘	struggle on whilst at death's door
 苟活	live without dignity|barely sustain oneself
 苠	multitude|skin of bamboo
@@ -72763,6 +73072,7 @@
 苦水	bitter water|suffering|bitter complaint
 苦活	bitter work|sweated labor
 苦海	abyss of worldly suffering|depths of misery|sea of bitterness
+苦海无边回头是岸	Repent and ye shall be saved!
 苦海茫茫	sea of bitterness is vast
 苦涩	bitter and astringent|pained|agonized
 苦熬	endure
@@ -73649,6 +73959,7 @@
 萝	radish
 萝卜	radish, esp. daikon
 萝卜丝饼	shredded daikon pie
+萝卜白菜各有所爱	one man's meat is another man's poison|each his own
 萝卜糕	radish cake
 萝莉	a Lolita
 萝莉控	lolicon or rorikon
@@ -73823,6 +74134,7 @@
 落网	be caught in a net|hit the net|be captured
 落脚	stay for a time|stop over|lodge|sink down|leftovers
 落色	fade|discolor
+落花有意流水无情	one side is willing, yet the other one remains indifferent
 落花流水	be in a sorry state|be utterly defeated
 落花生	peanut
 落草	take to the woods to become an outlaw|be born
@@ -74591,6 +74903,7 @@
 虱	louse
 虱多不痒	be past worrying
 虱子	louse
+虱子多了不痒债多了不愁	be past worrying
 虱目鱼	milkfish
 虷	worm
 虹	rainbow
@@ -75312,6 +75625,7 @@
 衋	sad
 行	go|travel|trip|journey|visit|makeshift
 行不从径	looking for a shortcut to get ahead in work or study
+行不更名坐不改姓	I am who I am and not ashamed of it
 行不由径	upright and honest
 行不通	won't work|will get nowhere
 行不顾言	say one thing and do another
@@ -75349,6 +75663,7 @@
 行动方案	program of action
 行动电话	mobile phone
 行动纲领	action plan|program of action
+行动胜于言语	Actions speak louder than words
 行动自由	freedom of action
 行动计划	action plan
 行医	practice medicine
@@ -75924,6 +76239,7 @@
 装货	load something onto a ship etc
 装载	load|stow
 装运	ship|shipment
+装逼	show off|act pretentious
 装配	assemble|fit together
 装配员	assembly worker
 装配工厂	assembly plant
@@ -76299,6 +76615,7 @@
 要闻	important news story|headline
 要隘	strategic pass
 要领	main aspects|essentials|gist
+要风得风要雨得雨	get whatever one wants|have everything going one's way
 要饭	beg
 覂	throw a rider
 覃	deep
@@ -76332,6 +76649,7 @@
 见习员	trainee
 见习生	apprentice|probationer|cadet
 见亮	please forgive me
+见人说人话见鬼说鬼话	adaptable|insincere|two-faced
 见仁见智	opinions differ
 见光死	wither in the light of day
 见利忘义	abandon moral principles in the pursuit of profit
@@ -76783,6 +77101,8 @@
 言犹在耳	words still ringing in one's ears
 言符其实	be in accord with reality
 言简意赅	concise and comprehensive
+言者无意听者有心	take a casual remark to heart
+言者无罪闻者足戒	don't blame the speaker, take note of his warning
 言而无信	untrustworthy|not true to one's word
 言而有信	speak and keep one's promise|as good as one's word
 言行	words and actions|what one says and what one does
@@ -77870,6 +78190,7 @@
 诳语	a lie|a falsehood
 说	speak|talk|say|explain|comment|scold
 说一不二	say one and mean just that|keep one's word
+说一千道一万	when all is said and done|at the end of the day
 说三道四	make thoughtless remarks|criticize|gossip
 说上	say|speak|talk
 说不上	be unable to say or tell|not be worth mentioning
@@ -77905,10 +78226,12 @@
 说得过去	acceptable|passable|justifiable|make sense
 说情	intercede|plead for someone else
 说教	preach
+说时迟那时快	no sooner said than done|before you know it
 说明	explain|illustrate|indicate|show|prove|explanation
 说明书	manual|directions|synopsis|specification
 说明会	information meeting
-说曹操曹操就到	speak of the devil and he doth appear
+说曹操曹操到	Speak of the devil
+说曹操曹操就到	Speak of the devil|speak of the devil and he doth appear
 说服	persuade|convince|talk someone over|Taiwan pr
 说服力	persuasiveness
 说来话长	start explaining and it's a long story|complicated and not easy to express succinctly
@@ -78017,6 +78340,7 @@
 诺贝尔文学奖	Nobel Prize in Literature
 诺贝尔物理学奖	Nobel Prize in Physics
 读	read out|read aloud|read|attend|study|pronounce
+读万卷书行万里路	acquire knowledge from study and wisdom from practical experience
 读书	read a book|study|attend school
 读书人	scholar|intellectual
 读书会	study group
@@ -78077,6 +78401,8 @@
 谁料	who would have thought that|who would have expected that
 谁知	who would have thought|unexpectedly
 谁知道	God knows|Who would have imagined...?
+谁笑到最后谁笑得最好	He laughs best who laughs last
+谁笑在最后谁笑得最好	He laughs best who laughs last
 谂	know|reprimand|urge|long for|tell|inform
 调	harmonize|reconcile|blend|suit well|adjust|regulate
 调三窝四	sow the seeds of discord everywhere
@@ -78227,6 +78553,7 @@
 谊	friendship
 谋	plan|seek|scheme
 谋事	plan matters|look for a job
+谋事在人成事在天	Man proposes but God disposes|planning is with man, accomplishing with heaven
 谋划	scheme|plot|conspiracy
 谋利	make a profit|gain|get an advantage
 谋刺	plot to assassinate
@@ -80086,6 +80413,7 @@
 跏	sit cross-legged
 跐	trample|step|walk on the ball of the foot
 跑	run|run away|escape|run around|leak or evaporate|away
+跑了和尚跑不了寺	I'll get you sooner or later
 跑了和尚跑不了庙	I'll get you sooner or later
 跑出	run out
 跑刀	racing skates
@@ -80097,6 +80425,7 @@
 跑垒员	runner
 跑堂	waiter
 跑堂儿的	waiter
+跑得了和尚跑不了庙	I'll get you sooner or later
 跑掉	run away|take to one's heels
 跑来跑去	scamper|run around
 跑步	run|jog|march at the double
@@ -80268,6 +80597,7 @@
 路虎	Land Rover
 路西弗	Lucifer
 路西法	Lucifer
+路见不平拔刀相助	rush to the rescue|play the white knight
 路费	travel expenses|money for a voyage|toll
 路轨	track
 路边	curb|roadside|wayside
@@ -80280,6 +80610,7 @@
 路途	road|path
 路途遥远	it's a very long journey to get there
 路遇	meet by chance on the way somewhere|encounter on the way somewhere
+路遥知马力日久见人心	Time reveals a person's true character
 路障	roadblock|barricade
 路霸	brigand|uncivil driver|road hog|person who sets up an illegal toll
 路面	road surface
@@ -80627,6 +80958,7 @@
 躲	hide|dodge|avoid
 躲债	dodge a creditor
 躲开	stay out of|avoid
+躲得过初一躲不过十五	you can't put it off forever|sooner or later you'll have to deal with it
 躲懒	shy away from work|get by without attending duty
 躲猫猫	hide-and-seek|peekaboo
 躲藏	conceal oneself|go into hiding|take cover
@@ -80642,7 +80974,7 @@
 躺	recline|lie down
 躺下	lie down
 躺倒	lie down
-躺平	lie stretched out|opt out of the rat race
+躺平	give up striving|opt out of the rat race|lie flat|lie stretched out
 躺枪	be unfairly targeted
 躺椅	deck chair|recliner|couch|lounge
 躺赢	victory presented on a platter
@@ -80675,6 +81007,7 @@
 车主	vehicle owner
 车位	parking spot|unloading point|garage place|stand for taxi
 车到山前必有路	everything will turn out for the best|let's worry about it when it happens|it will be all right on the night
+车到山前必有路船到桥头自然直	everything will turn out all right|let's worry about it when it happens|it will be all right on the night
 车厂	depot|car factory or repair shop
 车厢	carriage
 车号	vehicle number
@@ -81713,6 +82046,7 @@
 过筛	put through a sieve|sift|strain|screen|filter|select
 过细	extremely careful|meticulous|overattentive
 过继	adopt|give for adoption
+过而能改善莫大焉	If one can change after making a mistake, there is nothing better
 过节	celebrate a festival|after the celebrations
 过街天桥	skywalk|pedestrian bridge
 过街老鼠	someone or something detested by all|target of scorn|anathema
@@ -81865,6 +82199,7 @@
 近日点	lower apsis
 近景	scene in the foreground|nearby scenery|a close shot|the present situation|how things stand
 近期	near in time|in the near future|very soon|recent
+近朱者赤近墨者黑	you are the product of your environment|those who handle cinnabar are stained red|those who work with ink are stained black
 近朱近墨	one is judged by the company one keeps
 近来	recently|lately
 近水楼台	using one's proximity to the powerful to obtain favor
@@ -82058,6 +82393,7 @@
 远东	Far East
 远东豹	Amur leopard
 远亲	a distant relative
+远亲不如近邻	A good neighbor nearby is better than a relative far away
 远人	an estranged person|someone who is alienated|people far from home
 远光灯	high beam
 远劳	you will be making a long trip
@@ -82504,6 +82840,7 @@
 追龙	chase the dragon
 迿	be the first to begin a quarrel
 退	retreat|withdraw|reject|return|decline
+退一步海阔天空	Take a step back and a whole new world opens up
 退下	retire|withdraw|retreat|step down
 退下金	retirement pension
 退件	reject|return to sender|item returned to sender
@@ -82700,6 +83037,7 @@
 逆来顺受	resign oneself to adversity|grin and bear it
 逆水	against the current|upstream
 逆水行舟	in a tough environment
+逆水行舟不进则退	like rowing a boat upstream, if you stop moving forward you fall back
 逆流	against the stream|adverse current|a countercurrent|reactionary tendency|go against the trend
 逆流溯源	go back to the source
 逆流而上	sail against the current|go against the flow
@@ -83426,6 +83764,7 @@
 避世	shun the world
 避世绝俗	withdraw from society and live in seclusion
 避免	avert|prevent|avoid|refrain from
+避其锐气击其惰归	avoid the enemy when he is fresh and strike him when he is tired and withdraws
 避坑落井	dodge a pit only to fall into a well|out of the frying pan into the fire
 避嫌	avoid arousing suspicion
 避孕	contraception
@@ -84497,6 +84836,7 @@
 野汉子	woman's lover
 野游	outing in the country|go on a hike|go courting
 野火	wildfire|bush fire|farm fire
+野火烧不尽春风吹又生	cannot be easily eliminated
 野炊	cook a meal over a campfire|cookout
 野炮	field artillery
 野牛	bison
@@ -84582,6 +84922,7 @@
 金丝雀	canary
 金主	financial backer|bankroller
 金乌	Golden Crow|the sun
+金乌西坠玉兔东升	at sunset
 金伯利岩	Kimberlite
 金光党	racketeers|con artists
 金光闪烁	spangle
@@ -84634,6 +84975,7 @@
 金文	inscription in bronze|bell-cauldron inscription
 金斯敦	Kingston, capital of Jamaica
 金无足赤	not all gold is sufficiently red|no-one is perfect
+金无足赤人无完人	Nobody's perfect
 金日成	Kim Il Sung Great Leader of North Korea
 金星	gold star|stars|Venus
 金曜日	Friday
@@ -84662,6 +85004,8 @@
 金牛	Taurus
 金牛座	Taurus
 金玉	gold and jade|precious
+金玉其外败絮其中	gilded exterior, shabby and ruined on the inside
+金玉其表败絮其中	gilded exterior, shabby and ruined on the inside
 金玉满堂	abundant wealth|abundance of knowledge
 金玉良言	gems of wisdom|priceless advice
 金球奖	Golden Globe Award
@@ -85027,6 +85371,7 @@
 钰	treasure|hard metal
 钱	coin|money
 钱三强	Qian Sanqiang
+钱不是万能的没钱是万万不能的	money isn't everything, but without money you can do nothing
 钱串	string of cash
 钱串子	string of copper coins|an overly money-oriented person|centipede
 钱其琛	Qian Qichen, former Chinese vice premier
@@ -85114,6 +85459,7 @@
 铁幕	Iron Curtain
 铁律	an iron law|a cast-iron rule
 铁打	made of iron|strong as iron
+铁打的衙门流水的官	government officials come and go
 铁拳	Tekken|iron fist
 铁杆	iron rod|zealous|die-hard|iron
 铁杉	Tsuga chinensis
@@ -85902,6 +86248,7 @@
 长沙湾	Cheung Sha Wan
 长治久安	long-term peace and stability
 长波	longwave
+长流水不断线	continuous and patient effort
 长满	grow all over
 长漂	rafting on the Yangtze River
 长点心眼	watch out|keep one's wits about one
@@ -86210,6 +86557,7 @@
 闯过	crash one's way through
 闯进	burst in
 闰	intercalary
+闰四月吃树叶	an intercalary fourth month brings food shortages
 闰年	leap year|year with a thirteen intercalary month
 闰月	intercalary month in the lunar calendar|leap month
 闱	door to women's room|gate to palace
@@ -87995,12 +88343,14 @@
 雷克雅未克	Reykjavik, capital of Iceland
 雷克雅维克	Reykjavik, capital of Iceland
 雷公打豆腐	the God of Thunder strikes bean curd|bully the weakest person|pick on an easy target
+雷公打豆腐拣软的欺	pick on an easy target
 雷击	lightning strike|thunderbolt
 雷剧	poorly made TV drama|a cringeworthy show
 雷区	minefield
 雷厉风行	pass like thunder and move like the wind|swift and decisive reaction
 雷同	mirroring others|identical
 雷声	thunder
+雷声大雨点小	a lot of talk, but no action
 雷大雨小	a lot of talk but little action|his bark is worse than his bite
 雷子	cop
 雷射	laser
@@ -88506,6 +88856,7 @@
 靠北	carp|stop whining!|shut the hell up!|fuck!|damn!
 靠垫	back cushion
 靠山	patron|backer|close to a mountain
+靠山吃山靠水吃水	make the best use of local resources|find one's niche|live off the land|exploit one's position to advance oneself
 靠岸	reach the shore|pull toward shore|close to shore|landfall
 靠得住	reliable|trustworthy
 靠拢	draw close to
@@ -88519,6 +88870,7 @@
 靠边	keep to the side|pull over|move aside!
 靠近	be close to|approach|draw near
 靡	extravagant|go with fashion|not|waste
+靡不有初鲜克有终	don't start something you can't handle
 靡有孑遗	all dead and no survivors
 靡烂	rotting|decaying
 靡费	waste|squander
@@ -88725,6 +89077,7 @@
 鞠躬	bow|bend down
 鞠躬尽力	bend to a task and spare no effort|striving to the utmost
 鞠躬尽瘁	bend to a task and spare no effort|striving to the utmost
+鞠躬尽瘁死而后已	striving to the utmost one's whole life
 鞡	Taiwan pr
 鞣	suede|chamois|tannin|tan
 鞣制	tan|tanning
@@ -88980,6 +89333,7 @@
 项上人头	head|neck
 项圈	necklace
 项庄舞剑	an elaborate deception hiding malicious intent
+项庄舞剑意在沛公	an elaborate deception to hide malicious intent
 项目	item|project|event
 项目管理	project management
 项颈	back of neck
@@ -89420,6 +89774,7 @@
 飂	wind in high places
 风	wind|news|style|custom|manner
 风中之烛	feeble|hanging on a thread
+风中烛瓦上霜	feeble|hanging on a thread
 风云	weather|unstable situation
 风云人物	the man of the moment|influential figure
 风云变幻	changeable situation
@@ -89708,6 +90063,7 @@
 飞鼠	flying squirrel|bat
 飞龙	wyvern
 食	eat|food|animal feed|eclipse|feed
+食不厌精脍不厌细	be fastidious about one's food
 食不果腹	poverty-stricken
 食不知味	worried or downhearted
 食人	man-eating|eat people|oppress the people
@@ -89912,6 +90268,7 @@
 饱读	read intensively
 饱足	be full
 饱食终日	spend the whole day eating
+饱食终日无所用心	be sated with food and remain idle|eat three square meals a day and do no work
 饱餐	eat one's fill
 饱餐一顿	eat one's fill|be full
 饲	raise|rear|feed
@@ -90299,6 +90656,7 @@
 马尾松	Masson pine
 马尾水	Mawei river through Fuzhou city
 马尾港	Mawei harbor, the harbor of Fuzhou city
+马尾穿豆腐提不起来	let's not talk of this
 马尾辫	ponytail
 马屁	horse hindquarters|flattery|boot-licking
 马屁精	sycophant|toady|bootlicker
@@ -90943,6 +91301,7 @@
 高官显爵	high ranking
 高密	high density
 高密度	high density
+高富帅	tall, rich and handsome guy
 高寒	high and cold
 高寿	longevity|venerable age|your venerable age?
 高射机枪	anti-aircraft machine gun
@@ -91862,6 +92221,7 @@
 鹫科	Aegyptiidae
 鹫鸟	vulture
 鹬	common snipe|sandpiper
+鹬蚌相争渔翁得利	when two sides are locked in dispute, it's often a third party that benefits
 鹭	heron
 鹭鸶	egret
 鹮	spoonbill|ibis|family Threskiornithidae
@@ -92015,6 +92375,7 @@
 麻醉药	anesthetic|narcotic
 麻醉药品	narcotic
 麻雀	sparrow|mahjong
+麻雀虽小五脏俱全	small but complete in every detail
 麻风	leprosy|Hansen's disease
 麻风病	leprosy|Hansen's disease
 麻麻亮	begin to dawn|be just getting light
@@ -92650,6 +93011,7 @@
 龙猫	chinchilla|Totoro
 龙王	Dragon King
 龙生九子	all kinds of characters|good and bad intermingled|It takes all sorts to make a world
+龙生龙凤生凤	the apple doesn't fall far from the tree
 龙的传人	Descendants of the Dragon
 龙眼	longan fruit|dragon eye fruit|Dimocarpus longan
 龙纹	dragon

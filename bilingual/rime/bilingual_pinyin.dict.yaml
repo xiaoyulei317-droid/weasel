@@ -4,11 +4,12 @@
 # 双语拼音: the word lists of 白霜拼音 (gaboolic/rime-frost, GPL-3.0), the same
 # ones its rime_frost.dict.yaml imports. They are simplified Chinese with word
 # frequencies; bilingual/fetch-models.sh downloads them into cn_dicts/ and
-# cn_dicts_cell/ next to this file.
+# cn_dicts_cell/ next to this file. bilingual_sayings adds the sayings they
+# lack, so that one typed in full comes out whole.
 
 ---
 name: bilingual_pinyin
-version: "2026-11-02"
+version: "2026-11-04"
 import_tables:
   - cn_dicts/8105
   - cn_dicts/41448
@@ -40,4 +41,5 @@ import_tables:
   - cn_dicts_cell/composite
   - cn_dicts_cell/luna
   - cn_dicts_cell/name
+  - bilingual_sayings
 ...

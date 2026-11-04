@@ -1,9 +1,10 @@
-# 雙語拼音: idioms (chengyu) in plain words, for the translation model.
-# Before a sentence is translated, each idiom of this list in it is replaced
-# by its plain words (the longest match first): the model translates the
-# idioms themselves word by word. Simplified Chinese; one idiom, a tab, and
-# its plain words per line. Only idioms whose plain words the model
-# translates better in test sentences are listed.
+# 雙語拼音: idioms (chengyu) and slang in plain words, for the translation
+# model. Before a sentence is translated, each expression of this list in it
+# is replaced by its plain words (the longest match first): the model
+# translates the expressions themselves word by word. Simplified Chinese; one
+# expression, a tab, and its plain words per line. Only expressions whose
+# plain words the model translates better in test sentences are listed. An
+# entry with the same words on both sides keeps a longer phrase as it is.
 对牛弹琴	浪费口舌
 守株待兔	坐等机会
 指点江山	评论国家大事
@@ -219,3 +220,53 @@
 一知半解	了解得不深
 沧海桑田的变化	巨大的变化
 如白驹过隙	短暂
+
+# Slang and everyday speech
+给我滚	滚开
+给我滚出去	滚出去
+给我滚回去	滚回去
+滚蛋	滚开
+滚一边去	走开
+你算什么东西	你以为你是谁
+关你屁事	不关你的事
+关你什么事	不关你的事
+有病吧	疯了吧
+吃饱了撑的	太闲了
+拉倒吧	算了吧
+你行你上	你行的话你来做
+有完没完	够了没有
+脑子进水	脑子有问题
+吃软饭	靠女人养活
+站着说话不腰疼	说起来容易
+没门儿	不可能
+门都没有	不可能
+少来这套	别糊弄我
+背黑锅	当替罪羊
+掉链子	出差错
+来打酱油	来看看
+坑爹	让人失望
+画大饼	开空头支票
+马屁精	爱奉承的人
+吹牛逼	吹牛皮
+吹牛皮	吹牛皮
+吹牛	说大话
+牛逼	厉害
+装逼	装模作样
+二百五十	二百五十
+二百五	傻瓜
+内卷	过度竞争
+上班摸鱼	上班偷懒
+别摸鱼	别偷懒
+在摸鱼	在偷懒
+吃瓜群众	看热闹的人
+甩锅	推卸责任
+白嫖	免费占便宜
+社死	非常丢脸
+破防	情绪崩溃
+太牛了	太厉害了
+你真牛	你真厉害
+你真牛逼	你真厉害
+你真牛皮	你真厉害
+真牛啊	真厉害啊
+很牛	很厉害
+很牛逼	很厉害

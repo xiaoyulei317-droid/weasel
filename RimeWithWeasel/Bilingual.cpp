@@ -11,6 +11,8 @@
 #include <chrono>
 #include <condition_variable>
 #include <cstdint>
+#include <cstring>
+#include <cwchar>
 #include <deque>
 #include <filesystem>
 #include <fstream>
@@ -195,7 +197,41 @@ class Simplifier {
 // The English of whole words, as the candidates show it (the schema's
 // bilingual_english.txt: a simplified word, a tab, options split by "|").
 // A word typed on its own is translated with its first option: the model
-// takes an idiom word by word (指点江山: "Pointing to the mountains").
+// takes an idiom word by word (指点江山: "Pointing to the mountains"), and
+// a saying too (万事总有开头: "Everything always starts").
+
+// The English of a mark that ends a sentence, or null.
+const wchar_t* EnglishMark(wchar_t c) {
+  switch (c) {
+    case L'。':
+    case L'.':
+    case L'．':
+      return L".";
+    case L'！':
+    case L'!':
+      return L"!";
+    case L'？':
+    case L'?':
+      return L"?";
+    case L'；':
+    case L';':
+      return L";";
+    case L'：':
+    case L':':
+      return L":";
+    case L'…':
+      return L"...";
+    default:
+      return nullptr;
+  }
+}
+
+// Punctuation or a space, as a word may be typed with.
+bool IsMark(wchar_t c) {
+  static const wchar_t kOther[] =
+      L" \t\u3000，,、～~“”‘’\"'「」『』（）()《》〈〉【】[]—·";
+  return EnglishMark(c) || (c && wcschr(kOther, c));
+}
 
 class WordTable {
  public:
@@ -217,17 +253,70 @@ class WordTable {
     return it == first_.end() ? std::string_view() : it->second;
   }
 
+  // The English of a word of the table typed as a sentence: with punctuation
+  // around it, or with the commas of a saying (千里之行，始于足下). The marks
+  // that end it are kept: 万事总有开头。 is "There's a first time for
+  // everything." Empty if there is no such word.
+  std::string Sentence(const std::string& text) const {
+    std::string_view english = English(text);
+    if (!english.empty() || first_.empty())
+      return std::string(english);
+    std::wstring w = u8tow(text);
+    size_t begin = 0, end = w.size();
+    while (begin < end && IsMark(w[begin]))
+      ++begin;
+    while (end > begin && IsMark(w[end - 1]))
+      --end;
+    std::wstring word = w.substr(begin, end - begin);
+    if (word.empty())
+      return {};
+    english = English(wtou8(word));
+    // Without the commas (the shortest sayings with one have six
+    // characters), and without a particle after a saying (万事总有开头嘛).
+    std::wstring plain = word;
+    plain.erase(std::remove_if(plain.begin(), plain.end(),
+                               [](wchar_t c) {
+                                 return c == L'，' || c == L',' || c == L'、';
+                               }),
+                plain.end());
+    if (english.empty() && plain.size() >= 6 && plain.size() < word.size())
+      english = English(wtou8(plain));
+    if (english.empty() && plain.size() >= 5 &&
+        wcschr(L"嘛啊呀吧啦哦喔", plain.back()))
+      english = English(wtou8(plain.substr(0, plain.size() - 1)));
+    if (english.empty())
+      return {};
+    std::string out(english);
+    std::wstring tail;
+    const wchar_t* last = nullptr;
+    for (size_t i = end; i < w.size(); ++i) {
+      const wchar_t* mark = EnglishMark(w[i]);
+      if (!mark)
+        continue;
+      if (!last || wcscmp(last, mark) != 0)
+        tail += mark;
+      last = mark;
+    }
+    if (!tail.empty()) {
+      if (out[0] >= 'a' && out[0] <= 'z')
+        out[0] = out[0] - 'a' + 'A';
+      if (std::string_view(".!?").find(out.back()) == std::string_view::npos)
+        out += wtou8(tail);
+    }
+    return out;
+  }
+
  private:
   std::string file_;
   std::unordered_map<std::string_view, std::string_view> first_;
 };
 
 // ---------------------------------------------------------------------------
-// Idioms in a sentence, put in plain words before the model translates it
-// (idioms.tsv: an idiom, a tab, plain Chinese; both simplified). The model
-// reads 跟他讲道理就是对牛弹琴 as "To reason with him is to play the harp on
-// the cow"; with 浪费口舌 for the idiom, "To reason with him is a waste of
-// words."
+// Idioms and slang in a sentence, put in plain words before the model
+// translates it (idioms.tsv: an expression, a tab, plain Chinese; both
+// simplified). The model reads 跟他讲道理就是对牛弹琴 as "To reason with him
+// is to play the harp on the cow"; with 浪费口舌 for the idiom, "To reason
+// with him is a waste of words."
 
 class Paraphraser {
  public:
@@ -275,6 +364,113 @@ class Paraphraser {
   size_t longest_ = 0;
   size_t shortest_ = SIZE_MAX;
 };
+
+// ---------------------------------------------------------------------------
+// Everyday speech the model misreads, written out before it translates.
+//
+// The things the verbs take, left out: in 花日本的用日本的 (spending Japan's,
+// using Japan's) the model takes 日本 for what is spent ("spending Japan with
+// Japan"). Two or more verbs of this table with the same owner get the thing
+// each one takes, and a comma if the sentence goes on: 花日本的钱、用日本的东西，
+
+struct VerbNoun {
+  wchar_t verb;
+  const wchar_t* noun;
+};
+
+const VerbNoun kVerbNouns[] = {
+    {L'花', L"钱"},   {L'用', L"东西"},   {L'吃', L"饭"}, {L'喝', L"水"},
+    {L'住', L"房子"}, {L'穿', L"衣服"}, {L'拿', L"东西"},
+};
+
+const wchar_t* NounOf(wchar_t verb) {
+  for (const auto& vn : kVerbNouns)
+    if (vn.verb == verb)
+      return vn.noun;
+  return nullptr;
+}
+
+std::wstring FillNouns(const std::wstring& s) {
+  std::wstring out;
+  out.reserve(s.size() + 16);
+  for (size_t i = 0; i < s.size();) {
+    // A verb, the owner (1 to 4 characters, as at i), and 的, at p.
+    size_t n = 1;
+    auto taken_at = [&](size_t p) {
+      return p + 1 + n < s.size() && NounOf(s[p]) &&
+             s.compare(p + 1, n, s, i + 1, n) == 0 && s[p + 1 + n] == L'的';
+    };
+    std::vector<size_t> verbs;  // where each verb is
+    size_t end = i;
+    if (NounOf(s[i])) {
+      for (; n <= 4 && i + n < s.size(); ++n) {
+        wchar_t c = s[i + n];
+        if (!IsHan(c) || c == L'的')
+          break;
+        if (!taken_at(i))
+          continue;
+        for (size_t p = i; taken_at(p);) {
+          verbs.push_back(p);
+          end = p + n + 2;
+          // With or without a comma between them (吃我的、喝我的).
+          p = end < s.size() && wcschr(L"、，,", s[end]) ? end + 1 : end;
+        }
+        break;
+      }
+    }
+    if (verbs.size() < 2) {
+      out += s[i++];
+      continue;
+    }
+    for (size_t p : verbs) {
+      if (p > i)
+        out += L'、';
+      out.append(s, p, n + 2);
+      out += NounOf(s[p]);
+    }
+    if (end < s.size() && IsHan(s[end]))
+      out += L'，';
+    i = end;
+  }
+  return out;
+}
+
+// A sentence typed without commas, cut where a new clause starts: before a
+// conjunction, or before 为什么 or 怎么 after a particle, with four or more
+// characters before it. The model reads 我已经告诉过你了为什么还要问 as one
+// clause ("I told you why I asked."); with the comma, "I told you, why ask?"
+
+const wchar_t* const kConjunctions[] = {L"但是", L"可是", L"所以", L"而且",
+                                        L"然后", L"否则", L"要不然"};
+const wchar_t* const kQuestions[] = {L"为什么", L"怎么"};
+const wchar_t kParticles[] = L"了呢吗吧啊呀啦的";
+
+bool StartsWith(const std::wstring& s, size_t i, const wchar_t* word) {
+  return s.compare(i, wcslen(word), word) == 0;
+}
+
+std::wstring AddCommas(const std::wstring& s) {
+  std::wstring out;
+  out.reserve(s.size() + 8);
+  size_t han = 0;  // Han characters right before i
+  for (size_t i = 0; i < s.size(); ++i) {
+    if (han >= 4) {
+      wchar_t prev = s[i - 1];
+      bool cut = false;
+      for (const wchar_t* c : kConjunctions)
+        cut = cut || (StartsWith(s, i, c) && prev != L'之' &&
+                      !StartsWith(s, i, L"所以然"));
+      for (const wchar_t* q : kQuestions)
+        cut = cut || (StartsWith(s, i, q) && wcschr(kParticles, prev) &&
+                      !StartsWith(s, i, L"怎么样"));
+      if (cut)
+        out += L'，';
+    }
+    out += s[i];
+    han = IsHan(s[i]) ? han + 1 : 0;
+  }
+  return out;
+}
 
 // ---------------------------------------------------------------------------
 // Dictionaries for the details window. Each file is kept in memory as read;
@@ -1068,7 +1264,7 @@ class Service::Impl {
   std::wstring WordEnglish(const std::string& text) const {
     if (!words_loaded_)
       return {};
-    return u8tow(words_.English(simplifier_.Convert(text)));
+    return u8tow(words_.Sentence(simplifier_.Convert(text)));
   }
 
   void Work() {
@@ -1104,9 +1300,9 @@ class Service::Impl {
       // The model reads simplified Chinese. A word queued before its table
       // was loaded gets its English from the table all the same.
       std::string source = simplifier_.Convert(text);
-      std::wstring result = u8tow(words_.English(source));
+      std::wstring result = u8tow(words_.Sentence(source));
       if (result.empty()) {
-        source = paraphraser_.Apply(source);
+        source = Rewrite(source);
         std::string out(1024, '\0');
         int n = translate_(engine_, source.c_str(), &out[0], (int)out.size());
         if (n >= (int)out.size()) {
@@ -1128,6 +1324,13 @@ class Service::Impl {
       done_.notify_all();
       PostMessageW(hwnd_, WM_TRANSLATED, 0, 0);
     }
+  }
+
+  // The sentence in the words the model translates best: the things the
+  // verbs take, idioms and slang in plain words, and commas between clauses.
+  std::string Rewrite(const std::string& source) const {
+    std::string s = paraphraser_.Apply(wtou8(FillNouns(u8tow(source))));
+    return wtou8(AddCommas(u8tow(s)));
   }
 
   bool LoadEngine() {

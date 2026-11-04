@@ -1,0 +1,150 @@
+# Rime dictionary
+# encoding: utf-8
+#
+# 双语拼音: sayings 白霜拼音's word lists lack, from CC-CEDICT (CC BY-SA 4.0)
+# and tools/extra_english.tsv; written by tools/build_sayings.py.
+
+---
+name: bilingual_sayings
+version: "2026-11-04"
+sort: by_weight
+use_preset_vocabulary: false
+...
+
+一个天南一个地北	yi ge tian nan yi ge di bei	100
+一则以喜一则以忧	yi ze yi xi yi ze yi you	100
+一寸光阴一寸金寸金难买寸光阴	yi cun guang yin yi cun jin cun jin nan mai cun guang yin	100
+一次生两次熟	yi ci sheng liang ci shu	100
+一瓶子不响半瓶子晃荡	yi ping zi bu xiang ban ping zi huang dang	100
+一部二十四史不知从何说起	yi bu er shi si shi bu zhi cong he shuo qi	100
+万事总有开头	wan shi zong you kai tou	100
+三个臭皮匠胜过一个诸葛亮	san ge chou pi jiang sheng guo yi ge zhu ge liang	100
+三人行则必有我师	san ren xing ze bi you wo shi	100
+三十六计走为上策	san shi liu ji zou wei shang ce	100
+上一次当学一次乖	shang yi ci dang xue yi ci guai	100
+不做亏心事不怕鬼敲门	bu zuo kui xin shi bu pa gui qiao men	100
+不怕不识货只怕货比货	bu pa bu shi huo zhi pa huo bi huo	100
+不怕慢就怕站	bu pa man jiu pa zhan	100
+不怕神一样的对手就怕猪一样的队友	bu pa shen yi yang de dui shou jiu pa zhu yi yang de dui you	100
+不管白猫黑猫捉住老鼠就是好猫	bu guan bai mao hei mao zhuo zhu lao shu jiu shi hao mao	100
+两国相争不斩来使	liang guo xiang zheng bu zhan lai shi	100
+两虎相争必有一伤	liang hu xiang zheng bi you yi shang	100
+为富不仁为仁不富	wei fu bu ren wei ren bu fu	100
+书中自有黄金屋书中自有颜如玉	shu zhong zi you huang jin wu shu zhong zi you yan ru yu	100
+人往高处爬水往低处流	ren wang gao chu pa shui wang di chu liu	100
+人无横财不富马无夜草不肥	ren wu heng cai bu fu ma wu ye cao bu fei	100
+人有失手马有失蹄	ren you shi shou ma you shi ti	100
+人生一世草木一春	ren sheng yi shi cao mu yi chun	100
+人非生而知之者孰能无惑	ren fei sheng er zhi zhi zhe shu neng wu huo	100
+以直报怨以德报德	yi zhi bao yuan yi de bao de	100
+以言代法以权压法	yi yan dai fa yi quan ya fa	100
+任何事情都有第一次	ren he shi qing dou you di yi ci	100
+任何事都有第一次	ren he shi dou you di yi ci	100
+你走你的阳关道我过我的独木桥	ni zou ni de yang guan dao wo guo wo de du mu qiao	100
+内行看门道外行看热闹	nei hang kan men dao wai hang kan re nao	100
+凡事总有第一次	fan shi zong you di yi ci	100
+出满勤干满点	chu man qin gan man dian	100
+刀不磨要生锈人不学要落后	dao bu mo yao sheng xiu ren bu xue yao luo hou	100
+千里搭长棚没有不散的宴席	qian li da chang peng mei you bu san de yan xi	100
+千里马常有而伯乐不常有	qian li ma chang you er bo le bu chang you	100
+卑之毋甚高论	bei zhi wu shen gao lun	100
+单丝不成线独木不成林	dan si bu cheng xian du mu bu cheng lin	100
+又要马儿好又要马儿不吃草	you yao ma r hao you yao ma r bu chi cao	100
+又要马儿跑又要马儿不吃草	you yao ma r pao you yao ma r bu chi cao	100
+可以意会不可言传	ke yi yi hui bu ke yan chuan	100
+台上一分钟台下十年功	tai shang yi fen zhong tai xia shi nian gong	100
+吃人家的嘴软拿人家的手短	chi ren jia de zui ruan na ren jia de shou duan	100
+吃得苦中苦方为人上人	chi de ku zhong ku fang wei ren shang ren	100
+君子一言驷马难追	jun zi yi yan si ma nan zhui	100
+听君一席话胜读十年书	ting jun yi xi hua sheng du shi nian shu	100
+听话听声锣鼓听音	ting hua ting sheng luo gu ting yin	100
+吾生也有涯而知也无涯	wu sheng ye you ya er zhi ye wu ya	100
+和尚打伞无法无天	he shang da san wu fa wu tian	100
+嘴上没毛办事不牢	zui shang mei mao ban shi bu lao	100
+在家靠父母出门靠朋友	zai jia kao fu mu chu men kao peng you	100
+士为知己者死女为悦己者容	shi wei zhi ji zhe si nv wei yue ji zhe rong	100
+大勇若怯大智若愚	da yong ruo qie da zhi ruo yu	100
+大处着眼小处着手	da chu zhuo yan xiao chu zhuo shou	100
+天下没有免费的午餐	tian xia mei you mian fei de wu can	100
+天网恢恢疏而不失	tian wang hui hui shu er bu shi	100
+好学近乎知力行近乎仁知耻近乎勇	hao xue jin hu zhi li xing jin hu ren zhi chi jin hu yong	100
+子不嫌母丑狗不嫌家贫	zi bu xian mu chou gou bu xian jia pin	100
+学如逆水行舟不进则退	xue ru ni shui xing zhou bu jin ze tui	100
+学而不厌诲人不倦	xue er bu yan hui ren bu juan	100
+学而不思则罔思而不学则殆	xue er bu si ze wang si er bu xue ze dai	100
+宁为鸡头不为凤尾	ning wei ji tou bu wei feng wei	100
+宁拆十座庙不毁一桩婚	ning chai shi zuo miao bu hui yi zhuang hun	100
+守株待兔缘木求鱼	shou zhu dai tu yuan mu qiu yu	100
+害人之心不可有防人之心不可无	hai ren zhi xin bu ke you fang ren zhi xin bu ke wu	100
+小作怡情大作伤身	xiao zuo yi qing da zuo shang shen	100
+小隐隐于林大隐隐于市	xiao yin yin yu lin da yin yin yu shi	100
+小隐隐于野大隐隐于市	xiao yin yin yu ye da yin yin yu shi	100
+山外有山天外有天	shan wai you shan tian wai you tian	100
+左耳入右耳出	zuo er ru you er chu	100
+常在河边走哪有不湿鞋	chang zai he bian zou na you bu shi xie	100
+平时不烧香临时抱佛脚	ping shi bu shao xiang lin shi bao fo jiao	100
+平生不做亏心事半夜敲门心不惊	ping sheng bu zuo kui xin shi ban ye qiao men xin bu jing	100
+张三李四王五赵六	zhang san li si wang wu zhao liu	100
+德不配位必有灾殃	de bu pei wei bi you zai yang	100
+意存笔先画尽意在	yi cun bi xian hua jin yi zai	100
+打掉门牙往肚子里咽	da diao men ya wang du zi li yan	100
+无事献殷勤非奸即盗	wu shi xian yin qin fei jian ji dao	100
+是骡子是马牵出来遛遛	shi luo zi shi ma qian chu lai liu liu	100
+曾经沧海难为水除却巫山不是云	ceng jing cang hai nan wei shui chu que wu shan bu shi yun	100
+有一说一有二说二	you yi shuo yi you er shuo er	100
+有仇不报非君子有冤不伸枉为人	you chou bu bao fei jun zi you yuan bu shen wang wei ren	100
+有其师必有其徒	you qi shi bi you qi tu	100
+机关算尽太聪明反算了卿卿性命	ji guan suan jin tai cong ming fan suan le qing qing xing ming	100
+林子大了什么鸟都有	lin zi da le shen me niao dou you	100
+样样通样样松	yang yang tong yang yang song	100
+步子太大容易扯着蛋	bu zi tai da rong yi che zhe dan	100
+死了张屠夫不吃混毛猪	si le zhang tu fu bu chi hun mao zhu	100
+水至清则无鱼人至察则无徒	shui zhi qing ze wu yu ren zhi cha ze wu tu	100
+没有规矩不成方圆	mei you gui ju bu cheng fang yuan	100
+没有规矩何以成方圆	mei you gui ju he yi cheng fang yuan	100
+泥菩萨过江自身难保	ni pu sa guo jiang zi shen nan bao	100
+狗咬吕洞宾不识好人心	gou yao lv dong bin bu shi hao ren xin	100
+瓜无滚圆人无十全	gua wu gun yuan ren wu shi quan	100
+男怕入错行女怕嫁错郎	nan pa ru cuo hang nv pa jia cuo lang	100
+疾风知劲草烈火见真金	ji feng zhi jin cao lie huo jian zhen jin	100
+病来如山倒病去如抽丝	bing lai ru shan dao bing qu ru chou si	100
+百胜难虑敌三折乃良医	bai sheng nan lv di san zhe nai liang yi	100
+眼观四面耳听八方	yan guan si mian er ting ba fang	100
+知人者智自知者明	zhi ren zhe zhi zi zhi zhe ming	100
+知彼知己百战不殆	zhi bi zhi ji bai zhan bu dai	100
+穷在闹市无人问富在深山有远亲	qiong zai nao shi wu ren wen fu zai shen shan you yuan qin	100
+窃国者侯窃钩者诛	qie guo zhe hou qie gou zhe zhu	100
+端起碗吃肉放下筷子骂娘	duan qi wan chi rou fang xia kuai zi ma niang	100
+精诚所加金石为开	jing cheng suo jia jin shi wei kai	100
+罗马不是一天建成的	luo ma bu shi yi tian jian cheng de	100
+老吾老以及人之老幼吾幼以及人之幼	lao wu lao yi ji ren zhi lao you wu you yi ji ren zhi you	100
+老子英雄儿好汉老子反动儿混蛋	lao zi ying xiong er hao han lao zi fan dong er hun dan	100
+老鼠拉龟无从下手	lao shu la gui wu cong xia shou	100
+老鼠拖木锨大头在后头	lao shu tuo mu xian da tou zai hou tou	100
+聪明一世懵懂一时	cong ming yi shi meng dong yi shi	100
+虱子多了不痒债多了不愁	shi zi duo le bu yang zhai duo le bu chou	100
+行不改姓坐不改名	xing bu gai xing zuo bu gai ming	100
+行动胜于言语	xing dong sheng yu yan yu	100
+要风得风要雨得雨	yao feng de feng yao yu de yu	100
+见人说人话见鬼说鬼话	jian ren shuo ren hua jian gui shuo gui hua	100
+言者无意听者有心	yan zhe wu yi ting zhe you xin	100
+躲得过初一躲不过十五	duo de guo chu yi duo bu guo shi wu	100
+躲过初一躲不过十五	duo guo chu yi duo bu guo shi wu	100
+车到山前必有路船到桥头自然直	che dao shan qian bi you lu chuan dao qiao tou zi ran zhi	100
+过而能改善莫大焉	guo er neng gai shan mo da yan	100
+道之所存师之所存	dao zhi suo cun shi zhi suo cun	100
+酒不醉人人自醉色不迷人人自迷	jiu bu zui ren ren zi zui se bu mi ren ren zi mi	100
+野火烧不尽春风吹又生	ye huo shao bu jin chun feng chui you sheng	100
+钉是钉铆是铆	ding shi ding mao shi mao	100
+铁打的衙门流水的官	tie da de ya men liu shui de guan	100
+长流水不断线	chang liu shui bu duan xian	100
+闰四月吃树叶	run si yue chi shu ye	100
+雷公打豆腐拣软的欺	lei gong da dou fu jian ruan de qi	100
+顶港有名声下港上出名	ding gang you ming sheng xia gang shang chu ming	100
+风中烛瓦上霜	feng zhong zhu wa shang shuang	100
+食之无味弃之不甘	shi zhi wu wei qi zhi bu gan	100
+饭后一支烟赛过活神仙	fan hou yi zhi yan sai guo huo shen xian	100
+饱暖思淫欲饥寒起盗心	bao nuan si yin yu ji han qi dao xin	100
+马尾穿豆腐提不起来	ma wei chuan dou fu ti bu qi lai	100
+鱼生火肉生痰青菜豆腐保平安	yu sheng huo rou sheng tan qing cai dou fu bao ping an	100
+黄鼠狼给鸡拜年没安好心	huang shu lang gei ji bai nian mei an hao xin	100
